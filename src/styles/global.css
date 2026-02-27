@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-primary: #172550;
-  --color-brand-secondary: #158ec7;
-  --color-brand-accent: #fa9604;
-  --color-brand-text: #3b3b3b;
+  --color-brand-primary: #172550; /* Dark Navy / Indigo for text & backgrounds */
+  --color-brand-secondary: #158ec7; /* Cyan / Light Blue */
+  --color-brand-accent: #fa9604; /* Orange accent */
+  --color-brand-text: #3b3b3b; /* Body text grey */
+
+  /* Additional SVGs specific colors */
+  --color-brand-highlight: #20428a; /* A slightly lighter navy used in SVGs */
 
   --font-heading: "Montserrat", sans-serif;
   --font-body: "Open Sans", sans-serif;

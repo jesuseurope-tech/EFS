@@ -39,6 +39,9 @@ The visual identity is based on a professional medical aesthetic with high-contr
 | `brand-secondary` | `#158ec7` | Buttons, Light Blue sections, Links |
 | `brand-accent` | `#fa9604` | Orange highlights, important icons |
 | `brand-text` | `#3b3b3b` | General body text |
+| `brand-highlight` | `#20428A` | Secondary navy from SVGs, diagrams |
+| `brand-success` | `#10B981` | Green used for harmonic waves/positive markers |
+| `brand-danger` | `#EF4444` | Red used for disharmonic waves/negative markers |
 
 ### UI Components
 The site follows a consistent pattern of using:
