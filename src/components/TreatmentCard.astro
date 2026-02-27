@@ -1,0 +1,71 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  iconHtml?: string;
+  linkUrl: string;
+}
+
+const { title, description, iconHtml, linkUrl } = Astro.props;
+---
+
+<a
+  href={linkUrl}
+  class="group flex flex-col h-full bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden"
+>
+  <div
+    class="absolute top-0 left-0 w-full h-1 bg-brand-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+  >
+  </div>
+
+  {
+    iconHtml && (
+      <div
+        class="w-16 h-16 text-brand-primary mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:text-brand-secondary"
+        set:html={iconHtml}
+      />
+    )
+  }
+
+  <!-- Fallback if no specific icon is provided -->
+  {
+    !iconHtml && (
+      <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+        <div class="w-6 h-6 border-2 border-brand-primary rounded-full group-hover:border-brand-secondary transition-colors duration-300" />
+      </div>
+    )
+  }
+
+  <h3
+    class="text-xl font-heading font-bold text-brand-primary mb-3 group-hover:text-brand-secondary transition-colors duration-300"
+  >
+    {title}
+  </h3>
+
+  <p class="text-brand-text/70 font-body leading-relaxed flex-grow">
+    {description}
+  </p>
+
+  <div
+    class="mt-6 flex items-center text-brand-secondary font-bold text-sm uppercase tracking-wide"
+  >
+    <span
+      class="mr-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-brand-secondary after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left"
+    >
+      Saber más
+    </span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 5l7 7-7 7"></path>
+    </svg>
+  </div>
+</a>

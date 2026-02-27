@@ -1,0 +1,131 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { getLangFromUrl } from "../../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="Heavy Metal Exposure" lang={lang}>
+  <!-- Main Content -->
+  <section
+    class="max-w-[1200px] w-full mx-auto px-4 py-[50px] md:py-[100px] pt-[150px]"
+  >
+    <div class="mb-12">
+      <h2
+        class="font-heading font-bold text-[30px] text-brand-primary uppercase tracking-[0.9px] mb-6"
+      >
+        Heavy Metal Poisoning
+      </h2>
+      <div
+        class="font-body text-brand-text text-[17px] leading-[37px] space-y-4"
+      >
+        <p>
+          Heavy metals are inorganic compounds that the body is not capable of
+          metabolizing. Unfortunately, the increase in pollution of all kinds,
+          in all types of environments, toxic waste, etc. means that humans are
+          exposed to the ingestion, absorption, and exposure of these metals
+          which become toxins that the body cannot eliminate. They accumulate in
+          organs and tissues, and if not with the help of "chelators"
+          (substances that trap the inorganic molecules of heavy metals and
+          create compounds that the body *can* eliminate through urine), they
+          could not be removed.
+        </p>
+        <p>
+          There are different substances that "chelate" heavy metals. Despite
+          this, the presence of heavy metals in tissues creates an
+          electromagnetic impregnation. Even if physical elimination is
+          successful, this impregnation remains, causing the same symptoms as if
+          the heavy metals were still present, seemingly eliminated.
+        </p>
+        <p>
+          Only through the elimination of these frequencies via Bio-resonance
+          Mora is complete elimination possible, as well as the restoration of
+          the function of the affected tissue.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h2
+        class="font-heading font-bold text-[30px] text-brand-primary uppercase tracking-[0.9px] mb-6"
+      >
+        List of Most Common Heavy Metals and Where They Are Found
+      </h2>
+      <div
+        class="font-body text-brand-text text-[17px] leading-[37px] space-y-4"
+      >
+        <p>
+          <strong><span class="underline">ALUMINUM</span></strong>:<br />
+          – Accumulates in lungs and brain. Blocks magnesium absorption, causes fatigue,
+          and contributes to the onset of Alzheimer's.<br />
+          – Found in non-organic vegetables, industrial food, tap water, deodorants,
+          amalgams, vaccines, pain relievers, and antacids.
+        </p>
+
+        <p>
+          <strong><span class="underline">ARSENIC</span></strong><br />
+          – Accumulates in liver, kidneys, skin, and nervous system.<br />
+          – Inhibits the action of vitamin E, selenium, and sulfur. Causes chronic
+          fatigue, lung and bladder cancer, diabetes, and gastrointestinal problems.
+          found in tap water, packaged juices, whole grains (especially rice), and
+          wines.<br />
+          To remove arsenic from rice, rinse it several times and boil it in plenty
+          of water (about 6 times its volume).
+        </p>
+
+        <p>
+          <strong><span class="underline">CADMIUM</span></strong><br />
+          – Accumulates in the respiratory tract, liver, kidneys, fat, nerves, and
+          bones.<br />
+          – Blocks the absorption of zinc, magnesium, selenium, and sulfur.<br
+          />
+          – Causes hypertension, headache, anemia, peripheral nervous system disorders,
+          kidney and lung problems.<br />
+          – Found in tap water, freshwater fish, crustaceans, leafy vegetables, mushrooms,
+          and non-organic dried seaweed.
+        </p>
+
+        <p>
+          <strong><span class="underline">MERCURY</span></strong><br />
+          – Accumulates in kidneys, brain, and nervous system.<br />
+          – Prevents the absorption of zinc, selenium, and iron. Destroys vitamin
+          B12 and causes chronic fatigue, high blood pressure, infections, anemia,
+          and immune problems.<br />
+          – Found in large fish, intensive agriculture pesticides, vaccines, and dental
+          amalgams.
+        </p>
+
+        <p>
+          <strong><span class="underline">LEAD</span></strong><br />
+          – Accumulates in the brain, nervous system, and bones. Blocks iron, calcium,
+          and molybdenum absorption. Causes musculoskeletal pain, irritability, sleep
+          disorders, and cognitive changes.<br />
+          – Found in water channeled in lead pipes, pesticides, packaged products,
+          medications, tobacco smoke.
+        </p>
+
+        <p>
+          <strong><span class="underline">ALGAE AND MUSHROOMS</span></strong>:
+          BEWARE! If they come from contaminated places, they constitute
+          authentic heavy metal bombs.
+        </p>
+      </div>
+
+      <div class="mt-8 text-center border-t border-gray-200 pt-8">
+        <p
+          class="font-body text-[17px] leading-[37px] text-blue-600 font-bold mb-4"
+        >
+          The erasure of metal frequencies via bio-resonance M. guarantees their
+          complete elimination.
+        </p>
+        <p class="font-body text-[17px] leading-[37px] text-brand-text">
+          <a
+            href="/en/detoxification/"
+            class="hover:text-brand-accent transition-colors underline"
+            >See the procedure here.</a
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,77 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  lang?: string;
+}
+
+const { title, description, lang = "es" } = Astro.props;
+const siteBase = "https://www.drenriquefernandez.com";
+const canonical = new URL(Astro.url.pathname, siteBase).href;
+const path = Astro.url.pathname.replace(/\/?$/, "") || "/";
+
+const pathToEn: Record<string, string> = {
+  "/": "/en/",
+  "/tratamientos": "/en/treatments/",
+  "/dejar-de-fumar": "/en/stop-smoking/",
+  "/diagnostico-medico": "/en/medical-diagnosis/",
+  "/homeopatia": "/en/homeopathy/",
+  "/desintoxicacion": "/en/detoxification/",
+  "/medicina-familiar": "/en/family-medicine/",
+  "/como-se-toma-la-homeopatia": "/en/how-to-take-homeopathy/",
+  "/afectacion-por-metales": "/en/heavy-metal-poisoning/",
+};
+
+const pathToEs: Record<string, string> = {
+  "/en": "/",
+  "/en/treatments": "/tratamientos/",
+  "/en/stop-smoking": "/dejar-de-fumar/",
+  "/en/medical-diagnosis": "/diagnostico-medico/",
+  "/en/homeopathy": "/homeopatia/",
+  "/en/detoxification": "/desintoxicacion/",
+  "/en/family-medicine": "/medicina-familiar/",
+  "/en/how-to-take-homeopathy": "/como-se-toma-la-homeopatia/",
+  "/en/heavy-metal-poisoning": "/afectacion-por-metales/",
+};
+
+const alternateHref =
+  lang === "en"
+    ? pathToEs[path]
+      ? new URL(pathToEs[path], siteBase).href
+      : siteBase + "/"
+    : pathToEn[path]
+      ? new URL(pathToEn[path], siteBase).href
+      : siteBase + "/en/";
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+
+  <title>{title} | Dr. Enrique Fernández</title>
+  {description && <meta name="description" content={description} />}
+
+  <link rel="canonical" href={canonical} />
+  <link rel="alternate" hreflang={lang} href={canonical} />
+  <link
+    rel="alternate"
+    hreflang={lang === "es" ? "en" : "es"}
+    href={alternateHref}
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={`${title} | Dr. Enrique Fernández`} />
+  {description && <meta property="og:description" content={description} />}
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;500;700&family=Noto+Serif:ital,wght@0,200;1,200&display=swap"
+    rel="stylesheet"
+  />
+</head>

@@ -1,0 +1,19 @@
+---
+interface Props {
+  fill?: string;
+  class?: string;
+}
+
+const { fill = "#ffffff", class: className = "" } = Astro.props;
+---
+
+<div class={`absolute bottom-0 left-0 w-full overflow-hidden leading-none ${className}`}>
+  <svg
+    class="block w-[calc(100%+1.3px)] h-[102px]"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1000 100"
+    preserveAspectRatio="none"
+  >
+    <path fill={fill} d="M0,6V0h1000v100L0,6z"></path>
+  </svg>
+</div>

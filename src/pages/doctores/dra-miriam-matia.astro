@@ -1,0 +1,53 @@
+---
+import DoctorProfileLayout from "../../layouts/DoctorProfileLayout.astro";
+
+const doctor = {
+  name: "Dra. Miriam Matía",
+  role: "Psicóloga y Especialista en Homeopatía",
+  image: "/images/team/Miriam.png",
+  bio: `Soy Licenciada en psicología por La Universidad de Deusto, Bilbao y me dedico a la practica de la psicología, la homeopatía y los tratamientos de desintoxicación, antitabaco y adicciones en nuestra consulta.`,
+};
+---
+
+<DoctorProfileLayout
+  title={doctor.name}
+  description={`Conozca a la ${doctor.name}, ${doctor.role}.`}
+  doctorName={doctor.name}
+  doctorRole={doctor.role}
+  doctorImageUrl={doctor.image}
+>
+  <div class="space-y-12">
+    <section>
+      <h2 class="text-2xl font-heading font-bold text-brand-primary mb-6">
+        Diplomas y Especializaciones
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-brand-text">
+        <li>
+          <strong class="text-brand-primary">Diplomada en Bioterapia</strong> por
+          la Asociación Médica Española de Bioterapia (España).
+        </li>
+        <li>
+          <strong class="text-brand-primary">Diplomada en Homeopatía</strong> por
+          la asociación Homeoform.
+        </li>
+        <li>Diplomada en Bio-resonancia MORA en 2011.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-heading font-bold text-brand-primary mb-6">
+        Experiencia Profesional
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-brand-text">
+        <li>
+          Desde 1994, dedicada a la práctica de la Medicina Homeopática, con
+          consulta en Granada, España.
+        </li>
+        <li>
+          Desde 2001, especializada en efectuar la terapia del tratamiento
+          antitabaco.
+        </li>
+      </ul>
+    </section>
+  </div>
+</DoctorProfileLayout>

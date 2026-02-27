@@ -1,0 +1,215 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const path = Astro.url.pathname.replace(/\/?$/, "") || "/";
+const pathToEn: Record<string, string> = {
+  "/": "/en/",
+  "/tratamientos": "/en/treatments/",
+  "/dejar-de-fumar": "/en/stop-smoking/",
+  "/diagnostico-medico": "/en/medical-diagnosis/",
+  "/homeopatia": "/en/homeopathy/",
+  "/desintoxicacion": "/en/detoxification/",
+  "/medicina-familiar": "/en/family-medicine/",
+  "/como-se-toma-la-homeopatia": "/en/how-to-take-homeopathy/",
+  "/afectacion-por-metales": "/en/heavy-metal-poisoning/",
+};
+const pathToEs: Record<string, string> = {
+  "/en": "/",
+  "/en/treatments": "/tratamientos/",
+  "/en/stop-smoking": "/dejar-de-fumar/",
+  "/en/medical-diagnosis": "/diagnostico-medico/",
+  "/en/homeopathy": "/homeopatia/",
+  "/en/detoxification": "/desintoxicacion/",
+  "/en/family-medicine": "/medicina-familiar/",
+  "/en/how-to-take-homeopathy": "/como-se-toma-la-homeopatia/",
+  "/en/heavy-metal-poisoning": "/afectacion-por-metales/",
+};
+const esHref = lang === "en" ? (pathToEs[path] ?? "/") : "/";
+const enHref = lang === "es" ? (pathToEn[path] ?? "/en/") : "/en/";
+---
+
+<header
+  class="bg-white px-0 md:px-[100px] border-b border-gray-100 flex items-center justify-between py-4 sticky top-0 z-50"
+>
+  <div class="site-branding flex-shrink-0">
+    <a href={lang === "en" ? "/en/" : "/"} class="block w-[71px]">
+      <img
+        src="/images/logo/logo.png"
+        alt="Dr. Enrique Fernández"
+        class="w-[71px] max-w-[71px] h-auto object-contain"
+      />
+    </a>
+  </div>
+
+  <nav
+    class="hidden md:flex flex-row gap-6 items-center flex-1 justify-center space-x-[2em]"
+  >
+    <a
+      href={lang === "en" ? "/en/" : "/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize"
+    >
+      {t("nav.home")}
+    </a>
+    {lang === "en" && (
+    <a
+      href="/en/treatments/"
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize"
+    >
+      {t("nav.tratamientos")}
+    </a>
+    )}
+    <a
+      href={lang === "en" ? "/en/stop-smoking/" : "/dejar-de-fumar/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize"
+    >
+      {t("nav.antitabaco")}
+    </a>
+    <a
+      href={lang === "en" ? "/en/medical-diagnosis/" : "/diagnostico-medico/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize"
+    >
+      {t("nav.diagnostico")}
+    </a>
+    <a
+      href={lang === "en" ? "/en/homeopathy/" : "/homeopatia/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize"
+    >
+      {t("nav.homeopatia")}
+    </a>
+    <a
+      href={lang === "en" ? "/en/detoxification/" : "/desintoxicacion/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize"
+    >
+      {t("nav.desintoxicacion")}
+    </a>
+  </nav>
+
+  <div
+    class="hidden md:flex items-center gap-2 font-body text-sm font-bold text-gray-500 uppercase"
+  >
+    <a
+      href={esHref}
+      class={lang === "es"
+        ? "text-brand-accent"
+        : "hover:text-brand-accent transition-colors"}>ES</a
+    >
+    <span>|</span>
+    <a
+      href={enHref}
+      class={lang === "en"
+        ? "text-brand-accent"
+        : "hover:text-brand-accent transition-colors"}>EN</a
+    >
+  </div>
+
+  <button
+    type="button"
+    class="md:hidden block text-brand-accent p-2"
+    id="mobile-menu-btn"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      class="w-8 h-8"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+</header>
+
+<div
+  id="mobile-menu"
+  class="md:hidden fixed inset-0 top-[73px] z-40 bg-white border-t border-gray-100 overflow-y-auto hidden"
+  aria-hidden="true"
+>
+  <nav class="flex flex-col p-6 gap-4">
+    <a
+      href={lang === "en" ? "/en/" : "/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize py-2"
+    >
+      {t("nav.home")}
+    </a>
+    {lang === "en" && (
+    <a
+      href="/en/treatments/"
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize py-2"
+    >
+      {t("nav.tratamientos")}
+    </a>
+    )}
+    <a
+      href={lang === "en" ? "/en/stop-smoking/" : "/dejar-de-fumar/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize py-2"
+    >
+      {t("nav.antitabaco")}
+    </a>
+    <a
+      href={lang === "en" ? "/en/medical-diagnosis/" : "/diagnostico-medico/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize py-2"
+    >
+      {t("nav.diagnostico")}
+    </a>
+    <a
+      href={lang === "en" ? "/en/homeopathy/" : "/homeopatia/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize py-2"
+    >
+      {t("nav.homeopatia")}
+    </a>
+    <a
+      href={lang === "en" ? "/en/detoxification/" : "/desintoxicacion/"}
+      class="font-body text-[25px] font-medium text-brand-primary hover:text-brand-accent transition-colors capitalize py-2"
+    >
+      {t("nav.desintoxicacion")}
+    </a>
+    <div class="flex items-center gap-2 font-body text-sm font-bold text-gray-500 uppercase pt-4 border-t border-gray-100">
+      <a
+        href={esHref}
+        class={lang === "es"
+          ? "text-brand-accent"
+          : "hover:text-brand-accent transition-colors"}>ES</a
+      >
+      <span>|</span>
+      <a
+        href={enHref}
+        class={lang === "en"
+          ? "text-brand-accent"
+          : "hover:text-brand-accent transition-colors"}>EN</a
+      >
+    </div>
+  </nav>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", () => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      menu.setAttribute("aria-hidden", String(isOpen));
+      menu.classList.toggle("hidden", isOpen);
+    });
+
+    document.addEventListener("click", (e) => {
+      if (menu.classList.contains("hidden")) return;
+      if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        btn.setAttribute("aria-expanded", "false");
+        menu.setAttribute("aria-hidden", "true");
+        menu.classList.add("hidden");
+      }
+    });
+  });
+</script>

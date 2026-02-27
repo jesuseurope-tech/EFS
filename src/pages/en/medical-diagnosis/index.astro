@@ -1,0 +1,465 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactSection from "../../../components/ContactSection.astro";
+import { getLangFromUrl } from "../../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="Medical Diagnosis" lang={lang}>
+  <!-- Hero Section with Background -->
+  <section
+    class="bg-[url('/images/backgrounds/background-1.png')] bg-center bg-cover bg-no-repeat w-full py-[50px] md:py-[100px]"
+  >
+    <div
+      class="max-w-[1200px] mx-auto flex flex-col md:flex-row px-4 text-center md:text-left"
+    >
+      <!-- Text Side -->
+      <div class="w-full md:w-1/2 flex flex-col justify-center mb-10 md:mb-0">
+        <h2
+          class="text-brand-primary font-heading font-bold text-[30px] md:text-[45px] uppercase leading-[1.2] mb-4"
+        >
+          Complete medical diagnosis
+        </h2>
+        <h4
+          class="text-brand-primary font-heading font-medium text-[20px] md:text-[25px]"
+        >
+          The advances of electromagnetic medicine at your fingertips
+        </h4>
+      </div>
+
+      <!-- Animation Side -->
+      <div class="w-full md:w-1/2 flex justify-center items-center">
+        <!-- Interactive Animation from HTML -->
+        <div
+          class="animation-container relative w-full max-w-[500px] mx-auto rounded-[0.75rem] overflow-hidden bg-white shadow-lg"
+        >
+          <img
+            decoding="async"
+            id="torso-image"
+            src="/images/pages/torso.jpg"
+            alt="Drawing of a human torso for diagnosis"
+            class="w-full h-auto block opacity-80"
+          />
+          <div
+            class="scan-line absolute left-0 w-full h-[5px] opacity-0"
+            style="background: linear-gradient(90deg, transparent, rgba(21, 142, 199, 0.8), transparent); box-shadow: 0 0 15px 5px rgba(21, 142, 199, 0.5);"
+          >
+          </div>
+
+          <div
+            id="point1"
+            class="disharmony-point group absolute w-[25px] h-[25px] rounded-full border-2 border-white opacity-0 cursor-pointer"
+            style="background-color: rgba(250, 150, 4, 0.7); box-shadow: 0 0 10px 2px rgba(250, 150, 4, 0.8); transform: translate(-50%, -50%); top: 25%; left: 38%; transition: opacity 0.5s ease-in-out;"
+          >
+            <span
+              class="tooltip invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bottom-[125%] left-1/2 -translate-x-1/2 bg-brand-primary text-white py-1 px-2 rounded text-xs whitespace-nowrap transition-all z-10 font-body"
+              >Scar blockage</span
+            >
+          </div>
+
+          <div
+            id="point2"
+            class="disharmony-point group absolute w-[25px] h-[25px] rounded-full border-2 border-white opacity-0 cursor-pointer"
+            style="background-color: rgba(250, 150, 4, 0.7); box-shadow: 0 0 10px 2px rgba(250, 150, 4, 0.8); transform: translate(-50%, -50%); top: 58%; left: 60%; transition: opacity 0.5s ease-in-out;"
+          >
+            <span
+              class="tooltip invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bottom-[125%] left-1/2 -translate-x-1/2 bg-brand-primary text-white py-1 px-2 rounded text-xs whitespace-nowrap transition-all z-10 font-body"
+              >Toxic overload</span
+            >
+          </div>
+
+          <div
+            id="point3"
+            class="disharmony-point group absolute w-[25px] h-[25px] rounded-full border-2 border-white opacity-0 cursor-pointer"
+            style="background-color: rgba(250, 150, 4, 0.7); box-shadow: 0 0 10px 2px rgba(250, 150, 4, 0.8); transform: translate(-50%, -50%); top: 40%; left: 52%; transition: opacity 0.5s ease-in-out;"
+          >
+            <span
+              class="tooltip invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bottom-[125%] left-1/2 -translate-x-1/2 bg-brand-primary text-white py-1 px-2 rounded text-xs whitespace-nowrap transition-all z-10 font-body"
+              >Electromagnetic stress</span
+            >
+          </div>
+
+          <style>
+            .scan-line {
+              animation: scan 4s linear infinite;
+            }
+            .disharmony-point {
+              animation: pulse 2s infinite;
+            }
+            @keyframes scan {
+              0% {
+                top: 0%;
+              }
+              100% {
+                top: 100%;
+              }
+            }
+            @keyframes pulse {
+              0% {
+                transform: translate(-50%, -50%) scale(0.95);
+                box-shadow: 0 0 0 0 rgba(250, 150, 4, 0.7);
+              }
+              70% {
+                transform: translate(-50%, -50%) scale(1.1);
+                box-shadow: 0 0 10px 15px rgba(250, 150, 4, 0);
+              }
+              100% {
+                transform: translate(-50%, -50%) scale(0.95);
+                box-shadow: 0 0 0 0 rgba(250, 150, 4, 0);
+              }
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conocer la causa Section -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4 text-center md:text-left">
+    <h2
+      class="text-brand-primary font-heading font-bold text-[24px] md:text-[30px] uppercase mb-4 tracking-[0.9px] text-center"
+    >
+      Knowing the deep cause of your disease
+    </h2>
+    <div
+      class="text-brand-text text-[17px] leading-[37px] font-body text-center max-w-[1000px] mx-auto"
+    >
+      <p>
+        In our clinic, each consultation is based on a comprehensive medical
+        diagnosis, as it is the indispensable pillar for successful treatment.
+        For this, we integrate the advanced MORA Bio-Resonance technology, which
+        reveals the root of the imbalance, with traditional medicine methods to
+        obtain a global vision.
+      </p>
+    </div>
+  </section>
+
+  <!-- Feature 4 columns -->
+  <section
+    class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-6 px-4 py-8"
+  >
+    <div class="w-full md:w-1/4 text-center">
+      <h4 class="font-body text-[20px] font-bold text-brand-text mb-2">
+        Non-Invasive Method
+      </h4>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        We identify the origin of your symptoms without needles or uncomfortable
+        procedures.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h4 class="font-body text-[20px] font-bold text-brand-text mb-2">
+        Precise Identification
+      </h4>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        We discover which specific toxics, toxins, allergens or pathogens affect
+        your wellbeing and their subsequent elimination.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h4 class="font-body text-[20px] font-bold text-brand-text mb-2">
+        Integral Vision
+      </h4>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        We analyze your body as an interconnected whole, not as isolated parts.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h4 class="font-body text-[20px] font-bold text-brand-text mb-2">
+        Answers
+      </h4>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        We detect imbalances even when conventional analysis shows nothing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Como se usa Bio-resonancia -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4 mt-8">
+    <div
+      class="text-[17px] leading-[37px] font-body text-brand-text text-center md:text-left"
+    >
+      <h3 class="text-brand-secondary font-heading font-bold text-[25px] mb-6">
+        How is MORA Bio-resonance used for Diagnosis?
+      </h3>
+      <p class="mb-6">
+        MORA Bio-resonance is an <strong
+          >advanced medical diagnosis method</strong
+        > that allows us to go beyond symptoms to identify the original cause of the
+        imbalance in the organism. It is based on a key principle of biophysics: every
+        cell, tissue and organ of your body emits a specific and measurable electromagnetic
+        frequency that reflects its functional state.
+      </p>
+
+      <h4 class="font-body text-[20px] font-bold mb-4">
+        Diagnosis through frequencies
+      </h4>
+      <p class="mb-4">
+        We can understand this system as a «translator» of the language of your
+        cells:
+      </p>
+      <ul
+        class="list-disc ml-6 space-y-2 text-left w-full max-w-[800px] mx-auto md:mx-0"
+      >
+        <li>
+          <strong>When you are healthy,</strong> the frequencies you emit are ordered
+          and coherent, forming a pattern of <strong>harmonic vibrations</strong
+          >.
+        </li>
+        <li>
+          <strong>When an illness exists,</strong> even before it manifests in conventional
+          analysis, these vibrations are distorted. Factors such as toxins, allergens,
+          pathogens or stress create interferences, generating <strong
+            >inharmonic or pathological vibrations</strong
+          >.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Image and List Block -->
+  <section
+    class="max-w-[1200px] mx-auto py-10 px-4 flex flex-col md:flex-row gap-8 items-center"
+  >
+    <div class="w-full md:w-1/3 flex justify-center">
+      <img
+        src="/images/pages/medical-illustration.jpg"
+        class="max-w-[500px] w-full h-auto rounded shadow-sm"
+        alt="MORA Bio-resonance"
+      />
+    </div>
+    <div
+      class="w-full md:w-2/3 text-[17px] leading-[37px] font-body text-brand-text"
+    >
+      <p class="mb-4">
+        The MORA Bio-resonance equipment is capable of reading this entire
+        spectrum of vibrations. Its extraordinary precision allows it to
+        differentiate healthy signals from pathological ones, acting as a
+        bioenergetic scanner that reveals:
+      </p>
+      <ul class="list-disc ml-6 space-y-2 mb-6">
+        <li>
+          <strong>The Root Cause:</strong> Identifies which specific toxins, allergens,
+          heavy metals or microorganisms are altering your health.
+        </li>
+        <li>
+          <strong>The State of Organs:</strong> Evaluates the functionality of organs
+          and systems, detecting energetic blockages or weaknesses.
+        </li>
+        <li>
+          <strong>Hidden Imbalances:</strong> Discovers nutrient deficiencies, food
+          intolerances or interfering foci (such as scars or dental problems) that
+          often go unnoticed.
+        </li>
+      </ul>
+      <p>
+        In summary, MORA Bio-resonance provides us with an <strong
+          >incredibly detailed functional map of your current health state</strong
+        >. Thanks to this information, we can perform a holistic and accurate
+        diagnosis that goes directly to the origin of the problem, allowing us
+        to design a truly effective and personalized treatment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Medicina de verdad -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4 mb-8">
+    <div class="text-[17px] leading-[37px] font-body text-brand-text">
+      <h3 class="text-brand-secondary font-heading font-bold text-[25px] mb-6">
+        Real medicine without time limits
+      </h3>
+      <p class="mb-4">
+        Quality medical care is not measured in minutes, but in results. As a
+        private practice, we have the freedom to dedicate the necessary time to
+        each patient, ensuring a rigorous diagnosis and human treatment that
+        makes the difference. This philosophy, built on more than 40 years of
+        experience, ensures that you will be listened to and that your case will
+        be analyzed with the depth you deserve, which involves:
+      </p>
+      <ul class="list-disc ml-6 space-y-2">
+        <li>
+          <strong>Your medical history:</strong> Past illnesses, surgeries, treatments
+          received.
+        </li>
+        <li>
+          <strong>Your family history:</strong> Genetic predispositions that could
+          influence your current health.
+        </li>
+        <li>
+          <strong>Your personal history:</strong> Your lifestyle, your environment,
+          your diet, your stress level and your emotional state.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Principales Tratamientos Menu Block -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4 border-t border-gray-100">
+    <h2
+      class="text-[30px] font-heading font-bold text-brand-primary uppercase text-center tracking-[0.9px] mb-12"
+    >
+      Our Main Treatments
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Item 1 -->
+      <a
+        href="/en/homeopathy/"
+        class="group block text-center p-6 bg-white shadow-sm border border-gray-50 rounded transition-transform hover:-translate-y-1"
+      >
+        <div
+          class="mx-auto w-[60px] h-[60px] flex items-center justify-center rounded-full border-2 border-brand-primary text-brand-primary group-hover:bg-brand-accent group-hover:border-brand-accent group-hover:text-white transition-colors mb-4"
+        >
+          <svg
+            class="w-8 h-8 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            ><path
+              d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+            ></path></svg
+          >
+        </div>
+        <h3
+          class="text-[20px] font-heading font-medium text-brand-text group-hover:text-brand-accent transition-colors mb-2"
+        >
+          Homeopathic Medicine
+        </h3>
+        <p class="font-body text-[15px] text-gray-500 leading-snug">
+          Recover your health addressing the root of your diseases.
+        </p>
+      </a>
+      <!-- Item 2 -->
+      <a
+        href="/en/stop-smoking/"
+        class="group block text-center p-6 bg-white shadow-sm border border-gray-50 rounded transition-transform hover:-translate-y-1"
+      >
+        <div
+          class="mx-auto w-[60px] h-[60px] flex items-center justify-center rounded-full border-2 border-brand-primary text-brand-primary group-hover:bg-brand-accent group-hover:border-brand-accent group-hover:text-white transition-colors mb-4"
+        >
+          <svg
+            class="w-8 h-8 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            ><path
+              d="M96 304c0 8.8 7.2 16 16 16h117.5l-96-96H112c-8.8 0-16 7.2-16 16v64zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm0 448c-105.9 0-192-86.1-192-192 0-41.4 13.3-79.7 35.7-111.1l267.4 267.4C335.7 434.7 297.4 448 256 448zm45.2-192H384v32h-50.8l-32-32zm111.1 111.1L365.2 320H400c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16H269.2L144.9 99.7C176.3 77.3 214.6 64 256 64c105.9 0 192 86.1 192 192 0 41.4-13.3 79.7-35.7 111.1zM320.6 128c-15.6 0-28.6-11.2-31.4-25.9-.7-3.6-4-6.1-7.7-6.1h-16.2c-5 0-8.7 4.5-8 9.4 4.6 30.9 31.2 54.6 63.3 54.6 15.6 0 28.6 11.2 31.4 25.9.7 3.6 4 6.1 7.7 6.1h16.2c5 0 8.7-4.5 8-9.4-4.6-30.9-31.2-54.6-63.3-54.6z"
+            ></path></svg
+          >
+        </div>
+        <h3
+          class="text-[20px] font-heading font-medium text-brand-text group-hover:text-brand-accent transition-colors mb-2"
+        >
+          Stop Smoking Treatment
+        </h3>
+        <p class="font-body text-[15px] text-gray-500 leading-snug">
+          Quit smoking in a single session. Natural and effective with
+          bio-frequencies.
+        </p>
+      </a>
+      <!-- Item 3 -->
+      <a
+        href="/en/detoxification/"
+        class="group block text-center p-6 bg-white shadow-sm border border-gray-50 rounded transition-transform hover:-translate-y-1"
+      >
+        <div
+          class="mx-auto w-[60px] h-[60px] flex items-center justify-center rounded-full border-2 border-brand-primary text-brand-primary group-hover:bg-brand-accent group-hover:border-brand-accent group-hover:text-white transition-colors mb-4"
+        >
+          <svg
+            class="w-8 h-8 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            ><path
+              d="M562.1 383.9c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144C540.6 93.4 520 85.4 504.2 73 490.1 61.9 470 61.7 456 73c-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3z"
+            ></path></svg
+          >
+        </div>
+        <h3
+          class="text-[20px] font-heading font-medium text-brand-text group-hover:text-brand-accent transition-colors mb-2"
+        >
+          Complete Detoxification
+        </h3>
+        <p class="font-body text-[15px] text-gray-500 leading-snug">
+          Free your body from toxics, bacterial and viral loads, vaccine side
+          effects and persistent Covid.
+        </p>
+      </a>
+      <!-- Item 4 -->
+      <a
+        href="/en/family-medicine/"
+        class="group block text-center p-6 bg-white shadow-sm border border-gray-50 rounded transition-transform hover:-translate-y-1"
+      >
+        <div
+          class="mx-auto w-[60px] h-[60px] flex items-center justify-center rounded-full border-2 border-brand-primary text-brand-primary group-hover:bg-brand-accent group-hover:border-brand-accent group-hover:text-white transition-colors mb-4"
+        >
+          <svg
+            class="w-8 h-8 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            ><path
+              d="M496 256c8.8 0 16-7.2 16-16s-7.2-16-16-16-16 7.2-16 16 7.2 16 16 16zm-176-80c48.5 0 88-39.5 88-88S368.5 0 320 0s-88 39.5-88 88 39.5 88 88 88zM59.8 364c10.2 15.3 29.3 17.8 42.9 9.8 16.2-9.6 56.2-31.7 105.3-48.6V416h224v-90.7c49.1 16.8 89.1 39 105.3 48.6 13.6 8 32.7 5.3 42.9-9.8l17.8-26.7c8.8-13.2 7.6-34.6-10-45.1-11.9-7.1-29.7-17-51.1-27.4-28.1 46.1-99.4 17.8-87.7-35.1C409.3 217.2 365.1 208 320 208c-57 0-112.9 14.5-160 32.2-.2 40.2-47.6 63.3-79.2 36-11.2 6-21.3 11.6-28.7 16-17.6 10.5-18.8 31.8-10 45.1L59.8 364zM368 344c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm-96-96c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm-160 8c8.8 0 16-7.2 16-16s-7.2-16-16-16-16 7.2-16 16 7.2 16 16 16zm512 192H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h608c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z"
+            ></path></svg
+          >
+        </div>
+        <h3
+          class="text-[20px] font-heading font-medium text-brand-text group-hover:text-brand-accent transition-colors mb-2"
+        >
+          Family Medicine
+        </h3>
+        <p class="font-body text-[15px] text-gray-500 leading-snug">
+          Children, allergies, asthma and digestive disorders such as
+          intolerances, etc.
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <ContactSection />
+</Layout>
+
+<script>
+  // Medical Diagnosis Torso Animation Script Translation handling & initiation
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(
+      ".animation-container",
+    ) as HTMLElement;
+    const scanLine = document.querySelector(".scan-line") as HTMLElement;
+    const points = document.querySelectorAll(".disharmony-point");
+    const image = document.getElementById("torso-image") as HTMLImageElement;
+
+    if (!container || !scanLine || !image || points.length === 0) return;
+
+    function startAnimation() {
+      scanLine.style.opacity = "1";
+
+      function checkScanPosition() {
+        const scanLineRect = scanLine.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        const scanLineTop = scanLineRect.top - containerRect.top;
+
+        points.forEach((rawPoint) => {
+          const point = rawPoint as HTMLElement;
+          const pointTop = point.offsetTop;
+
+          if (scanLineTop > pointTop && point.style.opacity !== "1") {
+            point.style.opacity = "1";
+          }
+        });
+
+        requestAnimationFrame(checkScanPosition);
+      }
+
+      requestAnimationFrame(checkScanPosition);
+
+      scanLine.addEventListener("animationiteration", () => {
+        points.forEach((rawPoint) => {
+          (rawPoint as HTMLElement).style.opacity = "0";
+        });
+      });
+    }
+
+    if (image.complete) {
+      startAnimation();
+    } else {
+      image.onload = startAnimation;
+    }
+  });
+</script>

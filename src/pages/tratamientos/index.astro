@@ -1,0 +1,531 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ContactSection from "../../components/ContactSection.astro";
+import TreatmentCard from "../../components/TreatmentCard.astro";
+import { getLangFromUrl } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="Tratamientos Médicos" lang={lang}>
+  <!-- Main Content -->
+  <section
+    class="max-w-[1200px] w-full mx-auto px-4 py-[50px] md:py-[100px] pt-[150px]"
+  >
+    <!-- Hero Section -->
+    <div class="flex flex-col md:flex-row gap-8 items-center mb-16">
+      <div class="md:w-1/2">
+        <h2
+          class="font-heading font-bold text-[30px] text-brand-primary uppercase tracking-[0.9px] mb-6"
+        >
+          Soluciones Médicas para tu Salud
+        </h2>
+        <div
+          class="font-body text-brand-text text-[17px] leading-[37px] space-y-4"
+        >
+          <p>
+            Con más de 40 años de experiencia en Medicina General y Homeopatía,
+            mi objetivo es ir más allá del síntoma. Utilizando un diagnóstico
+            avanzado con bio-frecuencias, no nos limitamos a poner una etiqueta
+            a tu enfermedad, sino que buscamos su causa raíz para
+            restaurar el equilibrio natural de tu cuerpo.
+          </p>
+          <p>
+            Tratamos al «Ser Humano» en su totalidad, entendiendo
+            que el lugar donde aparece un problema rara vez es su verdadero origen.
+            A continuación, te presento las áreas de tratamiento que abordo en mi
+            consulta, desde nuestras soluciones principales hasta el abordaje de una
+            amplia gama de afecciones.
+          </p>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img
+          src="/images/treatments/white-background-mobile.png"
+          class="max-h-[500px] object-contain"
+          alt="Tratamientos Médicos"
+        />
+      </div>
+    </div>
+
+    <!-- Core Treatments Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      <!-- Homeopatía -->
+      <TreatmentCard
+        title="Homeopatía"
+        description="Tratamos a la persona, no a la enfermedad. La homeopatía es ideal para abordar condiciones crónicas, recurrentes y desequilibrios emocionales de forma profunda y personalizada. En una consulta detallada, investigamos tu historia para encontrar el remedio que tu organismo necesita para sanar desde dentro."
+        linkUrl="/homeopatia/"
+        iconHtml={`<svg class="w-full h-full fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"></path></svg>`}
+      />
+
+      <!-- Antitabaco -->
+      <TreatmentCard
+        title="Tratamiento Antitabaco"
+        description="Libérate del tabaco en una sola sesión. Nuestro método combina bio-frecuencias de última generación con apoyo médico integral para eliminar la dependencia física y psicológica. Un tratamiento avanzado con una tasa de éxito del 95% que te permite recuperar tu salud y tu libertad."
+        linkUrl="/dejar-de-fumar/"
+        iconHtml={`<svg class="w-full h-full fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M96 304c0 8.8 7.2 16 16 16h117.5l-96-96H112c-8.8 0-16 7.2-16 16v64zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm0 448c-105.9 0-192-86.1-192-192 0-41.4 13.3-79.7 35.7-111.1l267.4 267.4C335.7 434.7 297.4 448 256 448zm45.2-192H384v32h-50.8l-32-32zm111.1 111.1L365.2 320H400c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16H269.2L144.9 99.7C176.3 77.3 214.6 64 256 64c105.9 0 192 86.1 192 192 0 41.4-13.3 79.7-35.7 111.1zM320.6 128c-15.6 0-28.6-11.2-31.4-25.9-.7-3.6-4-6.1-7.7-6.1h-16.2c-5 0-8.7 4.5-8 9.4 4.6 30.9 31.2 54.6 63.3 54.6 15.6 0 28.6 11.2 31.4 25.9.7 3.6 4 6.1 7.7 6.1h16.2c5 0 8.7-4.5 8-9.4-4.6-30.9-31.2-54.6-63.3-54.6z"></path></svg>`}
+      />
+
+      <!-- Desintoxicación -->
+      <TreatmentCard
+        title="Desintoxicación completa"
+        description="Limpia tu organismo de la carga tóxica moderna. Nuestro entorno nos expone a frecuencias electromagnéticas dañinas, (Geopatías (Wifis, celulares, antenas, emanaciones terrestres etc.)), metales pesados, químicos y toxinas que afectan a nuestro bienestar. Con bio-frecuencias, identificamos y neutralizamos estas sustancias nocivas, fortaleciendo tu sistema inmunitario y recuperando tu energía y vitalidad."
+        linkUrl="/desintoxicacion/"
+        iconHtml={`<svg class="w-full h-full fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M562.1 383.9c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144c-21.5-2.4-42.1-10.5-57.9-22.9-14.1-11.1-34.2-11.3-48.2 0-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3zm0-144C540.6 93.4 520 85.4 504.2 73 490.1 61.9 470 61.7 456 73c-37.9 30.4-107.2 30.4-145.7-1.5-13.5-11.2-33-9.1-46.7 1.8-38 30.1-106.9 30-145.2-1.7-13.5-11.2-33.3-8.9-47.1 2-15.5 12.2-36 20.1-57.7 22.4-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16 28.8-2.5 56.1-11.4 79.4-25.9 56.5 34.6 137 34.1 192 0 56.5 34.6 137 34.1 192 0 23.3 14.2 50.9 23.3 79.1 25.8 9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3z"></path></svg>`}
+      />
+
+      <!-- Medicina Familiar -->
+      <TreatmentCard
+        title="Medicina Familiar Integral"
+        description="En la consulta del Dr. Enrique Fernández, nos especializamos en Medicina para la familia al completo, abordando de manera holística trastornos digestivos, intolerancias alimentarias, asma y alergias, especialmente en niños. Nuestro enfoque es único al considerar y tratar a la familia entera (padres e hijos), lo que nos permite comprender la causa profunda de la enfermedad desde su contexto y historia familiar."
+        linkUrl="/medicina-familiar/"
+        iconHtml={`<svg class="w-full h-full fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M496 256c8.8 0 16-7.2 16-16s-7.2-16-16-16-16 7.2-16 16 7.2 16 16 16zm-176-80c48.5 0 88-39.5 88-88S368.5 0 320 0s-88 39.5-88 88 39.5 88 88 88zM59.8 364c10.2 15.3 29.3 17.8 42.9 9.8 16.2-9.6 56.2-31.7 105.3-48.6V416h224v-90.7c49.1 16.8 89.1 39 105.3 48.6 13.6 8 32.7 5.3 42.9-9.8l17.8-26.7c8.8-13.2 7.6-34.6-10-45.1-11.9-7.1-29.7-17-51.1-27.4-28.1 46.1-99.4 17.8-87.7-35.1C409.3 217.2 365.1 208 320 208c-57 0-112.9 14.5-160 32.2-.2 40.2-47.6 63.3-79.2 36-11.2 6-21.3 11.6-28.7 16-17.6 10.5-18.8 31.8-10 45.1L59.8 364zM368 344c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm-96-96c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm-160 8c8.8 0 16-7.2 16-16s-7.2-16-16-16-16 7.2-16 16 7.2 16 16 16zm512 192H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16h608c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z"></path></svg>`}
+      />
+    </div>
+
+    <!-- Additional Advanced Treatments -->
+    <div class="mb-16">
+      <h2
+        class="font-heading font-bold text-[30px] text-brand-primary uppercase tracking-[0.9px] mb-8 text-center"
+      >
+        MAS TRATAMIENTOS AVANZADOS
+      </h2>
+
+      <div
+        class="border rounded-md divide-y overflow-hidden max-w-3xl mx-auto custom-accordion shadow-lg"
+      >
+        <!-- Accordion Item 1 -->
+        <details class="group bg-white" open>
+          <summary
+            class="flex justify-between items-center font-bold font-body cursor-pointer list-none p-5 text-[20px] text-brand-primary bg-gray-50 hover:bg-gray-100 transition-colors"
+          >
+            <span>Restauración del Equilibrio Físico y Ambiental</span>
+            <span class="transition group-open:rotate-180">
+              <svg
+                fill="none"
+                height="24"
+                shape-rendering="geometricPrecision"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                width="24"><path d="M6 9l6 6 6-6"></path></svg
+              >
+            </span>
+          </summary>
+          <div
+            class="text-neutral-600 font-body p-6 pb-6 text-[17px] leading-[37px] bg-white"
+          >
+            <ul class="list-disc pl-5 space-y-2">
+              <li>
+                Alergias e Intolerancias: Tratamiento de la causa
+                de reacciones a alimentos (trigo, lactosa), pólenes, ácaros, etc.
+              </li>
+              <li>
+                Geopatías y Electrosmog: Neutralización de los efectos
+                del exceso de radiaciones artificiales (WiFi, antenas, etc.) sobre
+                la salud.
+              </li>
+              <li>
+                Toxicidad Química: Eliminación de residuos de pesticidas,
+                disolventes, plásticos, aditivos y otras sustancias.
+              </li>
+              <li>
+                Metales Pesados: Detección y tratamiento específico
+                para la sobrecarga de mercurio, plomo, aluminio, etc.
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- Accordion Item 2 -->
+        <details class="group bg-white">
+          <summary
+            class="flex justify-between items-center font-bold font-body cursor-pointer list-none p-5 text-[20px] text-brand-primary bg-gray-50 hover:bg-gray-100 transition-colors"
+          >
+            <span>Bienestar Emocional y Mental</span>
+            <span class="transition group-open:rotate-180">
+              <svg
+                fill="none"
+                height="24"
+                shape-rendering="geometricPrecision"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                width="24"><path d="M6 9l6 6 6-6"></path></svg
+              >
+            </span>
+          </summary>
+          <div
+            class="text-neutral-600 font-body p-6 pb-6 text-[17px] leading-[37px] bg-white"
+          >
+            <ul class="list-disc pl-5 space-y-2">
+              <li>
+                Ansiedad, Estrés y Depresión: Apoyo individualizado
+                para manejar la ansiedad, superar duelos o tratar la tristeza desde
+                su origen.
+              </li>
+              <li>
+                Miedos y Fobias: Tratamiento homeopático para miedos
+                específicos o irracionales.
+              </li>
+              <li>
+                Problemas de Comportamiento: Abordaje de la agitación,
+                pasividad, celos o falta de concentración, tanto en adultos como en
+                niños.
+              </li>
+              <li>
+                Síndrome de Estrés Postraumático: Apoyo para la recuperación
+                del equilibrio emocional.
+              </li>
+              <li>
+                Síndrome de Fatiga Crónica, Consecuencia de
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- Accordion Item 3 -->
+        <details class="group bg-white">
+          <summary
+            class="flex justify-between items-center font-bold font-body cursor-pointer list-none p-5 text-[20px] text-brand-primary bg-gray-50 hover:bg-gray-100 transition-colors"
+          >
+            <span>Condiciones Crónicas, Sistémicas e Inflamatorias</span>
+            <span class="transition group-open:rotate-180">
+              <svg
+                fill="none"
+                height="24"
+                shape-rendering="geometricPrecision"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                width="24"><path d="M6 9l6 6 6-6"></path></svg
+              >
+            </span>
+          </summary>
+          <div
+            class="text-neutral-600 font-body p-6 pb-6 text-[17px] leading-[37px] bg-white"
+          >
+            <ul class="list-disc pl-5 space-y-2">
+              <li>
+                Afecciones Respiratorias y de Piel: Asma, catarros
+                de repetición, dermatitis atópica.
+              </li>
+              <li>
+                Problemas Digestivos: Tratamiento de la disbiosis
+                intestinal y trastornos crónicos.
+              </li>
+              <li>
+                Síndrome de Fatiga Crónica y Dolor: Abordaje multifactorial
+                de la fatiga y la inflamación sistémica.
+              </li>
+              <li>
+                Apoyo en Enfermedades Graves: Ayuda para paliar los
+                efectos secundarios de la quimioterapia y radioterapia.
+              </li>
+              <li>
+                <strong
+                  >Desequilibrios del Sistema Inmunitario y Metabólico:</strong
+                > Apoyo en enfermedades autoinmunes y corrección de la acidosis.
+              </li>
+              <li>
+                Bloqueos Energéticos y Estructurales: Liberación
+                de interferencias causadas por cicatrices y tratamiento del Síndrome
+                de Pierna Corta.
+              </li>
+              <li>
+                Síndrome de Guillen Barré. Mononucleosis infecciosa.
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- LA TECNOLOGIA MORA® NOVA -->
+  <section class="max-w-[1200px] mx-auto px-4 pb-16">
+    <h2
+      class="font-heading font-bold text-[30px] text-brand-primary uppercase tracking-[0.9px] mb-6 text-center"
+    >
+      LA TECNOLOGIA MORA® NOVA
+    </h2>
+    <p class="font-body text-[17px] leading-[37px] text-brand-text mb-8">
+      En el contexto de la bio-resonancia MORA, la cancelación de ondas ilustra
+      cómo, al identificar las frecuencias electromagnéticas disarmónicas de un
+      cuerpo (aquellas asociadas con un desequilibrio o enfermedad) y generar
+      una señal exactamente opuesta, estas frecuencias «negativas» pueden ser
+      anuladas. Este proceso de anulación busca «borrar» la información
+      patológica y restaurar el equilibrio energético natural del cuerpo,
+      facilitando así sus propios mecanismos de autosanación y permitiendo que
+      las terapias sean más efectivas
+    </p>
+
+    <!-- Wave Animation Canvas -->
+    <div class="animation-container shadow-lg">
+      <canvas id="frequencyCanvas"></canvas>
+    </div>
+
+    <style>
+      .animation-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-sizing: border-box;
+        aspect-ratio: 16 / 5;
+        font-family: "Open Sans", sans-serif;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+      }
+      @media (max-width: 768px) {
+        .animation-container {
+          aspect-ratio: 16 / 9;
+          border-radius: 4px;
+        }
+      }
+    </style>
+  </section>
+
+  <!-- La Base de Todo -->
+  <section
+    class="max-w-[1200px] w-full mx-auto px-4 py-8 mb-16 border rounded-lg shadow-sm bg-gray-50 flex flex-col md:flex-row gap-8 items-center"
+  >
+    <div class="md:w-1/4 flex justify-center">
+      <a href="/diagnostico-medico/">
+        <img
+          src="/images/treatments/resonancia.svg"
+          alt="Resonancia"
+          class="w-32 h-32"
+        />
+      </a>
+    </div>
+    <div class="md:w-3/4">
+      <h2
+        class="font-heading font-bold text-[28px] text-brand-primary uppercase mb-4"
+      >
+        La Base de Todo: El Diagnóstico Médico
+      </h2>
+      <p class="font-body text-brand-text text-[17px] leading-[37px] mb-4">
+        Recuerda que un tratamiento efectivo solo es posible con un diagnóstico
+        que vaya al fondo del problema. El <a
+          href="/diagnostico-medico/"
+          class="text-brand-secondary underline hover:text-brand-accent transition-colors"
+          >Diagnóstico Médico General con bio-frecuencias</a
+        > es la herramienta que nos permite crear un mapa de tu estado de salud, identificar
+        las causas originales y diseñar un plan de tratamiento verdaderamente personalizado
+        y eficaz.
+      </p>
+      <blockquote
+        class="italic text-gray-600 border-l-4 border-brand-accent pl-4 font-body leading-[37px]"
+      >
+        Nota Importante: Nuestro listado de tratamientos es orientativo.
+        Si tu condición no aparece aquí, no dudes en contactarme. El enfoque holístico
+        y las herramientas que utilizo nos permiten abordar una inmensa variedad de
+        desequilibrios de salud.
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="mb-20">
+    <ContactSection variant="compact" />
+  </section>
+</Layout>
+
+<script>
+  // Accordion Logic
+  const detailsElements = document.querySelectorAll(
+    ".custom-accordion details",
+  );
+
+  detailsElements.forEach((details) => {
+    details.addEventListener("toggle", (e) => {
+      if ((details as HTMLDetailsElement).open) {
+        detailsElements.forEach((otherDetails) => {
+          if (
+            otherDetails !== details &&
+            (otherDetails as HTMLDetailsElement).open
+          ) {
+            otherDetails.removeAttribute("open");
+          }
+        });
+      }
+    });
+  });
+
+  // Wave Logic
+  document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElementById(
+      "frequencyCanvas",
+    ) as HTMLCanvasElement;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const primaryColor = "#172550";
+    const secondaryColor = "#158EC7";
+    const accentColor = "#FAB604";
+
+    const waves = [
+      {
+        initialAmplitude: 50,
+        frequency: 0.05,
+        phase: 0,
+        color: secondaryColor,
+        label: "Onda A",
+      },
+      {
+        initialAmplitude: 50,
+        frequency: 0.05,
+        phase: Math.PI,
+        color: primaryColor,
+        label: "Onda B",
+      },
+    ];
+    const sumWave = { color: accentColor, label: "Resultado (A + B)" };
+
+    let animationTime = 0;
+    let buildUpFrame = 0;
+    const buildUpDuration = 150;
+
+    function easeInOutCubic(t: number) {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function drawWave(
+      amplitude: number,
+      frequency: number,
+      phase: number,
+      color: string,
+      lineWidth = 2,
+      currentRandomnessScale = 0,
+    ) {
+      if (!ctx || !canvas) return;
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = lineWidth;
+
+      const centerY = canvas.height / 2;
+
+      for (let x = 0; x < canvas.width; x++) {
+        let y =
+          centerY + amplitude * Math.sin(frequency * x + phase + animationTime);
+
+        if (currentRandomnessScale > 0) {
+          const flutterAmount = 10 * currentRandomnessScale;
+          y += (Math.random() * 2 - 1) * flutterAmount;
+        }
+
+        if (x === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      }
+      ctx.stroke();
+    }
+
+    function drawLabel(text: string, x: number, y: number, color: string) {
+      if (!ctx) return;
+      ctx.font = 'bold 16px "Open Sans", sans-serif';
+      ctx.fillStyle = color;
+      ctx.textAlign = "left";
+      ctx.textBaseline = "top";
+      ctx.fillText(text, x, y);
+    }
+
+    function animate() {
+      if (!ctx || !canvas) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      ctx.strokeStyle = "rgba(0, 0, 0, 0.1)";
+      ctx.lineWidth = 0.5;
+      ctx.beginPath();
+      ctx.moveTo(0, canvas.height / 2);
+      ctx.lineTo(canvas.width, canvas.height / 2);
+      ctx.stroke();
+
+      let currentAmplitudeScale = 1;
+      let currentRandomnessScale = 0;
+
+      if (buildUpFrame < buildUpDuration) {
+        let t = buildUpFrame / buildUpDuration;
+        currentAmplitudeScale = easeInOutCubic(t);
+        currentRandomnessScale = 1 - t;
+        buildUpFrame++;
+      }
+
+      animationTime += 0.02;
+
+      drawWave(
+        waves[0].initialAmplitude * currentAmplitudeScale,
+        waves[0].frequency,
+        waves[0].phase,
+        waves[0].color,
+        2,
+        currentRandomnessScale,
+      );
+      drawWave(
+        waves[1].initialAmplitude * currentAmplitudeScale,
+        waves[1].frequency,
+        waves[1].phase,
+        waves[1].color,
+        2,
+        currentRandomnessScale,
+      );
+
+      ctx.beginPath();
+      ctx.strokeStyle = sumWave.color;
+      ctx.lineWidth = 3;
+
+      const centerY = canvas.height / 2;
+
+      for (let x = 0; x < canvas.width; x++) {
+        const y1 =
+          waves[0].initialAmplitude *
+          currentAmplitudeScale *
+          Math.sin(waves[0].frequency * x + waves[0].phase + animationTime);
+        const y2 =
+          waves[1].initialAmplitude *
+          currentAmplitudeScale *
+          Math.sin(waves[1].frequency * x + waves[1].phase + animationTime);
+
+        const sumY = centerY + (y1 + y2);
+
+        if (x === 0) {
+          ctx.moveTo(x, sumY);
+        } else {
+          ctx.lineTo(x, sumY);
+        }
+      }
+      ctx.stroke();
+
+      drawLabel(waves[0].label, 10, 10, waves[0].color);
+      drawLabel(waves[1].label, 10, 30, waves[1].color);
+      drawLabel(sumWave.label, 10, 50, sumWave.color);
+
+      requestAnimationFrame(animate);
+    }
+
+    function resizeCanvas() {
+      if (!canvas) return;
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      animate();
+    }
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+  });
+</script>

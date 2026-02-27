@@ -1,0 +1,199 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import ContactSection from "./ContactSection.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const labels = {
+  es: {
+    title: "Localizacion de las consultas",
+    andalucia: "Andalucía",
+    paisVasco: "País Vasco",
+    peninsula: "Península y Extranjero",
+    clinicLaHerradura:
+      "Consulta en la Herradura a 50 minutos de Málaga y de Granada",
+    clinicLaHerraduraDesc:
+      "Paseo Andrés Segovia nº 35, 1ºC 18697 La Herradura / Granada<br><br>La consulta se encuentra a una hora de aeropuerto de Málaga, en la localidad costera de La Herradura.",
+    clinicBilbao: "Consulta en Bilbao",
+    clinicBilbaoDesc:
+      "Edificio Albia, Calle San Vicente, Centro de Negocios SPANPKOR – Planta Sexta<br>Bilbao, Vizcaia<br>Parking cercano: Pio Baroja<br><br>En la zona norte, hacemos consultas periódicamente en Bilbao, puede pedir cita para la próxima fecha consulta en cualquier momento, y le avisaremos en el momento en que se abran las fechas.",
+    bilbaoDates:
+      "El próximo tratamiento en Bilbao:<br>Del 1 de Abril de 2026<br>al 30 de Abril de 2026",
+    bilbaoCall:
+      "pedir cita anticipada llamando al +34 629 43 41 82<br>Plazas Limitadas.",
+    international: "Consulta Internacional",
+    internationalDesc:
+      "A los pacientes del resto de España y del extranjero les recomendamos contacten con antelación ya que pueden coger vuelo de ida y vuelta a Málaga en el mismo día aprovechando las ofertas de billetes de avión.<br><br>Le facilitaremos servicio de taxi de confianza del aeropuerto de Málaga hasta la clínica de La Herradura, para que una vez terminado el tratamiento vuelva al aeropuerto para su viaje de retorno u optar por un hotel para su descanso.<br><br>Llámenos al +34 629 43 41 82 y le recomendaremos la mejor opción para usted.",
+  },
+  en: {
+    title: "Clinic Locations",
+    andalucia: "Andalusia",
+    paisVasco: "Basque Country",
+    peninsula: "Peninsula and Abroad",
+    clinicLaHerradura:
+      "Clinic in La Herradura, 50 minutes from Malaga and Granada",
+    clinicLaHerraduraDesc:
+      "Paseo Andrés Segovia nº 35, 1ºC 18697 La Herradura / Granada<br><br>The clinic is located one hour from Malaga airport, in the coastal town of La Herradura.",
+    clinicBilbao: "Clinic in Bilbao",
+    clinicBilbaoDesc:
+      "Albia Building, San Vicente Street, SPANPKOR Business Center - Sixth Floor<br>Bilbao, Vizcaya<br>Nearby parking: Pio Baroja<br><br>In the northern area, we periodically hold consultations in Bilbao; you can request an appointment for the next consultation date at any time, and we will inform you when the dates become available.",
+    bilbaoDates:
+      "The next treatment in Bilbao:<br>From April 1, 2026<br>to April 30, 2026",
+    bilbaoCall:
+      "Request an early appointment by calling +34 629 43 41 82<br>Limited Places.",
+    international: "International Consultation",
+    internationalDesc:
+      "For patients from the rest of Spain and abroad, we recommend contacting us well in advance, as they can catch a round-trip flight to Malaga on the same day taking advantage of airfare offers.<br><br>We will provide you with a reliable taxi service from Malaga airport to the clinic in La Herradura, so that after the treatment you can return to the airport for your return trip or opt for a hotel for your rest.<br><br>Call us at +34 629 43 41 82 and we will recommend the best option for you.",
+  },
+};
+
+const t = labels[lang];
+---
+
+<section id="Consultas" class="max-w-[1200px] mx-auto py-16 px-4 pt-[150px]">
+  <h2
+    class="text-brand-primary font-heading font-bold text-[30px] uppercase text-center tracking-[0.9px] mb-12"
+  >
+    {t.title}
+  </h2>
+  <div class="w-full max-w-[1000px] mx-auto">
+    <div class="flex flex-row justify-center gap-4 md:gap-8 flex-wrap mb-10">
+      <button
+        class="tab-btn font-heading font-medium text-[20px] uppercase px-8 py-3 rounded-full bg-brand-secondary text-white hover:bg-brand-accent transition-colors"
+        data-tab="andalucia">{t.andalucia}</button
+      >
+      <button
+        class="tab-btn font-heading font-medium text-[20px] uppercase px-8 py-3 rounded-full bg-brand-primary text-white hover:bg-brand-accent transition-colors"
+        data-tab="paisvasco">{t.paisVasco}</button
+      >
+      <button
+        class="tab-btn font-heading font-medium text-[20px] uppercase px-8 py-3 rounded-full bg-brand-primary text-white hover:bg-brand-accent transition-colors"
+        data-tab="peninsula">{t.peninsula}</button
+      >
+    </div>
+
+    <!-- Tab Content: Andalucia -->
+    <div
+      id="tab-andalucia"
+      class="tab-content active mx-auto flex flex-col items-center text-center"
+    >
+      <h3 class="text-brand-primary font-heading font-medium text-[25px] mb-8">
+        {t.clinicLaHerradura}
+      </h3>
+      <img
+        src="/images/locations/la-herradura.jpg"
+        class="w-[300px] h-[200px] object-cover rounded shadow-md mb-8"
+        style="-webkit-mask-image: url('/images/shapes/sketch.svg'); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; mask-image: url('/images/shapes/sketch.svg'); mask-size: contain; mask-repeat: no-repeat; mask-position: center;"
+        alt="La Herradura"
+      />
+      <p
+        class="text-[#3B3B3B] font-body text-[17px] leading-[30px] mb-8 max-w-[600px]"
+        set:html={t.clinicLaHerraduraDesc}
+      />
+      <div class="w-full h-[300px]">
+        <iframe
+          loading="lazy"
+          class="w-full h-full rounded shadow"
+          src="https://maps.google.com/maps?q=P.%C2%BA%20Andr%C3%A9s%20Segovia%2C%20n%2035%2C%201c%2C%2018697%20La%20Herradura%2C%20Granada&t=m&z=10&output=embed&iwloc=near"
+          title="Map La Herradura"></iframe>
+      </div>
+    </div>
+
+    <!-- Tab Content: Pais Vasco -->
+    <div
+      id="tab-paisvasco"
+      class="tab-content hidden mx-auto flex flex-col items-center text-center"
+    >
+      <h3 class="text-brand-primary font-heading font-medium text-[25px] mb-8">
+        {t.clinicBilbao}
+      </h3>
+      <img
+        src="/images/locations/bilbao.png"
+        class="w-[300px] h-[200px] object-cover rounded shadow-md mb-8 bg-white p-2"
+        style="-webkit-mask-image: url('/images/shapes/sketch.svg'); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; mask-image: url('/images/shapes/sketch.svg'); mask-size: contain; mask-repeat: no-repeat; mask-position: center;"
+        alt="Bilbao"
+      />
+      <p
+        class="text-[#3B3B3B] font-body text-[17px] leading-[30px] mb-8 max-w-[600px]"
+        set:html={t.clinicBilbaoDesc}
+      />
+
+      <div
+        class="bg-brand-accent p-6 text-white rounded mb-8 w-full max-w-[600px]"
+      >
+        <h5
+          class="font-heading font-medium text-[22px] mb-2 text-white"
+          set:html={t.bilbaoDates}
+        />
+        <p
+          class="font-heading font-medium text-[20px] text-white"
+          set:html={t.bilbaoCall}
+        />
+      </div>
+
+      <div class="w-full h-[300px]">
+        <iframe
+          loading="lazy"
+          class="w-full h-full rounded shadow"
+          src="https://maps.google.com/maps?q=San%20Vicente%208%20-%206%C2%BA%20pta%20-%20dpto.%208%20Edificio%20Albia%20I%2C%2048001%20Bilbao%2C%20Biscay%2C%20Spain&t=m&z=10&output=embed&iwloc=near"
+          title="Map Bilbao"></iframe>
+      </div>
+    </div>
+
+    <!-- Tab Content: Peninsula -->
+    <div
+      id="tab-peninsula"
+      class="tab-content hidden mx-auto flex flex-col items-center text-center"
+    >
+      <h3 class="text-brand-primary font-heading font-medium text-[25px] mb-8">
+        {t.international}
+      </h3>
+      <p
+        class="text-[#3B3B3B] font-body text-[17px] leading-[30px] mb-8 max-w-[600px] text-left"
+        set:html={t.internationalDesc}
+      />
+      <div class="w-full h-[300px]">
+        <iframe
+          loading="lazy"
+          class="w-full h-full rounded shadow"
+          src="https://maps.google.com/maps?q=P.%C2%BA%20Andr%C3%A9s%20Segovia%2C%20n%2035%2C%201c%2C%2018697%20La%20Herradura%2C%20Granada&t=m&z=10&output=embed&iwloc=near"
+          title="Map La Herradura (International)"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ContactSection variant="compact" />
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabBtns = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("data-tab");
+
+        // Remove active classes
+        tabBtns.forEach((b) => {
+          b.classList.remove("bg-brand-secondary");
+          b.classList.add("bg-brand-primary");
+        });
+        tabContents.forEach((content) => {
+          content.classList.add("hidden");
+          content.classList.remove("active");
+        });
+
+        // Add active classes to selected
+        btn.classList.add("bg-brand-secondary");
+        btn.classList.remove("bg-brand-primary");
+
+        const targetContent = document.getElementById("tab-" + targetId);
+        if (targetContent) {
+          targetContent.classList.remove("hidden");
+          targetContent.classList.add("active");
+        }
+      });
+    });
+  });
+</script>

@@ -1,0 +1,478 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ContactSection from "../../components/ContactSection.astro";
+import WaveDivider from "../../components/WaveDivider.astro";
+import MainTreatments from "../../components/MainTreatments.astro";
+import { getLangFromUrl } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="Medical Consultation" lang="en">
+  <!-- Hero Section -->
+  <section
+    class="relative min-h-[748px] overflow-hidden flex flex-col items-center pt-[100px] md:pt-[330px]"
+  >
+    <div class="max-w-[1200px] w-full mx-auto relative px-4 z-10 md:pl-[117px]">
+      <div class="max-w-[100%] md:max-w-[400px]">
+        <h1
+          class="text-brand-primary font-heading font-bold text-[45px] leading-[1.2] uppercase"
+        >
+          Advanced Medicine
+        </h1>
+        <p class="mt-4 text-[17px] leading-[40px] text-brand-text">
+          Welcome to my website where you can find all the information about the
+          treatments performed in my clinic.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Images Layer -->
+    <div
+      class="absolute inset-0 z-0 pointer-events-none overflow-hidden max-w-[1200px] mx-auto w-full relative"
+    >
+      <!-- principal-1.png (Right-aligned main doctor background) -->
+      <img
+        src="/images/hero/principal-1.png"
+        alt=""
+        class="absolute inset-0 w-full h-[680px] md:h-full object-cover object-right md:object-right-top hero-img"
+        style="animation-delay: 0s; --final-opacity: 1;"
+      />
+
+      <!-- principal-4.png (Hexagon outlines pattern) -->
+      <img
+        src="/images/hero/principal-4.png"
+        alt=""
+        class="absolute inset-0 w-full h-[680px] md:h-full object-cover object-right md:object-right-top hidden md:block mix-blend-multiply hero-img"
+        style="animation-delay: 1.5s; --final-opacity: 0.9;"
+      />
+
+      <!-- aprincipal-2.png (Left floral pattern) -->
+      <img
+        src="/images/hero/aprincipal-2.png"
+        alt=""
+        class="absolute inset-0 w-full h-[680px] md:h-full object-cover object-right md:object-right-top hidden md:block mix-blend-multiply hero-img"
+        style="animation-delay: 3s; --final-opacity: 0.8;"
+      />
+
+      <!-- aprincipal-1.png (Top left elements) -->
+      <img
+        src="/images/hero/aprincipal-1.png"
+        alt=""
+        class="absolute inset-0 w-full h-[680px] md:h-full object-cover object-right md:object-right-top hidden md:block mix-blend-multiply hero-img"
+        style="animation-delay: 4.5s; --final-opacity: 0.9;"
+      />
+    </div>
+
+    <!-- CTA Button -->
+    <div
+      class="relative z-20 mt-[50px] md:mt-[100px] w-full max-w-[1200px] mx-auto text-center md:text-left px-4"
+    >
+      <a
+        href="#Llamar_cita"
+        class="inline-block bg-brand-primary text-white font-heading font-bold text-[21px] uppercase tracking-[0.9px] px-8 py-4 rounded-[8px] hover:bg-brand-accent transition-colors"
+      >
+        Book Appointment
+      </a>
+    </div>
+  </section>
+
+  <!-- Nuestra consulta Section -->
+  <section class="py-[50px] max-w-[1200px] mx-auto px-4">
+    <h2
+      class="text-[30px] font-heading font-bold uppercase text-brand-primary mb-[40px]"
+    >
+      Our Clinic
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Step 1 -->
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="w-[80px] flex-shrink-0">
+          <svg
+            class="h-[80px] w-[80px] text-brand-primary fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 200 200"
+          >
+            <path
+              d="M40,20 L160,20 L160,180 L40,180 Z"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="4"></path>
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-body text-[25px] font-normal mb-4">
+            1. In-Depth Initial Medical Evaluation
+          </h4>
+          <p class="text-brand-text leading-[37px]">
+            Unlike a medical model often constrained by time, understanding the
+            etiology of your condition requires really getting to know the
+            patient. That is why we take all the necessary time to dive deeply
+            not just into your medical biography, but also your <strong
+              >family history, living environment, and full context</strong
+            >. Understanding where you live, how you interact, and what
+            challenges you've faced gives us crucial diagnostic clues that are
+            often overlooked.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div
+        class="flex flex-col md:flex-row gap-6 p-4 rounded-[15px] hover:shadow-lg transition duration-300"
+      >
+        <div class="w-[80px] flex-shrink-0">
+          <svg
+            class="h-[80px] w-[80px] text-brand-primary fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 200 200"
+          >
+            <circle
+              cx="100"
+              cy="100"
+              r="60"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="4"></circle>
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-body text-[25px] font-normal mb-4">
+            2. Precision Medical Diagnosis
+          </h4>
+          <p class="text-brand-text leading-[37px] mb-4">
+            After the initial clinical analysis, we apply cutting-edge
+            technology for a comprehensive functional evaluation. Our Medical
+            Diagnosis via <strong>MORA ® Bio-Resonance</strong> allows objective analysis
+            of cellular and systemic activity, identifying imbalances, toxic loads,
+            intolerances, or interfering foci that are not always detectable by conventional
+            methods. This step is crucial to precisely determine the etiology (root
+            cause) of your pathology.
+          </p>
+          <a href="/en/medical-diagnosis/" class="capitalize"
+            >Learn about our diagnostic methodology</a
+          >
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="w-[80px] flex-shrink-0">
+          <svg
+            class="h-[80px] w-[80px] text-brand-primary fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 200 200"
+          >
+            <rect
+              x="50"
+              y="50"
+              width="100"
+              height="100"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="4"></rect>
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-body text-[25px] font-normal mb-4">
+            3. Personalized Therapeutic Strategy
+          </h4>
+          <p class="text-brand-text leading-[37px] mb-4">
+            Based on the clinical and functional evidence obtained, we design a <strong
+              >rigorous and specific therapeutic strategy for each patient</strong
+            >. We do not offer generic solutions, but individualized treatment
+            plans that may integrate different modalities, such as <strong
+              >Clinical Homeopathy</strong
+            >, advanced <strong>Detoxification</strong> protocols, or our effective
+            <strong>Anti-Smoking Treatment</strong>, to restore homeostasis and
+            promote a stable and lasting recovery.
+          </p>
+          <a href="/en/treatments/" class="capitalize"
+            >Explore our treatment areas</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principales Tratamientos Menu Block -->
+  <MainTreatments />
+
+  <!-- ACERCA DE NOSOTROS section -->
+  <section class="bg-brand-secondary text-white py-[50px]">
+    <div class="max-w-[1200px] mx-auto px-4">
+      <h2
+        class="text-[30px] font-heading font-bold uppercase text-white mb-[20px]"
+      >
+        ABOUT US
+      </h2>
+    </div>
+  </section>
+  <section
+    class="h-[300px] bg-cover bg-center flex items-center md:h-[400px]"
+    style="background-image: url('/images/hero/slider.jpg');"
+  >
+    <div class="max-w-[1200px] mx-auto px-4 w-full">
+      <div
+        class="bg-white/70 backdrop-blur-sm p-[18px] rounded-[20px] max-w-[72%]"
+      >
+        <p class="text-brand-text text-[26px] leading-[34px]">
+          Clinic specialized in finding the cause of the disease, providing
+          solutions to problems, diseases and blockages.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs / Full Bio Gradient Section -->
+  <section
+    class="pt-[50px] pb-[150px] bg-gradient-to-br from-brand-primary to-brand-secondary relative"
+  >
+    <div class="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row gap-8">
+      <!-- Info Left -->
+      <div
+        class="md:w-2/5 p-[40px] bg-white rounded-[15px] bg-opacity-95 hover:bg-opacity-100 transition-all duration-300 shadow-xl self-start"
+        style="background-image: url('/images/backgrounds/background-1.png'); background-position: 107px -94px; background-repeat: no-repeat;"
+      >
+        <div class="text-center font-bold text-[#333333] mb-4">
+          The human being is a WHOLE.
+        </div>
+        <div class="text-left text-[#333333] mb-4">
+          You cannot separate the physical part from their emotional, mental, or
+          even spiritual system.
+        </div>
+        <div class="text-center text-[#333333] mb-4 italic">
+          "There is no physical disease without a correlating mental or
+          emotional symptom"
+        </div>
+        <div class="text-center text-[#333333] mb-4">nor on the contrary</div>
+        <div class="text-center text-[#333333] mb-4 italic">
+          "a mental or emotional symptom without a physical symptom".
+        </div>
+        <div class="text-left text-[#333333] mb-4">
+          It is important to investigate and treat this synchronization to
+          recover health and harmony at all levels.
+        </div>
+        <div class="text-center text-[#333333]">Why do I get sick?</div>
+        <div class="text-center text-[#333333]">
+          Why does what I have happen to me?
+        </div>
+        <div class="text-center text-[#333333]">
+          Why do symptoms persist over time?
+        </div>
+        <div class="text-center text-[#333333] mb-4">
+          What does this disease mean?
+        </div>
+        <div class="text-center text-[#333333] font-bold mb-4">
+          Everything is related since EVERYTHING is in ONE.
+        </div>
+        <div class="text-center text-[#333333]">
+          Helping you uncover this is my work and specialty.
+        </div>
+      </div>
+
+      <!-- Tabs Right -->
+      <div class="md:w-3/5">
+        <div class="flex flex-wrap gap-4 mb-8">
+          <button
+            class="tab-bio-btn px-6 py-3 rounded-full bg-brand-secondary text-white font-serif italic text-lg hover:bg-brand-accent transition-colors"
+            data-tab="consulta">Clinic</button
+          >
+          <button
+            class="tab-bio-btn px-6 py-3 rounded-full bg-brand-primary text-white font-serif italic text-lg hover:bg-brand-accent transition-colors"
+            data-tab="enrique">Doctor Enrique Fernández</button
+          >
+          <button
+            class="tab-bio-btn px-6 py-3 rounded-full bg-brand-primary text-white font-serif italic text-lg hover:bg-brand-accent transition-colors"
+            data-tab="miriam">Psychologist Miriam Matia</button
+          >
+        </div>
+
+        <div
+          id="tab-bio-consulta"
+          class="tab-bio-content active bg-transparent text-white"
+        >
+          <h3 class="text-center text-[22px] font-bold mb-2">
+            Personalized Attention
+          </h3>
+          <p class="text-center leading-[37px] mb-8">
+            Dedicating the necessary time to fully understand your situation,
+            backed by a complete Medical History.
+          </p>
+
+          <h3 class="text-center text-[22px] font-bold mb-2">
+            Comprehensive Diagnosis
+          </h3>
+          <p class="text-center leading-[37px] mb-8">
+            I conduct a complete systemic diagnosis (of the entire body)
+            investigating the root causes of your illness or ailment.
+          </p>
+
+          <h3 class="text-center text-[22px] font-bold mb-2">
+            Medical Specialties
+          </h3>
+          <p class="text-center leading-[37px]">
+            I employ advancements in Electromagnetic Medicine alongside over 40
+            years of experience practicing Homeopathic Medicine.
+          </p>
+        </div>
+
+        <div
+          id="tab-bio-enrique"
+          class="tab-bio-content hidden bg-transparent text-white"
+        >
+          <img
+            src="/images/team/enrique.png"
+            alt="Doctor Enrique Fernández"
+            class="w-full max-h-[300px] object-contain mb-6 rounded shadow-md object-top"
+          />
+          <p class="mb-4">
+            Degree in <strong
+              >Medicine and Surgery from the University of the Basque Country
+              (Spain)</strong
+            >, and since 1984, I have been dedicated to the practice of Medicine
+            in my clinic.
+          </p>
+
+          <h4 class="font-bold mb-2">Diplomas and Specializations</h4>
+          <ul class="list-disc list-inside mb-4 space-y-1">
+            <li>
+              <strong>Diploma in Homeopathy</strong> by the Spanish Medical Association
+              of Homeopathy and Biotherapy A.M.E.B. (Spain).
+            </li>
+            <li>
+              Associate member of the <strong>Faculty of Homeopathy</strong>,
+              London.
+            </li>
+            <li>
+              <strong>Diploma in Homeopathy</strong> by the Homeoform Association
+              (Homeopathie Post-Universitaire (Geneva) H.P.U.
+            </li>
+            <li><strong>Diploma in Homo-toxicology</strong> (Spain).</li>
+            <li><strong>Diploma in Mora Bioresonance</strong> since 1990</li>
+          </ul>
+
+          <h4 class="font-bold mb-2">
+            Positions and Professional Recognitions
+          </h4>
+          <ul class="list-disc list-inside mb-4 space-y-1">
+            <li>
+              Founder and Former President of the Homeopathy Collegiate Section
+              of the Official College of Physicians of Vizcaya.
+            </li>
+            <li>
+              Coordinator of Perfection Studies at the Homeoform Association.
+            </li>
+            <li>General Secretary of the Homeoform Association.</li>
+          </ul>
+
+          <h4 class="font-bold mb-2">Teaching</h4>
+          <ul class="list-disc list-inside space-y-1">
+            <li>
+              Assistant Professor of Homeopathy at the Homeopathie
+              Post-Universitaire (Spain).
+            </li>
+            <li>
+              Assistant Professor of Homeopathy at the Homeoform Association
+              (Spain).
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="tab-bio-miriam"
+          class="tab-bio-content hidden bg-transparent text-white"
+        >
+          <img
+            src="/images/team/Miriam.png"
+            alt="Psychologist Miriam Matia"
+            class="w-full max-h-[300px] object-contain mb-6 rounded shadow-md object-top"
+          />
+          <p class="mb-4">
+            I have a degree in psychology from the University of Deusto, Bilbao,
+            and I dedicate myself to the practice of psychology, homeopathy, and
+            detoxification, anti-smoking, and addiction treatments in our
+            clinic.
+          </p>
+
+          <h4 class="font-bold mb-2">Diplomas and Specializations</h4>
+          <ul class="list-disc list-inside mb-4 space-y-1">
+            <li>
+              <strong>Diploma in Biotherapy</strong> by the Spanish Medical Association
+              of Biotherapy (Spain).
+            </li>
+            <li>
+              <strong>Diploma in Homeopathy</strong> by the Homeoform association.
+            </li>
+            <li>Diploma in MORA Bio-resonance in 2011.</li>
+          </ul>
+
+          <h4 class="font-bold mb-2">Professional Experience</h4>
+          <ul class="list-disc list-inside space-y-1">
+            <li>
+              Since 1994, dedicated to the practice of Homeopathic Medicine,
+              with a clinic in Granada, Spain.
+            </li>
+            <li>
+              Since 2001, specialized in performing anti-smoking treatment
+              therapy.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <WaveDivider />
+  </section>
+
+  <ContactSection variant="form-only" />
+</Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabBtns = document.querySelectorAll(".tab-bio-btn");
+    const tabContents = document.querySelectorAll(".tab-bio-content");
+
+    tabBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("data-tab");
+
+        // Remove active classes
+        tabBtns.forEach((b) => {
+          b.classList.remove("bg-brand-secondary");
+          b.classList.add("bg-brand-primary");
+        });
+        tabContents.forEach((content) => {
+          content.classList.add("hidden");
+          content.classList.remove("active");
+        });
+
+        // Add active classes to selected
+        btn.classList.add("bg-brand-secondary");
+        btn.classList.remove("bg-brand-primary");
+
+        const targetContent = document.getElementById("tab-bio-" + targetId);
+        if (targetContent) {
+          targetContent.classList.remove("hidden");
+          targetContent.classList.add("active");
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .hero-img {
+    opacity: 0;
+    animation: heroFadeIn 2s ease-in-out forwards;
+  }
+  @keyframes heroFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: var(--final-opacity, 1);
+    }
+  }
+</style>

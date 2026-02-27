@@ -1,0 +1,16 @@
+We need to create documentation for this website, a series of markdown files that describe flly the intent of the website, what it does.
+
+I want to upgrade the website but its really important to me to maintain the text because it has already been curated.
+
+What is important to me is that we take fll advantage of modern web frameworks like astro so that the code is pristine, that components and layouts are well defined to be reused, so you need to look through the website and suggest what could be a component or a layout and make it so.
+
+SEO is also important so i need to understand what imrpovements to make to the iamges, meta tags, file names and folder to make sure seo is pristing.
+
+Bre in mind this website has already been live so some of the existing names i dont want to change in fact i want to keep becasue we already have some ranking with it.
+
+I can see google values having a page on the Dr. Enrique Fernandez San jose and the Dra Miriam Matia, and although they are part of the amin page maybe it would be good to somehow have some pages for them too just for SEO sake.
+
+I have seen that LLms make so much progress in the layout design and I would like a good prompt to takke advantage of the new gemini pro 3.1 features to make a beautiful web, yet i still have to take in mind that this is a medical practice and it does need to look professional and quite neutral.
+
+Because we initially imported many pages form wordpress and the old website I can see that the files, even the code is mixed with references to elementor, wordpress etc... and I want to eliminate this, my goal is to have a brand new astro website (having made a good copy of the origianl worpress site):
+

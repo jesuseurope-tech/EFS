@@ -1,0 +1,864 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ContactSection from "../../components/ContactSection.astro";
+import TreatmentCard from "../../components/TreatmentCard.astro";
+import { getLangFromUrl } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="Tratamiento Antitabaco" lang={lang}>
+  <!-- Orange Alert Banner -->
+  <div class="bg-brand-accent text-white text-center py-6 px-4">
+    <h5 class="font-body text-[24px] md:text-[26px] font-semibold mb-2">
+      El próximo tratamiento en Bilbao:<br />
+      Del 1 de Abril de 2026 al 30 de Abril de 2026
+    </h5>
+    <p class="font-body text-[20px] md:text-[24px] font-medium">
+      pedir cita anticipada llamando al +34 629 43 41 82<br />
+      Plazas Limitadas.
+    </p>
+  </div>
+
+  <!-- Hero Section 2 -->
+  <section
+    class="bg-[#0C1124] min-h-[600px] flex items-center relative py-20 overflow-hidden"
+  >
+    <!-- Background Image -->
+    <div
+      class="absolute inset-0 w-full h-full bg-[url('/images/pages/quit-smoking.png')] bg-contain bg-center bg-no-repeat opacity-[0.51] md:-ml-[20%]"
+    >
+    </div>
+
+    <div
+      class="max-w-[1200px] w-full mx-auto px-4 relative z-10 flex flex-col md:flex-row"
+    >
+      <div class="w-full md:w-[52%]">
+        <h1
+          class="text-white font-heading font-bold uppercase text-[32px] md:text-[41px] leading-[1.2] md:leading-[49px] tracking-[0.9px] mb-[101px]"
+        >
+          Si quiere, es fácil dejárlo.
+        </h1>
+        <div class="bg-[#0c1124ab] p-6 text-right md:bg-transparent md:p-0">
+          <h4
+            class="text-white font-accent font-light italic text-[20px] md:text-[25px]"
+          >
+            Tratamiento de desintoxicación anulando por completo el efecto
+            adictivo de la nicotina y tóxicos del tabaco.
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Una sola sesión -->
+  <section
+    class="max-w-[1200px] mx-auto pt-[75px] pb-[55px] px-4 md:px-[55px] text-center"
+  >
+    <h2
+      class="text-brand-primary font-heading font-bold text-[24px] md:text-[30px] uppercase mb-4"
+    >
+      Una sola sesión, de una hora
+    </h2>
+    <p class="text-[#023047] font-body text-[28px] md:text-[38px] font-light">
+      Solo hace falta querer
+    </p>
+  </section>
+
+  <!-- 95% exito -->
+  <section
+    class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8 px-4 py-10"
+  >
+    <div class="w-full md:w-[40%] flex flex-col justify-center items-center">
+      <div class="text-center">
+        <h3
+          class="text-brand-secondary font-heading font-bold text-[24px] md:text-[30px] uppercase"
+        >
+          ¡de éxito!
+        </h3>
+        <div
+          class="text-brand-accent font-heading font-semibold text-[80px] md:text-[100px] uppercase leading-none"
+        >
+          95%
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full md:w-[60%] flex flex-col justify-center text-left text-brand-text text-[17px] leading-[37px]"
+    >
+      <h3 class="text-brand-secondary font-heading font-bold text-[25px] mb-4">
+        Tratamiento con bio-Resonancia
+      </h3>
+      <p class="font-body">
+        La aplicación de bio-resonancia para dejar de fumar se basa en el
+        principio físico de que el cuerpo (sus celulas) se impregnan del humo
+        del tabaco y de esa manera «<b>memorizan</b>» y retienen las <b
+          >frecuencias electromagnéticas</b
+        > de las sustancias tóxicas que ha consumido, como la nicotina, alquitrán
+        y otros aditivos de los cigarrillos. Nuestro tratamiento, ayuda al organismo
+        a <b>neutralizar</b> y <b>eliminar</b> estas frecuencias tóxicas, facilitando
+        la desintoxicación y eliminando la memoria, y la información de las sustancias
+        permitiendo al paciente <b>dejar de fumar</b>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="max-w-[1200px] mx-auto flex flex-col md:flex-row py-10">
+    <div
+      class="w-full md:w-1/4 p-6 md:p-10 text-brand-text text-[17px] leading-[37px]"
+    >
+      <h4
+        class="font-bold mb-4 font-body text-[20px] md:text-[25px] text-brand-text"
+      >
+        Eficacia rápida y efectiva
+      </h4>
+      <p class="text-center md:text-left">
+        Nuestra experiencia confirma que con una sola sesión se elimina la
+        dependencia del tabaco, siendo la mejor opción para quienes buscan
+        resultados.
+      </p>
+    </div>
+    <div
+      class="w-full md:w-1/4 p-6 md:p-10 text-brand-text text-[17px] leading-[37px]"
+    >
+      <h4
+        class="font-bold mb-4 font-body text-[20px] md:text-[25px] text-brand-text"
+      >
+        Sin efectos secundarios
+      </h4>
+      <p class="text-center md:text-left">
+        El tratamiento, consiste en eliminar unicamente las frecuencias del
+        tabaco, sin substancias químicas ni alterar su organismo. Por lo que
+        carece de contraindiccaciones.
+      </p>
+    </div>
+    <div
+      class="w-full md:w-1/4 p-6 md:p-10 text-brand-text text-[17px] leading-[37px]"
+    >
+      <h4
+        class="font-bold mb-4 font-body text-[20px] md:text-[25px] text-brand-text"
+      >
+        Desintoxicación completa
+      </h4>
+      <p class="text-center md:text-left">
+        Elimina no solo la nicotina, sino también todos los tóxicos químicos del
+        cigarrillo, favoreciendo una limpieza profunda del organismo.
+      </p>
+    </div>
+    <div
+      class="w-full md:w-1/4 p-6 md:p-10 text-brand-text text-[17px] leading-[37px]"
+    >
+      <h4
+        class="font-bold mb-4 font-body text-[20px] md:text-[25px] text-brand-text"
+      >
+        Mejora del bienestar
+      </h4>
+      <p class="text-center md:text-left">
+        Desintoxicar el organismo, ayuda a experimentar mayor energía, mejor
+        respiración y una recuperación del estado de salud.
+      </p>
+    </div>
+  </section>
+
+  <!-- Doctor Section -->
+  <section class="bg-brand-secondary py-[50px]">
+    <h2
+      class="text-white font-heading font-bold text-[24px] md:text-[30px] uppercase text-center tracking-[0.9px]"
+    >
+      Doctor Enrique Fernández
+    </h2>
+  </section>
+  <section
+    class="bg-[radial-gradient(at_bottom_right,_var(--color-brand-primary)_0%,_var(--color-brand-secondary)_100%)] w-full py-[50px] px-4 text-white"
+  >
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 flex justify-center mb-10 md:mb-0">
+        <img
+          src="/images/team/enrique.png"
+          class="max-w-[421px] w-full object-contain"
+          alt="Fotografía del Dr. Enrique Fernandez"
+        />
+      </div>
+      <div
+        class="w-full md:w-2/3 flex flex-col justify-center px-4 md:px-10 text-[17px] leading-[37px] text-center"
+      >
+        <p class="mb-6 font-body">
+          A través de mi experiencia personal y después de haber ayudado a dejar
+          de fumar a muchísimas personas durante más de 41 años, diría que el
+          dejar de fumar se resume en una sola decisión:
+        </p>
+
+        <div
+          class="bg-white text-brand-text rounded-[21px] p-8 mx-0 md:mx-[100px] mb-6 font-body"
+        >
+          <p class="mb-4">
+            <strong><em>¿Quiero o no quiero dejar de fumar?</em></strong>
+          </p>
+          <p class="mb-4">
+            <strong>No es necesario tener fuerza de voluntad.</strong>
+          </p>
+          <p>
+            <strong
+              >Es imprescindible <em>desear / querer dejar de fumar</em
+              >.</strong
+            >
+          </p>
+        </div>
+
+        <p class="font-body mx-0 md:mx-10">
+          Hay una gran diferencia entre querer y tener que dejar de fumar.
+          Muchas personas tienen que dejar de fumar por prescripción médica o
+          porque se lo piden sus familiares. Sin embargo, si a <em
+            >la obligación de dejar de fumar</em
+          > le añade el <em>deseo de dejar de fumar</em>, esto último, potencia
+          considerablemente el tratamiento.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tratamiento de frecuencias (Dark blue bg with image) -->
+  <section
+    class="bg-brand-primary py-[100px] md:py-[200px] text-center bg-[url('/images/pages/frecuencias.png')] bg-center bg-contain bg-no-repeat w-full"
+    id="Tratamiento"
+  >
+    <div class="max-w-[1200px] mx-auto px-4 flex flex-col items-center">
+      <h2
+        class="text-white font-heading font-bold text-[24px] md:text-[30px] uppercase mb-10 tracking-[0.9px]"
+      >
+        TRATAMIENTO AVANZADO DE FRECUENCIAS
+      </h2>
+      <div
+        class="text-white text-[20px] md:text-[24px] leading-[1.3em] font-body font-normal max-w-full md:max-w-[60%]"
+      >
+        <p class="mb-6">
+          <i
+            >Todo lo que EXISTE, posee y emite una frecuencia y una longitud de
+            onda únicas, como una huella dactilar.</i
+          >
+        </p>
+        <p class="mb-6">
+          Toda FRECUENCIA es <span class="underline">información</span> vibracional.
+        </p>
+        <p>Toda VIBRACION – INFORMACION es susceptible de poder modificarse.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content & Canvas -->
+  <section class="bg-brand-primary w-full pb-20">
+    <div
+      class="max-w-[1200px] mx-auto flex flex-col md:flex-row px-4 text-white"
+    >
+      <!-- Left text -->
+      <div
+        class="w-full md:w-1/2 text-[17px] leading-[37px] font-body font-normal pr-0 md:pr-10"
+      >
+        <h3
+          class="text-brand-secondary font-heading font-bold text-[25px] mt-6 mb-4"
+        >
+          ¿Que debe saber?
+        </h3>
+        <p class="mb-4">
+          El tratamiento para dejar de fumar es sencillo. Con una sola sesión de
+          una hora es suficiente para liberarse de la adicción al tabaco, sin
+          necesidad de fuerza de voluntad. Solo se requiere el deseo genuino de
+          dejarlo.
+        </p>
+        <p class="mb-8">
+          Utilizamos un tratamiento basado en biofrecuencias electromagnéticas,
+          que permite eliminar la información de la nicotina y de todas las
+          sustancias presentes en el tabaco (alquitranes, cadmio, plomo,
+          arsénico, amoníaco, bencenos, entre otras). Al invertir estas
+          frecuencias en el cuerpo, conseguimos neutralizar sus efectos.
+        </p>
+
+        <h3
+          class="text-brand-secondary font-heading font-bold text-[25px] mt-6 mb-4"
+        >
+          ¿Por qué no se produce el síndrome de abstinencia?
+        </h3>
+        <p class="mb-4">
+          Cuando usted fuma, el humo del tabaco impregna cada célula de su
+          cuerpo, dejando una huella en forma de frecuencias electromagnéticas.
+          Aunque deje de fumar por su cuenta, esta información permanece y
+          continúa afectando negativamente en su organismo.
+        </p>
+        <p class="mb-8">
+          Solo a través de una eliminación electromagnética de estas frecuencias
+          es posible anular por completo la información asociada al tabaco, ya
+          sea de cigarrillos, puros, tabaco de pipa o vapeadores. El resultado
+          es un organismo como si nunca hubiera fumado. Si bien las lesiones
+          previas causadas por el tabaco pueden seguir presentes, su estado de
+          salud mejorará notablemente y tendrá la capacidad de recuperarse en la
+          mayor medida posible.
+        </p>
+
+        <h3
+          class="text-brand-secondary font-heading font-bold text-[25px] mt-6 mb-4"
+        >
+          Profesional a cargo
+        </h3>
+        <p>
+          El tratamiento es realizado por la Sra. Miriam Matía, psicóloga
+          especializada en Homeopatía. Con una alta cualificación y experiencia
+          en este tipo de terapia desde hace mas de 20 años. En caso necesario,
+          el tratamiento puede complementarse con medicina Homeopática.
+        </p>
+      </div>
+
+      <!-- Right canvas diagram -->
+      <div
+        class="w-full md:w-1/2 mt-10 md:mt-0 hidden xl:flex items-start justify-center"
+      >
+        <!-- Mora Diagram HTML -->
+        <div
+          class="mora-diagram-container w-full max-w-[42rem] mx-auto bg-brand-primary p-10 rounded-[1rem] shadow-xl font-body border border-white/10 mt-6"
+        >
+          <h3 class="text-white text-2xl font-bold text-left mb-8">
+            El tratamiento a base de bio-frecuencias armoniza su cuerpo y
+            elimina la información del tabaco a la vez
+          </h3>
+
+          <div class="grid grid-cols-1 gap-4 md:gap-6">
+            <!-- Señal Saludable -->
+            <div>
+              <h4 class="text-white text-lg font-semibold mb-2">
+                Señal Saludable (Armónica)
+              </h4>
+              <canvas
+                id="harmonicWaveDiagram"
+                class="rounded-lg w-full h-[120px] block shadow-inner bg-[#D1FAE5]"
+              ></canvas>
+            </div>
+            <!-- Señal del tabaco -->
+            <div>
+              <h4 class="text-white text-lg font-semibold mb-2">
+                Señal del tabaco y otros tóxicos (Disarmónica)
+              </h4>
+              <canvas
+                id="disharmonicWaveDiagram"
+                class="rounded-lg w-full h-[120px] block shadow-inner bg-[#FEE2E2]"
+              ></canvas>
+            </div>
+            <!-- Señal Invertida -->
+            <div>
+              <h4 class="text-white text-lg font-semibold mb-2">
+                Señal Invertida (del tabaco)
+              </h4>
+              <canvas
+                id="invertedTobaccoWaveDiagram"
+                class="rounded-lg w-full h-[120px] block shadow-inner bg-[#FFFBEB]"
+              ></canvas>
+            </div>
+            <!-- Salida Terapéutica -->
+            <div>
+              <h4 class="text-white text-lg font-semibold mb-2">
+                Salida Terapéutica (Cancelación y Amplificación)
+              </h4>
+              <canvas
+                id="therapeuticWaveDiagram"
+                class="rounded-lg w-full h-[144px] block shadow-inner bg-[#DBEAFE]"
+              ></canvas>
+            </div>
+          </div>
+
+          <!-- Botones -->
+          <button
+            id="runTherapyBtnDiagram"
+            class="text-white font-bold py-3 px-6 rounded-lg w-full border-none cursor-pointer transition-colors mt-6 bg-[#4C51BF] hover:bg-[#6D28D9] active:bg-[#4B088A] disabled:opacity-70 disabled:cursor-not-allowed"
+          >
+            Simulación de Terapia
+          </button>
+          <button
+            id="resetTherapyBtnDiagram"
+            class="text-white font-bold py-3 px-6 rounded-lg w-full border-none cursor-pointer transition-colors mt-3 bg-[#6B7280] hover:bg-[#4B5563] active:bg-[#374151] disabled:opacity-70 disabled:cursor-not-allowed"
+          >
+            Reiniciar Simulación
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas frecuentes -->
+  <section class="max-w-[1200px] mx-auto px-4 py-[50px]">
+    <h2
+      class="text-brand-primary font-heading font-bold text-[30px] uppercase mb-10 tracking-[0.9px]"
+    >
+      preguntas frecuentes
+    </h2>
+
+    <div
+      class="space-y-10 text-brand-text text-[17px] leading-[37px] font-body"
+    >
+      <div>
+        <h3
+          class="text-brand-secondary font-heading font-bold text-[25px] mb-4"
+        >
+          ¿Que debo hacer después del tratamiento?
+        </h3>
+        <p>
+          Es importante beber mucha agua durante los siguientes días después del
+          tratamiento para que su cuerpo libere las toxinas acumuladas mas
+          fácilmente. En los años que llevo haciendo el tratamiento anti-tabaco,
+          nunca he modificado los hábitos de los pacientes. Pueden seguir
+          tomando café, saliendo por las noches, o cualquier otra actividad que
+          hacían cuando fumaban. Aproximadamente hacia los 4-7 días del
+          tratamiento, los hábitos se van e incluso la mayoría de los pacientes
+          ni se acuerdan del tabaco.
+        </p>
+      </div>
+      <div>
+        <h3
+          class="text-brand-secondary font-heading font-bold text-[25px] mb-4"
+        >
+          ¿Cómo se maneja la ansiedad? ¿se engorda después?
+        </h3>
+        <p class="mb-4">
+          ¿Tiene Ud. Ansiedad? ¿Y el tabaco le calma? ¿Que pasará al dejar de
+          fumar?<br />Si existe una <em>ansiedad de base</em> que se calma con el
+          tabaco, al quitarel habito de fumar uno puede seguir con esa ansiedad y
+          puede ser que la tendencia sea de sustituir el tabaco por la comida. La
+          Medicina Homeopática ayuda mucho en estos casos, con lo que la situación
+          de miedo a engordar no debería impedirle hacer su tratamiento anti tabaco.
+        </p>
+        <p>
+          ¿Engordar? Muchas personas están preocupadas por si engordan al dejar
+          de fumar. No hay correlación fisiológica entre dejar de fumar y
+          engordar.
+        </p>
+      </div>
+      <div>
+        <h3
+          class="text-brand-secondary font-heading font-bold text-[25px] mb-4"
+        >
+          ¿Y el 5% restante?
+        </h3>
+        <p>
+          Encontramos que en un 5% de los casos las personas vienen obligadas
+          por sus familiares o sin saber si de verdad quieren dejar de fumar.
+          Puesto que el tratamiento funciona, es importante que usted venga a la
+          consulta <strong><em>queriendo</em></strong> dejar de fumar. Al eliminar
+          la dependencia física y psicológica le será fácil de estar sin fumar ya
+          que su cuerpo no le pedirá fumar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tab localization logic will go here, simplified -->
+  <section class="bg-gray-50 py-20" id="Consultas">
+    <div class="max-w-[1200px] mx-auto px-4 text-center">
+      <h2
+        class="text-brand-primary font-heading font-bold uppercase text-[30px] mb-10"
+      >
+        Localizacion de las consultas
+      </h2>
+      <!-- Location subpages: Málaga, Granada, Logroño, Bilbao -->
+      <p class="text-brand-text font-body text-[17px] mb-8">
+        Tratamiento antitabaco en: <a
+          href="/dejar-de-fumar/dejar-de-fumar-en-malaga/"
+          class="text-brand-secondary hover:text-brand-accent font-medium"
+          >Málaga</a
+        > · <a
+          href="/dejar-de-fumar/dejar-de-fumar-en-granada/"
+          class="text-brand-secondary hover:text-brand-accent font-medium"
+          >Granada</a
+        > · <a
+          href="/dejar-de-fumar/dejar-de-fumar-en-logrono/"
+          class="text-brand-secondary hover:text-brand-accent font-medium"
+          >Logroño</a
+        > · <a
+          href="/dejar-de-fumar/dejar-de-fumar-en-bilbao/"
+          class="text-brand-secondary hover:text-brand-accent font-medium"
+          >Bilbao</a
+        >
+      </p>
+      <!-- The actual content mapping -> Herradura, Bilbao, Internacional as tabs or sections -->
+      <div class="flex flex-col md:flex-row justify-center gap-10">
+        <a
+          href="/dejar-de-fumar/dejar-de-fumar-en-granada/"
+          class="flex-1 bg-white p-6 shadow-sm hover:shadow-md transition-shadow block"
+        >
+          <h3
+            class="text-brand-secondary font-heading font-bold text-[20px] mb-4"
+          >
+            La Herradura (Granada)
+          </h3>
+          <img
+            src="/images/locations/la-herradura.jpg"
+            class="mx-auto my-4 w-full object-cover h-[150px]"
+            alt="La Herradura"
+          />
+          <p class="text-brand-text text-[15px] font-body">
+            Paseo Andrés Segovia nº 35, 1ºC 18697 La Herradura. Situada a una
+            hora del aeropuerto de Málaga.
+          </p>
+        </a>
+        <a
+          href="/dejar-de-fumar/dejar-de-fumar-en-bilbao/"
+          class="flex-1 bg-white p-6 shadow-sm hover:shadow-md transition-shadow block"
+        >
+          <h3
+            class="text-brand-secondary font-heading font-bold text-[20px] mb-4"
+          >
+            Bilbao
+          </h3>
+          <img
+            src="/images/locations/bilbao.png"
+            class="mx-auto my-4 w-[200px] object-cover h-[150px]"
+            alt="Bilbao"
+          />
+          <p class="text-brand-text text-[15px] font-body">
+            Edificio Albia, Calle San Vicente. Centro de Negocios SPANPKOR –
+            Planta Sexta.
+          </p>
+        </a>
+        <div class="flex-1 bg-white p-6 shadow-sm">
+          <h3
+            class="text-brand-secondary font-heading font-bold text-[20px] mb-4"
+          >
+            Consulta Internacional
+          </h3>
+          <p class="text-brand-text text-[15px] font-body mt-4">
+            Les recomendamos contacten antelación. Le facilitaremos taxi
+            confiable desde Aeropuerto Málaga a La Herradura. Opción con hotel
+            disponible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ContactSection />
+</Layout>
+
+<script>
+  // Mora Diagram Animation Script
+  document.addEventListener("DOMContentLoaded", function () {
+    const harmonicCanvasDiagram = document.getElementById(
+      "harmonicWaveDiagram",
+    ) as HTMLCanvasElement;
+    const disharmonicCanvasDiagram = document.getElementById(
+      "disharmonicWaveDiagram",
+    ) as HTMLCanvasElement;
+    const invertedTobaccoCanvasDiagram = document.getElementById(
+      "invertedTobaccoWaveDiagram",
+    ) as HTMLCanvasElement;
+    const therapeuticCanvasDiagram = document.getElementById(
+      "therapeuticWaveDiagram",
+    ) as HTMLCanvasElement;
+    const runTherapyBtnDiagram = document.getElementById(
+      "runTherapyBtnDiagram",
+    ) as HTMLButtonElement;
+    const resetTherapyBtnDiagram = document.getElementById(
+      "resetTherapyBtnDiagram",
+    ) as HTMLButtonElement;
+
+    if (
+      !harmonicCanvasDiagram ||
+      !disharmonicCanvasDiagram ||
+      !invertedTobaccoCanvasDiagram ||
+      !therapeuticCanvasDiagram ||
+      !runTherapyBtnDiagram ||
+      !resetTherapyBtnDiagram
+    ) {
+      return;
+    }
+
+    let animationFrameIdDiagram: number;
+    let therapyIntervalId: ReturnType<typeof setInterval>;
+    let phaseDiagram = 0;
+
+    function resizeCanvas(canvas: HTMLCanvasElement) {
+      if (canvas) {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+      }
+    }
+
+    const canvasesToResize = [
+      harmonicCanvasDiagram,
+      disharmonicCanvasDiagram,
+      invertedTobaccoCanvasDiagram,
+      therapeuticCanvasDiagram,
+    ];
+    canvasesToResize.forEach((canvas) => resizeCanvas(canvas));
+
+    window.addEventListener("resize", () => {
+      canvasesToResize.forEach((canvas) => resizeCanvas(canvas));
+      drawWaveDiagram(harmonicCanvasDiagram, "#10B981", 2, 40, phaseDiagram);
+      drawWaveDiagram(
+        disharmonicCanvasDiagram,
+        "#EF4444",
+        2,
+        40,
+        phaseDiagram,
+        true,
+      );
+
+      if (runTherapyBtnDiagram.textContent === "Terapia Completada!") {
+        drawInvertedTobaccoWave(
+          invertedTobaccoCanvasDiagram,
+          "#FDBA74",
+          2,
+          40,
+          phaseDiagram,
+          100,
+        );
+        drawTherapeuticWave(100);
+      } else {
+        drawInvertedTobaccoWave(
+          invertedTobaccoCanvasDiagram,
+          "#FDBA74",
+          2,
+          40,
+          phaseDiagram,
+          0,
+        );
+        drawTherapeuticWave(0);
+      }
+    });
+
+    function drawWaveDiagram(
+      canvas: HTMLCanvasElement,
+      color: string,
+      frequency: number,
+      amplitude: number,
+      phase: number,
+      isDisharmonic = false,
+    ) {
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+      const width = canvas.width;
+      const height = canvas.height;
+      ctx.clearRect(0, 0, width, height);
+      ctx.beginPath();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = color;
+
+      for (let x = 0; x < width; x++) {
+        const angle = (x / width) * 2 * Math.PI * frequency + phase;
+        let y = height / 2 + Math.sin(angle) * amplitude;
+
+        if (isDisharmonic) {
+          y += Math.sin(angle * 5) * amplitude * 0.3;
+          y += Math.cos(angle * 2.5) * amplitude * 0.2;
+        }
+        if (x === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      }
+      ctx.stroke();
+    }
+
+    function drawInvertedTobaccoWave(
+      canvas: HTMLCanvasElement,
+      color: string,
+      frequency: number,
+      amplitude: number,
+      phase: number,
+      progress: number,
+    ) {
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+      const width = canvas.width;
+      const height = canvas.height;
+      ctx.clearRect(0, 0, width, height);
+      ctx.beginPath();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = color;
+
+      const currentAmplitude = amplitude * (1 - progress / 100);
+
+      if (currentAmplitude <= 0) {
+        ctx.moveTo(0, height / 2);
+        ctx.lineTo(width, height / 2);
+        ctx.stroke();
+        return;
+      }
+
+      for (let x = 0; x < width; x++) {
+        const angle = (x / width) * 2 * Math.PI * frequency + phase;
+        let y_raw = Math.sin(angle) * currentAmplitude;
+        y_raw += Math.sin(angle * 5) * currentAmplitude * 0.3;
+        y_raw += Math.cos(angle * 2.5) * currentAmplitude * 0.2;
+
+        const y = height / 2 - y_raw;
+
+        if (x === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      }
+      ctx.stroke();
+    }
+
+    function drawTherapeuticWave(progress: number) {
+      const ctx = therapeuticCanvasDiagram.getContext("2d");
+      if (!ctx) return;
+      const width = therapeuticCanvasDiagram.width;
+      const height = therapeuticCanvasDiagram.height;
+      ctx.clearRect(0, 0, width, height);
+      ctx.beginPath();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "#3B82F6";
+
+      const baseAmplitude = 40;
+      const finalHealedAmplitude = baseAmplitude * 1.5;
+      const maxAllowedDeviation = (height / 2) * 0.9;
+
+      for (let x = 0; x < width; x++) {
+        const harmonicAngle = (x / width) * 2 * Math.PI * 2 + phaseDiagram;
+        const disharmonicAngle = (x / width) * 2 * Math.PI * 2 + phaseDiagram;
+
+        const harmonicYComponent = Math.sin(harmonicAngle) * baseAmplitude;
+
+        let disharmonicYComponentRaw =
+          Math.sin(disharmonicAngle) * baseAmplitude;
+        disharmonicYComponentRaw +=
+          Math.sin(disharmonicAngle * 5) * baseAmplitude * 0.3;
+        disharmonicYComponentRaw +=
+          Math.cos(disharmonicAngle * 2.5) * baseAmplitude * 0.2;
+
+        const theoreticalMaxInitialDeviation = baseAmplitude * 2.5;
+        const initialScaledDeviationFactor =
+          maxAllowedDeviation / theoreticalMaxInitialDeviation;
+        const initialYValue =
+          height / 2 +
+          (harmonicYComponent - disharmonicYComponentRaw) *
+            initialScaledDeviationFactor;
+        const finalYValue =
+          height / 2 + Math.sin(harmonicAngle) * finalHealedAmplitude;
+
+        const t = progress / 100;
+        let y = initialYValue * (1 - t) + finalYValue * t;
+
+        y = Math.max(0, Math.min(height, y));
+
+        if (x === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      }
+      ctx.stroke();
+    }
+
+    function animateWavesDiagram() {
+      phaseDiagram += 0.05;
+
+      drawWaveDiagram(harmonicCanvasDiagram, "#10B981", 2, 40, phaseDiagram);
+      drawWaveDiagram(
+        disharmonicCanvasDiagram,
+        "#EF4444",
+        2,
+        40,
+        phaseDiagram,
+        true,
+      );
+
+      if (
+        !runTherapyBtnDiagram.disabled ||
+        runTherapyBtnDiagram.textContent === "Terapia Completada!"
+      ) {
+        if (runTherapyBtnDiagram.textContent !== "Terapia Completada!") {
+          drawInvertedTobaccoWave(
+            invertedTobaccoCanvasDiagram,
+            "#FDBA74",
+            2,
+            40,
+            phaseDiagram,
+            0,
+          );
+          drawTherapeuticWave(0);
+        } else {
+          drawInvertedTobaccoWave(
+            invertedTobaccoCanvasDiagram,
+            "#FDBA74",
+            2,
+            40,
+            phaseDiagram,
+            100,
+          );
+          drawTherapeuticWave(100);
+        }
+      }
+
+      animationFrameIdDiagram = requestAnimationFrame(animateWavesDiagram);
+    }
+
+    function resetDiagram() {
+      clearInterval(therapyIntervalId);
+      runTherapyBtnDiagram.disabled = false;
+      runTherapyBtnDiagram.textContent = "Simulación de Terapia";
+      runTherapyBtnDiagram.style.backgroundColor = "#4C51BF";
+
+      phaseDiagram = 0;
+
+      canvasesToResize.forEach((canvas) => resizeCanvas(canvas));
+      drawWaveDiagram(harmonicCanvasDiagram, "#10B981", 2, 40, phaseDiagram);
+      drawWaveDiagram(
+        disharmonicCanvasDiagram,
+        "#EF4444",
+        2,
+        40,
+        phaseDiagram,
+        true,
+      );
+      drawInvertedTobaccoWave(
+        invertedTobaccoCanvasDiagram,
+        "#FDBA74",
+        2,
+        40,
+        phaseDiagram,
+        0,
+      );
+      drawTherapeuticWave(0);
+    }
+
+    runTherapyBtnDiagram.addEventListener("click", () => {
+      if (runTherapyBtnDiagram.disabled) {
+        return;
+      }
+
+      runTherapyBtnDiagram.disabled = true;
+      runTherapyBtnDiagram.textContent = "Terapia en Curso...";
+      runTherapyBtnDiagram.style.backgroundColor = "#6D28D9";
+
+      let progress = 0;
+
+      if (therapyIntervalId) {
+        clearInterval(therapyIntervalId);
+      }
+
+      therapyIntervalId = setInterval(() => {
+        progress += 1;
+        drawInvertedTobaccoWave(
+          invertedTobaccoCanvasDiagram,
+          "#FDBA74",
+          2,
+          40,
+          phaseDiagram,
+          progress,
+        );
+        drawTherapeuticWave(progress);
+
+        if (progress >= 100) {
+          clearInterval(therapyIntervalId);
+          runTherapyBtnDiagram.textContent = "Terapia Completada!";
+          runTherapyBtnDiagram.style.backgroundColor = "#16A34A";
+        }
+      }, 20);
+    });
+
+    resetTherapyBtnDiagram.addEventListener("click", resetDiagram);
+
+    animateWavesDiagram();
+  });
+</script>

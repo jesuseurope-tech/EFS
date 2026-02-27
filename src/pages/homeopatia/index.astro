@@ -1,0 +1,383 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ContactSection from "../../components/ContactSection.astro";
+import MainTreatments from "../../components/MainTreatments.astro";
+import { getLangFromUrl } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="Homeopatía" lang={lang}>
+  <!-- Hero Section with Background -->
+  <section
+    class="bg-[url('/images/pages/homeopatia-hero.jpeg')] bg-center bg-cover bg-no-repeat w-full min-h-[500px] flex items-end"
+  >
+    <div class="max-w-[1200px] w-full mx-auto px-4 py-20 text-center">
+      <h1
+        class="text-white font-heading font-bold text-[30px] md:text-[42px] uppercase tracking-[0.9px]"
+      >
+        Médico y homeopáta
+      </h1>
+    </div>
+  </section>
+
+  <!-- Intro Block -->
+  <section
+    class="max-w-[1200px] mx-auto py-12 px-4 flex flex-col md:flex-row items-center gap-8"
+  >
+    <div class="w-full md:w-2/5 flex justify-center">
+      <img
+        src="/images/team/enrique.png"
+        alt="Dr. Enrique Fernandez"
+        class="max-w-full h-auto"
+      />
+    </div>
+    <div
+      class="w-full md:w-3/5 text-center md:text-left text-brand-text font-body text-[20px] md:text-[31px] font-medium leading-[1.6]"
+    >
+      <p>
+        Con más de cuarenta años de dedicación a la Medicina, le ofrezco una
+        atención médica profundamente personalizada para usted, sus hijos y su
+        familia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Feature 4 columns -->
+  <section
+    class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-6 px-4 py-12"
+  >
+    <div class="w-full md:w-1/4 text-center">
+      <h3
+        class="font-heading text-[20px] md:text-[25px] font-medium text-[#158EC7] mb-2 font-['Open_Sans']"
+      >
+        Experiencia Profunda
+      </h3>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        Más de 40 años dedicados a la homeopatía para restaurar su salud y
+        bienestar integral.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h3
+        class="font-heading text-[20px] md:text-[25px] font-medium text-[#158EC7] mb-2 font-['Open_Sans']"
+      >
+        Atención Personal
+      </h3>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        Consultas detalladas (1-3h) para entender su caso único y tratar la
+        causa raíz de sus dolencias.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h3
+        class="font-heading text-[20px] md:text-[25px] font-medium text-[#158EC7] mb-2 font-['Open_Sans']"
+      >
+        Enfoque Holístico
+      </h3>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        Le tratamos en su totalidad (cuerpo, mente, emociones) para encontrar su
+        equilibrio natural y duradero.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h3
+        class="font-heading text-[20px] md:text-[25px] font-medium text-[#158EC7] mb-2 font-['Open_Sans']"
+      >
+        Curación Natural
+      </h3>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        Estimulamos su propia capacidad curativa para lograr un bienestar
+        respetuoso con su organismo.
+      </p>
+    </div>
+  </section>
+
+  <!-- La homeopatia -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4 text-center">
+    <h2
+      class="text-brand-primary font-heading font-bold text-[30px] md:text-[45px] uppercase tracking-[0.9px] mb-8"
+    >
+      La homeopatía
+    </h2>
+    <div
+      class="text-brand-text text-[17px] leading-[37px] font-body text-left max-w-[1000px] mx-auto space-y-4"
+    >
+      <p>
+        La Homeopatía es una disciplina médica con fundamentos que se remontan a
+        Hipócrates y que fue sistematizada por el Dr. Samuel Christian Hahnemann
+        en 1808. Es una ciencia medica terapéutica que se basa en una
+        observación clínica rigurosa y en el profundo respeto por las leyes
+        naturales de curación del propio organismo.
+      </p>
+      <p>
+        En mi consulta, con más de 40 años de experiencia, aplico la Homeopatía
+        como una herramienta médica de precisión. El objetivo no es suprimir
+        síntomas, sino <strong
+          >devolver al organismo su capacidad inherente de auto-regulación</strong
+        >, re-equilibrando los sistemas y órganos afectados para alcanzar un
+        estado de salud estable y duradero. Tratamos al «Ser Humano» en su
+        totalidad, entendiendo que su dimensión física, mental y emocional es
+        indivisible.
+      </p>
+    </div>
+  </section>
+
+  <!-- Ser Humano Quote Block -->
+  <section class="max-w-[1200px] mx-auto py-[50px] px-4">
+    <p
+      class="text-[35px] font-heading font-light text-brand-text text-center uppercase tracking-[0.9px]"
+    >
+      Se debe tratar al <span class="font-serif italic font-light normal-case"
+        >Ser Humano</span
+      > que hay en usted
+    </p>
+  </section>
+
+  <!-- Principio de similitud -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4">
+    <div
+      class="text-brand-text text-[17px] leading-[37px] font-body text-left max-w-[1000px] mx-auto space-y-4"
+    >
+      <h4
+        class="font-body text-[25px] font-bold text-brand-text mb-4 font-['Open_Sans']"
+      >
+        El Principio de Similitud: La Clave Terapéutica
+      </h4>
+      <p>
+        El pilar fundamental de la Homeopatía es el <strong
+          >Principio de Similitud</strong
+        >: «lo similar cura lo similar». Este fenómeno, ya descrito por
+        Hipócrates y Paracelso, fue comprobado experimentalmente por el Dr.
+        Hahnemann y establece que una sustancia capaz de provocar ciertos
+        síntomas en un individuo sano puede, en dosis infinitesimales y
+        preparadas de forma específica, curar esos mismos síntomas en una
+        persona enferma.
+      </p>
+      <p>
+        El fenómeno de similitud se observa en numerosos ámbitos, incluido en
+        ciertos medicamentos convencionales. Se basa en el hecho de que una
+        misma sustancia puede tener efectos diferentes u opuestos según la dosis
+        empleada y la sensibilidad del sujeto. Este hecho fue descrito por
+        Hipócrates, reformulado por Paracelso y comprobado por Hanneman dando
+        así, origen a uno de los principios de la Homeopatía.
+      </p>
+    </div>
+  </section>
+
+  <!-- El arte de la homeopatía -->
+  <section class="bg-brand-secondary py-12 px-4 mt-8">
+    <h2
+      class="text-white font-heading font-bold text-[30px] md:text-[45px] uppercase tracking-[0.9px] text-center mb-0"
+    >
+      El arte de la homeopatía
+    </h2>
+  </section>
+
+  <!-- Gradient section with shape divider -->
+  <section
+    class="relative bg-gradient-to-br from-[#172550] to-[#158ec7] pb-12 w-full pt-12 overflow-hidden px-4 md:px-0"
+  >
+    <!-- Shape Divider using custom SVGs (tilt) -->
+    <div
+      class="absolute top-0 left-0 w-full overflow-hidden leading-zero"
+      style="transform: rotate(180deg);"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1000 100"
+        preserveAspectRatio="none"
+        class="block w-[calc(100%+1.3px)] h-[100px] relative left-1/2 -translate-x-1/2"
+        style="fill: #158EC7;"
+      >
+        <path d="M0,6V0h1000v100L0,6z"></path>
+      </svg>
+    </div>
+    <div class="max-w-[1200px] mx-auto relative z-10 pt-[50px]">
+      <div
+        class="bg-white rounded-[30px] p-8 md:p-12 mb-12 shadow-lg max-w-[900px] mx-auto text-brand-text text-[17px] leading-[37px] font-body text-center space-y-4"
+      >
+        <p>
+          En la medicina homeopática de alto nivel, nuestro trabajo clínico
+          consiste en realizar una <strong
+            >síntesis profunda de todas las facetas que componen a la persona</strong
+          >.
+        </p>
+        <p>
+          Hablaremos de su plano <strong>físico</strong> (los síntomas concretos,
+          sus modalidades), su plano <strong>emocional</strong> (miedos, tristezas,
+          ansiedades), su plano <strong>mental</strong> (patrones de pensamiento,
+          concentración) e incluso su plano <strong>espiritual</strong> (su sentido
+          de propósito, sus conflictos vitales).
+        </p>
+        <p>
+          El objetivo de esta investigación exhaustiva es encontrar <strong
+            >el remedio único (o <em>simillimum</em>)</strong
+          > que resuena con la totalidad de su ser. Este remedio actúa como un catalizador
+          que inicia el proceso de sanación propia, estimulando la fuerza vital del
+          organismo.
+        </p>
+      </div>
+
+      <div class="flex justify-center max-w-[800px] mx-auto">
+        <img
+          src="/images/pages/homeopatia-article.jpeg"
+          alt="Medicine bottles"
+          class="max-w-[800px] w-full h-auto border-[5px] border-brand-primary rounded-[10px] shadow-lg"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas de Aplicacion Accordion -->
+  <section
+    class="max-w-[1200px] mx-auto py-16 px-4 flex flex-col md:flex-row gap-8"
+  >
+    <div class="w-full md:w-1/3 flex justify-center items-start">
+      <img
+        src="/images/treatments/white-background-mobile.png"
+        class="max-w-[300px] w-full"
+        alt="Device illustration"
+      />
+    </div>
+    <div class="w-full md:w-2/3">
+      <h2
+        class="text-brand-primary font-heading font-bold text-[30px] md:text-[45px] uppercase tracking-[0.9px] mb-8 text-center md:text-left"
+      >
+        Areas de aplicación
+      </h2>
+
+      <div class="space-y-4">
+        <details class="group bg-white border border-gray-200" open>
+          <summary
+            class="flex justify-between items-center font-body text-[16px] font-medium cursor-pointer list-none p-4 hover:bg-gray-50 transition-colors text-brand-text"
+          >
+            <span>Bienestar Emocional y Mental</span>
+            <span class="transition group-open:rotate-180">
+              <svg
+                class="w-4 h-4 fill-current text-brand-primary"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                ><path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                  class="hidden group-open:block"></path><path
+                  d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                  class="block group-open:hidden"></path></svg
+              >
+            </span>
+          </summary>
+          <div
+            class="p-4 border-t border-gray-200 text-brand-text font-body text-[17px] leading-[37px] bg-white text-left"
+          >
+            <ul class="list-disc ml-6 space-y-2">
+              <li>
+                Tratamiento de fondo para <strong
+                  >ansiedad, miedos, celos, depresión o tristezas prolongadas</strong
+                >, etc.
+              </li>
+              <li>
+                Apoyo en <strong
+                  >problemas de comportamiento, concentración o alimentación</strong
+                >, tanto en adultos como en niños, etc.
+              </li>
+              <li>
+                Manejo del <strong
+                  >estrés, Síndrome de Trauma Postraumático,</strong
+                >etc.
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details class="group bg-white border border-gray-200">
+          <summary
+            class="flex justify-between items-center font-body text-[16px] font-medium cursor-pointer list-none p-4 hover:bg-gray-50 transition-colors text-brand-text"
+          >
+            <span>Afecciones Crónicas y Recurrentes</span>
+            <span class="transition group-open:rotate-180">
+              <svg
+                class="w-4 h-4 fill-current text-brand-primary"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                ><path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                  class="block group-open:hidden"></path><path
+                  d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                  class="hidden group-open:block"></path></svg
+              >
+            </span>
+          </summary>
+          <div
+            class="p-4 border-t border-gray-200 text-brand-text font-body text-[17px] leading-[37px] bg-white text-left"
+          >
+            <ul class="list-disc ml-6 space-y-2">
+              <li>
+                <strong>Problemas respiratorios:</strong> Catarros frecuentes, anginas
+                de repetición, asma, etc.
+              </li>
+              <li>
+                <strong>Afecciones de la piel:</strong> Dermatitis atópica y otras
+                condiciones cutáneas, etc.
+              </li>
+              <li>
+                <strong>Trastornos digestivos:</strong> Intolerancias alimentarias,
+                desequilibrios intestinales y mucho más, etc.
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details class="group bg-white border border-gray-200">
+          <summary
+            class="flex justify-between items-center font-body text-[16px] font-medium cursor-pointer list-none p-4 hover:bg-gray-50 transition-colors text-brand-text"
+          >
+            <span>Acompañamiento en Enfermedades Graves</span>
+            <span class="transition group-open:rotate-180">
+              <svg
+                class="w-4 h-4 fill-current text-brand-primary"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                ><path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                  class="block group-open:hidden"></path><path
+                  d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                  class="hidden group-open:block"></path></svg
+              >
+            </span>
+          </summary>
+          <div
+            class="p-4 border-t border-gray-200 text-brand-text font-body text-[17px] leading-[37px] bg-white text-left"
+          >
+            <ul class="list-disc ml-6 space-y-2">
+              <li>
+                Protocolos para <strong
+                  >paliar los efectos secundarios de la quimioterapia</strong
+                > y otros tratamientos oncológicos, mejorando la calidad de vida del
+                paciente, etc.
+              </li>
+              <li>
+                Tratamiento para contrarrestar los <strong
+                  >efectos adversos de fármacos o las secuelas post-vacunales</strong
+                >, incluyendo las relacionadas con la Covid-19 (Covid
+                Persistente), etc.
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="mt-6 text-brand-text font-body text-[17px] leading-[37px]">
+        <p>
+          <em
+            >(Esta lista es meramente orientativa, ya que el enfoque
+            individualizado de la homeopatía permite abordar prácticamente
+            cualquier desequilibrio en el que el organismo necesite un impulso
+            para recuperar su estado de salud.)</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principales Tratamientos Menu Block -->
+  <MainTreatments />
+
+  <ContactSection />
+</Layout>

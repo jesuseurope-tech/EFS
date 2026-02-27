@@ -1,0 +1,704 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.8.0
+2 info using node@v24.13.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/jmx/Documents/PROJECTS/Consulta Website upgrade 2/.npmrc
+5 silly config load:file:/Users/jmx/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install @tailwindcss/vite@^4.2.0 tailwindcss@^4.2.0
+8 verbose argv "install" "@tailwindcss/vite@^4.2.0" "tailwindcss@^4.2.0" "--cache" "./.npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/jmx/Documents/PROJECTS/Consulta Website upgrade 2/.npm-cache/_logs/2026-02-22T23_27_08_871Z-
+10 verbose logfile /Users/jmx/Documents/PROJECTS/Consulta Website upgrade 2/.npm-cache/_logs/2026-02-22T23_27_08_871Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest @tailwindcss/vite@^4.2.0
+15 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fvite cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http cache https://registry.npmjs.org/@tailwindcss%2fvite 25ms (cache hit)
+18 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fvite set size:1854737 disposed:false
+19 silly fetch manifest vite@^5.2.0 || ^6 || ^7
+20 silly packumentCache full:https://registry.npmjs.org/vite cache-miss
+21 http cache https://registry.npmjs.org/vite 140ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/vite set size:38728544 disposed:false
+23 silly fetch manifest @types/node@^20.19.0 || >=22.12.0
+24 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+25 http cache https://registry.npmjs.org/@types%2fnode 21ms (cache hit)
+26 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:10864169 disposed:false
+27 silly fetch manifest jiti@>=1.21.0
+28 silly packumentCache full:https://registry.npmjs.org/jiti cache-miss
+29 http cache https://registry.npmjs.org/jiti 4ms (cache hit)
+30 silly packumentCache full:https://registry.npmjs.org/jiti set size:382310 disposed:false
+31 silly fetch manifest less@^4.0.0
+32 silly packumentCache full:https://registry.npmjs.org/less cache-miss
+33 http cache https://registry.npmjs.org/less 3ms (cache hit)
+34 silly packumentCache full:https://registry.npmjs.org/less set size:430648 disposed:false
+35 silly fetch manifest lightningcss@^1.21.0
+36 silly packumentCache full:https://registry.npmjs.org/lightningcss cache-miss
+37 http cache https://registry.npmjs.org/lightningcss 2ms (cache hit)
+38 silly packumentCache full:https://registry.npmjs.org/lightningcss set size:182441 disposed:false
+39 silly fetch manifest sass@^1.70.0
+40 silly packumentCache full:https://registry.npmjs.org/sass cache-miss
+41 http cache https://registry.npmjs.org/sass 3ms (cache hit)
+42 silly packumentCache full:https://registry.npmjs.org/sass set size:722061 disposed:false
+43 silly fetch manifest sass-embedded@^1.70.0
+44 silly packumentCache full:https://registry.npmjs.org/sass-embedded cache-miss
+45 http cache https://registry.npmjs.org/sass-embedded 3ms (cache hit)
+46 silly packumentCache full:https://registry.npmjs.org/sass-embedded set size:407397 disposed:false
+47 silly fetch manifest stylus@>=0.54.8
+48 silly packumentCache full:https://registry.npmjs.org/stylus cache-miss
+49 http cache https://registry.npmjs.org/stylus 4ms (cache hit)
+50 silly packumentCache full:https://registry.npmjs.org/stylus set size:286766 disposed:false
+51 silly fetch manifest sugarss@^5.0.0
+52 silly packumentCache full:https://registry.npmjs.org/sugarss cache-miss
+53 http cache https://registry.npmjs.org/sugarss 6ms (cache hit)
+54 silly packumentCache full:https://registry.npmjs.org/sugarss set size:44975 disposed:false
+55 silly fetch manifest postcss@^8.3.3
+56 silly packumentCache full:https://registry.npmjs.org/postcss cache-miss
+57 http cache https://registry.npmjs.org/postcss 4ms (cache hit)
+58 silly packumentCache full:https://registry.npmjs.org/postcss set size:696248 disposed:false
+59 silly fetch manifest terser@^5.16.0
+60 silly packumentCache full:https://registry.npmjs.org/terser cache-miss
+61 http cache https://registry.npmjs.org/terser 3ms (cache hit)
+62 silly packumentCache full:https://registry.npmjs.org/terser set size:786629 disposed:false
+63 silly fetch manifest tsx@^4.8.1
+64 silly packumentCache full:https://registry.npmjs.org/tsx cache-miss
+65 http cache https://registry.npmjs.org/tsx 3ms (cache hit)
+66 silly packumentCache full:https://registry.npmjs.org/tsx set size:289592 disposed:false
+67 silly fetch manifest yaml@^2.4.2
+68 silly packumentCache full:https://registry.npmjs.org/yaml cache-miss
+69 http cache https://registry.npmjs.org/yaml 3ms (cache hit)
+70 silly packumentCache full:https://registry.npmjs.org/yaml set size:361552 disposed:false
+71 silly fetch manifest tailwindcss@^4.2.0
+72 silly packumentCache full:https://registry.npmjs.org/tailwindcss cache-miss
+73 http cache https://registry.npmjs.org/tailwindcss 20ms (cache hit)
+74 silly packumentCache full:https://registry.npmjs.org/tailwindcss set size:10210224 disposed:false
+75 silly placeDep ROOT @tailwindcss/vite@4.2.0 OK for: consulta-medica-astro@0.0.1 want: ^4.2.0
+76 silly placeDep ROOT tailwindcss@4.2.0 OK for: consulta-medica-astro@0.0.1 want: ^4.2.0
+77 silly fetch manifest tailwindcss@4.2.0
+78 silly packumentCache full:https://registry.npmjs.org/tailwindcss cache-miss
+79 silly fetch manifest @tailwindcss/node@4.2.0
+80 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fnode cache-miss
+81 silly fetch manifest @tailwindcss/oxide@4.2.0
+82 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide cache-miss
+83 http cache https://registry.npmjs.org/@tailwindcss%2fnode 8ms (cache hit)
+84 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fnode set size:1875285 disposed:false
+85 http cache https://registry.npmjs.org/@tailwindcss%2foxide 22ms (cache hit)
+86 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide set size:4070897 disposed:false
+87 http cache https://registry.npmjs.org/tailwindcss 56ms (cache hit)
+88 silly packumentCache full:https://registry.npmjs.org/tailwindcss set size:10210224 disposed:false
+89 silly placeDep ROOT @tailwindcss/node@4.2.0 OK for: @tailwindcss/vite@4.2.0 want: 4.2.0
+90 silly placeDep ROOT @tailwindcss/oxide@4.2.0 OK for: @tailwindcss/vite@4.2.0 want: 4.2.0
+91 silly fetch manifest jiti@^2.6.1
+92 silly packumentCache full:https://registry.npmjs.org/jiti cache-hit
+93 silly fetch manifest lightningcss@1.31.1
+94 silly packumentCache full:https://registry.npmjs.org/lightningcss cache-hit
+95 silly fetch manifest enhanced-resolve@^5.19.0
+96 silly packumentCache full:https://registry.npmjs.org/enhanced-resolve cache-miss
+97 silly fetch manifest @jridgewell/remapping@^2.3.5
+98 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fremapping cache-miss
+99 silly fetch manifest @tailwindcss/oxide-darwin-x64@4.2.0
+100 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-x64 cache-miss
+101 silly fetch manifest @tailwindcss/oxide-freebsd-x64@4.2.0
+102 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 cache-miss
+103 silly fetch manifest @tailwindcss/oxide-wasm32-wasi@4.2.0
+104 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi cache-miss
+105 silly fetch manifest @tailwindcss/oxide-darwin-arm64@4.2.0
+106 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 cache-miss
+107 silly fetch manifest @tailwindcss/oxide-android-arm64@4.2.0
+108 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 cache-miss
+109 http cache https://registry.npmjs.org/@jridgewell%2fremapping 22ms (cache hit)
+110 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fremapping set size:23809 disposed:false
+111 silly fetch manifest @tailwindcss/oxide-linux-x64-gnu@4.2.0
+112 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu cache-miss
+113 http cache https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 23ms (cache hit)
+114 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 set size:1735796 disposed:false
+115 silly fetch manifest @tailwindcss/oxide-linux-x64-musl@4.2.0
+116 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl cache-miss
+117 http cache https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 37ms (cache hit)
+118 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 set size:2596775 disposed:false
+119 silly fetch manifest @tailwindcss/oxide-win32-x64-msvc@4.2.0
+120 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-x64-msvc cache-miss
+121 http cache https://registry.npmjs.org/enhanced-resolve 53ms (cache hit)
+122 silly packumentCache full:https://registry.npmjs.org/enhanced-resolve set size:349613 disposed:false
+123 silly fetch manifest @tailwindcss/oxide-linux-arm64-gnu@4.2.0
+124 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-gnu cache-miss
+125 http cache https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 60ms (cache hit)
+126 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 set size:2577344 disposed:false
+127 silly fetch manifest @tailwindcss/oxide-linux-arm64-musl@4.2.0
+128 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-musl cache-miss
+129 http cache https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu 86ms (cache hit)
+130 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu set size:2617171 disposed:false
+131 silly fetch manifest @tailwindcss/oxide-win32-arm64-msvc@4.2.0
+132 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-arm64-msvc cache-miss
+133 http cache https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl 88ms (cache hit)
+134 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl set size:2624758 disposed:false
+135 silly fetch manifest @tailwindcss/oxide-linux-arm-gnueabihf@4.2.0
+136 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm-gnueabihf cache-miss
+137 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi 264ms (cache miss)
+138 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi set size:undefined disposed:false
+139 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-darwin-x64 353ms (cache miss)
+140 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-x64 set size:undefined disposed:false
+141 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-win32-x64-msvc 313ms (cache miss)
+142 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-x64-msvc set size:undefined disposed:false
+143 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-win32-arm64-msvc 288ms (cache miss)
+144 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-arm64-msvc set size:undefined disposed:false
+145 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-musl 345ms (cache miss)
+146 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-musl set size:undefined disposed:false
+147 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm-gnueabihf 317ms (cache miss)
+148 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm-gnueabihf set size:undefined disposed:false
+149 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-gnu 428ms (cache miss)
+150 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-gnu set size:undefined disposed:false
+151 silly placeDep ROOT @jridgewell/remapping@2.3.5 OK for: @tailwindcss/node@4.2.0 want: ^2.3.5
+152 silly placeDep ROOT enhanced-resolve@5.19.0 OK for: @tailwindcss/node@4.2.0 want: ^5.19.0
+153 silly placeDep ROOT jiti@2.6.1 OK for: @tailwindcss/node@4.2.0 want: ^2.6.1
+154 silly placeDep ROOT lightningcss@1.31.1 OK for: @tailwindcss/node@4.2.0 want: 1.31.1
+155 silly fetch manifest @jridgewell/gen-mapping@^0.3.5
+156 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fgen-mapping cache-miss
+157 silly fetch manifest @jridgewell/trace-mapping@^0.3.24
+158 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2ftrace-mapping cache-miss
+159 silly fetch manifest graceful-fs@^4.2.4
+160 silly packumentCache full:https://registry.npmjs.org/graceful-fs cache-miss
+161 silly fetch manifest tapable@^2.3.0
+162 silly packumentCache full:https://registry.npmjs.org/tapable cache-miss
+163 silly fetch manifest lightningcss-darwin-x64@1.31.1
+164 silly packumentCache full:https://registry.npmjs.org/lightningcss-darwin-x64 cache-miss
+165 silly fetch manifest lightningcss-linux-x64-gnu@1.31.1
+166 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-x64-gnu cache-miss
+167 silly fetch manifest lightningcss-win32-x64-msvc@1.31.1
+168 silly packumentCache full:https://registry.npmjs.org/lightningcss-win32-x64-msvc cache-miss
+169 http fetch GET 200 https://registry.npmjs.org/graceful-fs 34ms (cache miss)
+170 silly packumentCache full:https://registry.npmjs.org/graceful-fs set size:undefined disposed:false
+171 silly fetch manifest lightningcss-win32-arm64-msvc@1.31.1
+172 silly packumentCache full:https://registry.npmjs.org/lightningcss-win32-arm64-msvc cache-miss
+173 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-x64-gnu 45ms (cache miss)
+174 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-x64-gnu set size:undefined disposed:false
+175 silly fetch manifest lightningcss-darwin-arm64@1.31.1
+176 silly packumentCache full:https://registry.npmjs.org/lightningcss-darwin-arm64 cache-miss
+177 http fetch GET 200 https://registry.npmjs.org/tapable 46ms (cache miss)
+178 silly packumentCache full:https://registry.npmjs.org/tapable set size:undefined disposed:false
+179 silly fetch manifest lightningcss-linux-arm64-gnu@1.31.1
+180 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm64-gnu cache-miss
+181 http fetch GET 200 https://registry.npmjs.org/lightningcss-darwin-x64 49ms (cache miss)
+182 silly packumentCache full:https://registry.npmjs.org/lightningcss-darwin-x64 set size:undefined disposed:false
+183 silly fetch manifest lightningcss-linux-arm-gnueabihf@1.31.1
+184 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf cache-miss
+185 http fetch GET 200 https://registry.npmjs.org/lightningcss-win32-x64-msvc 61ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/lightningcss-win32-x64-msvc set size:undefined disposed:false
+187 silly fetch manifest lightningcss-linux-arm64-musl@1.31.1
+188 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm64-musl cache-miss
+189 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fgen-mapping 66ms (cache miss)
+190 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fgen-mapping set size:undefined disposed:false
+191 silly fetch manifest lightningcss-linux-x64-musl@1.31.1
+192 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-x64-musl cache-miss
+193 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2ftrace-mapping 69ms (cache miss)
+194 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2ftrace-mapping set size:undefined disposed:false
+195 silly fetch manifest lightningcss-freebsd-x64@1.31.1
+196 silly packumentCache full:https://registry.npmjs.org/lightningcss-freebsd-x64 cache-miss
+197 http fetch GET 200 https://registry.npmjs.org/lightningcss-win32-arm64-msvc 42ms (cache miss)
+198 silly packumentCache full:https://registry.npmjs.org/lightningcss-win32-arm64-msvc set size:undefined disposed:false
+199 silly fetch manifest lightningcss-android-arm64@1.31.1
+200 silly packumentCache full:https://registry.npmjs.org/lightningcss-android-arm64 cache-miss
+201 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf 37ms (cache miss)
+202 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf set size:undefined disposed:false
+203 http fetch GET 200 https://registry.npmjs.org/lightningcss-darwin-arm64 46ms (cache miss)
+204 silly packumentCache full:https://registry.npmjs.org/lightningcss-darwin-arm64 set size:undefined disposed:false
+205 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-arm64-musl 31ms (cache miss)
+206 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm64-musl set size:undefined disposed:false
+207 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-arm64-gnu 47ms (cache miss)
+208 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm64-gnu set size:undefined disposed:false
+209 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-x64-musl 29ms (cache miss)
+210 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-x64-musl set size:undefined disposed:false
+211 http fetch GET 200 https://registry.npmjs.org/lightningcss-android-arm64 27ms (cache miss)
+212 silly packumentCache full:https://registry.npmjs.org/lightningcss-android-arm64 set size:undefined disposed:false
+213 http fetch GET 200 https://registry.npmjs.org/lightningcss-freebsd-x64 54ms (cache miss)
+214 silly packumentCache full:https://registry.npmjs.org/lightningcss-freebsd-x64 set size:undefined disposed:false
+215 silly placeDep ROOT @jridgewell/gen-mapping@0.3.13 OK for: @jridgewell/remapping@2.3.5 want: ^0.3.5
+216 silly placeDep ROOT @jridgewell/trace-mapping@0.3.31 OK for: @jridgewell/remapping@2.3.5 want: ^0.3.24
+217 silly fetch manifest @jridgewell/resolve-uri@^3.1.0
+218 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fresolve-uri cache-miss
+219 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fresolve-uri 39ms (cache miss)
+220 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fresolve-uri set size:undefined disposed:false
+221 silly placeDep ROOT @jridgewell/resolve-uri@3.1.2 OK for: @jridgewell/trace-mapping@0.3.31 want: ^3.1.0
+222 silly placeDep ROOT @tailwindcss/oxide-android-arm64@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+223 silly placeDep ROOT @tailwindcss/oxide-darwin-arm64@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+224 silly placeDep ROOT @tailwindcss/oxide-darwin-x64@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+225 silly placeDep ROOT @tailwindcss/oxide-freebsd-x64@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+226 silly placeDep ROOT @tailwindcss/oxide-linux-arm-gnueabihf@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+227 silly placeDep ROOT @tailwindcss/oxide-linux-arm64-gnu@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+228 silly placeDep ROOT @tailwindcss/oxide-linux-arm64-musl@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+229 silly placeDep ROOT @tailwindcss/oxide-linux-x64-gnu@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+230 silly placeDep ROOT @tailwindcss/oxide-linux-x64-musl@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+231 silly placeDep ROOT @tailwindcss/oxide-wasm32-wasi@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+232 silly placeDep ROOT @tailwindcss/oxide-win32-arm64-msvc@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+233 silly placeDep ROOT @tailwindcss/oxide-win32-x64-msvc@4.2.0 OK for: @tailwindcss/oxide@4.2.0 want: 4.2.0
+234 silly placeDep ROOT graceful-fs@4.2.11 OK for: enhanced-resolve@5.19.0 want: ^4.2.4
+235 silly placeDep ROOT tapable@2.3.0 OK for: enhanced-resolve@5.19.0 want: ^2.3.0
+236 silly placeDep ROOT lightningcss-android-arm64@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+237 silly placeDep ROOT lightningcss-darwin-arm64@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+238 silly placeDep ROOT lightningcss-darwin-x64@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+239 silly placeDep ROOT lightningcss-freebsd-x64@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+240 silly placeDep ROOT lightningcss-linux-arm-gnueabihf@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+241 silly placeDep ROOT lightningcss-linux-arm64-gnu@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+242 silly placeDep ROOT lightningcss-linux-arm64-musl@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+243 silly placeDep ROOT lightningcss-linux-x64-gnu@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+244 silly placeDep ROOT lightningcss-linux-x64-musl@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+245 silly placeDep ROOT lightningcss-win32-arm64-msvc@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+246 silly placeDep ROOT lightningcss-win32-x64-msvc@1.31.1 OK for: lightningcss@1.31.1 want: 1.31.1
+247 silly reify moves {}
+248 silly audit bulk request {
+248 silly audit   '@astrojs/compiler': [ '2.13.1' ],
+248 silly audit   '@astrojs/internal-helpers': [ '0.7.5' ],
+248 silly audit   '@astrojs/markdown-remark': [ '6.3.10' ],
+248 silly audit   '@astrojs/prism': [ '3.3.0' ],
+248 silly audit   '@astrojs/telemetry': [ '3.3.0' ],
+248 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+248 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+248 silly audit   '@babel/parser': [ '7.29.0' ],
+248 silly audit   '@babel/types': [ '7.29.0' ],
+248 silly audit   '@capsizecss/unpack': [ '4.0.0' ],
+248 silly audit   '@emnapi/runtime': [ '1.8.1' ],
+248 silly audit   '@esbuild/aix-ppc64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/android-arm': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/android-arm64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/android-x64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/darwin-arm64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/darwin-x64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/freebsd-arm64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/freebsd-x64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-arm': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-arm64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-ia32': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-loong64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-mips64el': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-ppc64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-riscv64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-s390x': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/linux-x64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/netbsd-arm64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/netbsd-x64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/openbsd-arm64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/openbsd-x64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/openharmony-arm64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/sunos-x64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/win32-arm64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/win32-ia32': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@esbuild/win32-x64': [ '0.27.3', '0.25.12' ],
+248 silly audit   '@img/colour': [ '1.0.0' ],
+248 silly audit   '@img/sharp-darwin-arm64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-darwin-x64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.4' ],
+248 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.4' ],
+248 silly audit   '@img/sharp-linux-arm': [ '0.34.5' ],
+248 silly audit   '@img/sharp-linux-arm64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-linux-ppc64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-linux-riscv64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-linux-s390x': [ '0.34.5' ],
+248 silly audit   '@img/sharp-linux-x64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-wasm32': [ '0.34.5' ],
+248 silly audit   '@img/sharp-win32-arm64': [ '0.34.5' ],
+248 silly audit   '@img/sharp-win32-ia32': [ '0.34.5' ],
+248 silly audit   '@img/sharp-win32-x64': [ '0.34.5' ],
+248 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+248 silly audit   '@oslojs/encoding': [ '1.1.0' ],
+248 silly audit   '@rollup/pluginutils': [ '5.3.0' ],
+248 silly audit   'estree-walker': [ '2.0.2', '3.0.3' ],
+248 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-android-arm64': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-darwin-arm64': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-darwin-x64': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-freebsd-x64': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-loong64-musl': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-ppc64-musl': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-openbsd-x64': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.59.0' ],
+248 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.59.0' ],
+248 silly audit   '@shikijs/core': [ '3.22.0' ],
+248 silly audit   '@shikijs/engine-javascript': [ '3.22.0' ],
+248 silly audit   '@shikijs/engine-oniguruma': [ '3.22.0' ],
+248 silly audit   '@shikijs/langs': [ '3.22.0' ],
+248 silly audit   '@shikijs/themes': [ '3.22.0' ],
+248 silly audit   '@shikijs/types': [ '3.22.0' ],
+248 silly audit   '@shikijs/vscode-textmate': [ '10.0.2' ],
+248 silly audit   '@types/debug': [ '4.1.12' ],
+248 silly audit   '@types/estree': [ '1.0.8' ],
+248 silly audit   '@types/hast': [ '3.0.4' ],
+248 silly audit   '@types/mdast': [ '4.0.4' ],
+248 silly audit   '@types/ms': [ '2.1.0' ],
+248 silly audit   '@types/nlcst': [ '2.0.3' ],
+248 silly audit   '@types/unist': [ '3.0.3' ],
+248 silly audit   '@ungap/structured-clone': [ '1.3.0' ],
+248 silly audit   acorn: [ '8.16.0' ],
+248 silly audit   'ansi-align': [ '3.0.1' ],
+248 silly audit   'ansi-regex': [ '5.0.1', '6.2.2' ],
+248 silly audit   'emoji-regex': [ '8.0.0', '10.6.0' ],
+248 silly audit   'string-width': [ '4.2.3', '7.2.0' ],
+248 silly audit   'strip-ansi': [ '6.0.1', '7.1.2' ],
+248 silly audit   'ansi-styles': [ '6.2.3' ],
+248 silly audit   anymatch: [ '3.1.3' ],
+248 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+248 silly audit   argparse: [ '2.0.1' ],
+248 silly audit   'aria-query': [ '5.3.2' ],
+248 silly audit   'array-iterate': [ '2.0.1' ],
+248 silly audit   astro: [ '5.17.3' ],
+248 silly audit   'axobject-query': [ '4.1.0' ],
+248 silly audit   bail: [ '2.0.2' ],
+248 silly audit   'base-64': [ '1.0.0' ],
+248 silly audit   boolbase: [ '1.0.0' ],
+248 silly audit   boxen: [ '8.0.1' ],
+248 silly audit   camelcase: [ '8.0.0' ],
+248 silly audit   ccount: [ '2.0.1' ],
+248 silly audit   chalk: [ '5.6.2' ],
+248 silly audit   'character-entities': [ '2.0.2' ],
+248 silly audit   'character-entities-html4': [ '2.1.0' ],
+248 silly audit   'character-entities-legacy': [ '3.0.0' ],
+248 silly audit   chokidar: [ '5.0.0' ],
+248 silly audit   'ci-info': [ '4.4.0' ],
+248 silly audit   'cli-boxes': [ '3.0.0' ],
+248 silly audit   clsx: [ '2.1.1' ],
+248 silly audit   'comma-separated-tokens': [ '2.0.3' ],
+248 silly audit   commander: [ '11.1.0' ],
+248 silly audit   'common-ancestor-path': [ '1.0.1' ],
+248 silly audit   cookie: [ '1.1.1' ],
+248 silly audit   'cookie-es': [ '1.2.2' ],
+248 silly audit   crossws: [ '0.3.5' ],
+248 silly audit   'css-select': [ '5.2.2' ],
+248 silly audit   'css-tree': [ '3.1.0', '2.2.1' ],
+248 silly audit   'css-what': [ '6.2.2' ],
+248 silly audit   cssesc: [ '3.0.0' ],
+248 silly audit   csso: [ '5.0.5' ],
+248 silly audit   'mdn-data': [ '2.0.28', '2.12.2' ],
+248 silly audit   debug: [ '4.4.3' ],
+248 silly audit   'decode-named-character-reference': [ '1.3.0' ],
+248 silly audit   defu: [ '6.1.4' ],
+248 silly audit   dequal: [ '2.0.3' ],
+248 silly audit   destr: [ '2.0.5' ],
+248 silly audit   'detect-libc': [ '2.1.2' ],
+248 silly audit   'deterministic-object-hash': [ '2.0.2' ],
+248 silly audit   devalue: [ '5.6.3' ],
+248 silly audit   devlop: [ '1.1.0' ],
+248 silly audit   diff: [ '8.0.3' ],
+248 silly audit   dlv: [ '1.1.3' ],
+248 silly audit   'dom-serializer': [ '2.0.0' ],
+248 silly audit   entities: [ '4.5.0', '6.0.1' ],
+248 silly audit   domelementtype: [ '2.3.0' ],
+248 silly audit   domhandler: [ '5.0.3' ],
+248 silly audit   domutils: [ '3.2.2' ],
+248 silly audit   dset: [ '3.1.4' ],
+248 silly audit   'es-module-lexer': [ '1.7.0' ],
+248 silly audit   esbuild: [ '0.27.3', '0.25.12' ],
+248 silly audit   'escape-string-regexp': [ '5.0.0' ],
+248 silly audit   eventemitter3: [ '5.0.4' ],
+248 silly audit   extend: [ '3.0.2' ],
+248 silly audit   fdir: [ '6.5.0' ],
+248 silly audit   flattie: [ '1.1.1' ],
+248 silly audit   fontace: [ '0.4.1' ],
+248 silly audit   fontkitten: [ '1.0.2' ],
+248 silly audit   fsevents: [ '2.3.3' ],
+248 silly audit   'get-east-asian-width': [ '1.5.0' ],
+248 silly audit   'github-slugger': [ '2.0.0' ],
+248 silly audit   h3: [ '1.15.5' ],
+248 silly audit   'hast-util-from-html': [ '2.0.3' ],
+248 silly audit   'hast-util-from-parse5': [ '8.0.3' ],
+248 silly audit   'hast-util-is-element': [ '3.0.0' ],
+248 silly audit   'hast-util-parse-selector': [ '4.0.0' ],
+248 silly audit   'hast-util-raw': [ '9.1.0' ],
+248 silly audit   'hast-util-to-html': [ '9.0.5' ],
+248 silly audit   'hast-util-to-parse5': [ '8.0.1' ],
+248 silly audit   'hast-util-to-text': [ '4.0.2' ],
+248 silly audit   'hast-util-whitespace': [ '3.0.0' ],
+248 silly audit   hastscript: [ '9.0.1' ],
+248 silly audit   'html-escaper': [ '3.0.3' ],
+248 silly audit   'html-void-elements': [ '3.0.0' ],
+248 silly audit   'http-cache-semantics': [ '4.2.0' ],
+248 silly audit   'import-meta-resolve': [ '4.2.0' ],
+248 silly audit   'iron-webcrypto': [ '1.2.1' ],
+248 silly audit   'is-docker': [ '3.0.0' ],
+248 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+248 silly audit   'is-inside-container': [ '1.0.0' ],
+248 silly audit   'is-plain-obj': [ '4.1.0' ],
+248 silly audit   'is-wsl': [ '3.1.1' ],
+248 silly audit   'js-yaml': [ '4.1.1' ],
+248 silly audit   kleur: [ '3.0.3' ],
+248 silly audit   'longest-streak': [ '3.1.0' ],
+248 silly audit   'lru-cache': [ '11.2.6' ],
+248 silly audit   'magic-string': [ '0.30.21' ],
+248 silly audit   magicast: [ '0.5.2' ],
+248 silly audit   'markdown-table': [ '3.0.4' ],
+248 silly audit   'mdast-util-definitions': [ '6.0.0' ],
+248 silly audit   'mdast-util-find-and-replace': [ '3.0.2' ],
+248 silly audit   'mdast-util-from-markdown': [ '2.0.3' ],
+248 silly audit   'mdast-util-gfm': [ '3.1.0' ],
+248 silly audit   'mdast-util-gfm-autolink-literal': [ '2.0.1' ],
+248 silly audit   'mdast-util-gfm-footnote': [ '2.1.0' ],
+248 silly audit   'mdast-util-gfm-strikethrough': [ '2.0.0' ],
+248 silly audit   'mdast-util-gfm-table': [ '2.0.0' ],
+248 silly audit   'mdast-util-gfm-task-list-item': [ '2.0.0' ],
+248 silly audit   'mdast-util-phrasing': [ '4.1.0' ],
+248 silly audit   'mdast-util-to-hast': [ '13.2.1' ],
+248 silly audit   'mdast-util-to-markdown': [ '2.1.2' ],
+248 silly audit   'mdast-util-to-string': [ '4.0.0' ],
+248 silly audit   micromark: [ '4.0.2' ],
+248 silly audit   'micromark-core-commonmark': [ '2.0.3' ],
+248 silly audit   'micromark-extension-gfm': [ '3.0.0' ],
+248 silly audit   'micromark-extension-gfm-autolink-literal': [ '2.1.0' ],
+248 silly audit   'micromark-extension-gfm-footnote': [ '2.1.0' ],
+248 silly audit   'micromark-extension-gfm-strikethrough': [ '2.1.0' ],
+248 silly audit   'micromark-extension-gfm-table': [ '2.1.1' ],
+248 silly audit   'micromark-extension-gfm-tagfilter': [ '2.0.0' ],
+248 silly audit   'micromark-extension-gfm-task-list-item': [ '2.1.0' ],
+248 silly audit   'micromark-factory-destination': [ '2.0.1' ],
+248 silly audit   'micromark-factory-label': [ '2.0.1' ],
+248 silly audit   'micromark-factory-space': [ '2.0.1' ],
+248 silly audit   'micromark-factory-title': [ '2.0.1' ],
+248 silly audit   'micromark-factory-whitespace': [ '2.0.1' ],
+248 silly audit   'micromark-util-character': [ '2.1.1' ],
+248 silly audit   'micromark-util-chunked': [ '2.0.1' ],
+248 silly audit   'micromark-util-classify-character': [ '2.0.1' ],
+248 silly audit   'micromark-util-combine-extensions': [ '2.0.1' ],
+248 silly audit   'micromark-util-decode-numeric-character-reference': [ '2.0.2' ],
+248 silly audit   'micromark-util-decode-string': [ '2.0.1' ],
+248 silly audit   'micromark-util-encode': [ '2.0.1' ],
+248 silly audit   'micromark-util-html-tag-name': [ '2.0.1' ],
+248 silly audit   'micromark-util-normalize-identifier': [ '2.0.1' ],
+248 silly audit   'micromark-util-resolve-all': [ '2.0.1' ],
+248 silly audit   'micromark-util-sanitize-uri': [ '2.0.1' ],
+248 silly audit   'micromark-util-subtokenize': [ '2.1.0' ],
+248 silly audit   'micromark-util-symbol': [ '2.0.1' ],
+248 silly audit   'micromark-util-types': [ '2.0.2' ],
+248 silly audit   mrmime: [ '2.0.1' ],
+248 silly audit   ms: [ '2.1.3' ],
+248 silly audit   nanoid: [ '3.3.11' ],
+248 silly audit   neotraverse: [ '0.6.18' ],
+248 silly audit   'nlcst-to-string': [ '4.0.0' ],
+248 silly audit   'node-fetch-native': [ '1.6.7' ],
+248 silly audit   'node-mock-http': [ '1.0.4' ],
+248 silly audit   'normalize-path': [ '3.0.0' ],
+248 silly audit   'nth-check': [ '2.1.1' ],
+248 silly audit   ofetch: [ '1.5.1' ],
+248 silly audit   ohash: [ '2.0.11' ],
+248 silly audit   'oniguruma-parser': [ '0.12.1' ],
+248 silly audit   'oniguruma-to-es': [ '4.3.4' ],
+248 silly audit   'p-limit': [ '6.2.0' ],
+248 silly audit   'p-queue': [ '8.1.1' ],
+248 silly audit   'p-timeout': [ '6.1.4' ],
+248 silly audit   'package-manager-detector': [ '1.6.0' ],
+248 silly audit   'parse-latin': [ '7.0.0' ],
+248 silly audit   parse5: [ '7.3.0' ],
+248 silly audit   piccolore: [ '0.1.3' ],
+248 silly audit   picocolors: [ '1.1.1' ],
+248 silly audit   postcss: [ '8.5.6' ],
+248 silly audit   prismjs: [ '1.30.0' ],
+248 silly audit   prompts: [ '2.4.2' ],
+248 silly audit   'property-information': [ '7.1.0' ],
+248 silly audit   radix3: [ '1.1.2' ],
+248 silly audit   readdirp: [ '5.0.0' ],
+248 silly audit   regex: [ '6.1.0' ],
+248 silly audit   'regex-recursion': [ '6.0.2' ],
+248 silly audit   'regex-utilities': [ '2.3.0' ],
+248 silly audit   rehype: [ '13.0.2' ],
+248 silly audit   'rehype-parse': [ '9.0.1' ],
+248 silly audit   'rehype-raw': [ '7.0.0' ],
+248 silly audit   'rehype-stringify': [ '10.0.1' ],
+248 silly audit   'remark-gfm': [ '4.0.1' ],
+248 silly audit   'remark-parse': [ '11.0.0' ],
+248 silly audit   'remark-rehype': [ '11.1.2' ],
+248 silly audit   'remark-smartypants': [ '3.0.2' ],
+248 silly audit   'remark-stringify': [ '11.0.0' ],
+248 silly audit   retext: [ '9.0.0' ],
+248 silly audit   'retext-latin': [ '4.0.0' ],
+248 silly audit   'retext-smartypants': [ '6.2.0' ],
+248 silly audit   'retext-stringify': [ '4.0.0' ],
+248 silly audit   rollup: [ '4.59.0' ],
+248 silly audit   sax: [ '1.4.4' ],
+248 silly audit   semver: [ '7.7.4' ],
+248 silly audit   sharp: [ '0.34.5' ],
+248 silly audit   shiki: [ '3.22.0' ],
+248 silly audit   sisteransi: [ '1.0.5' ],
+248 silly audit   'smol-toml': [ '1.6.0' ],
+248 silly audit   'source-map-js': [ '1.2.1' ],
+248 silly audit   'space-separated-tokens': [ '2.0.2' ],
+248 silly audit   'stringify-entities': [ '4.0.4' ],
+248 silly audit   svgo: [ '4.0.0' ],
+248 silly audit   'tiny-inflate': [ '1.0.3' ],
+248 silly audit   tinyexec: [ '1.0.2' ],
+248 silly audit   tinyglobby: [ '0.2.15' ],
+248 silly audit   'trim-lines': [ '3.0.1' ],
+248 silly audit   trough: [ '2.2.0' ],
+248 silly audit   tsconfck: [ '3.1.6' ],
+248 silly audit   tslib: [ '2.8.1' ],
+248 silly audit   'type-fest': [ '4.41.0' ],
+248 silly audit   typescript: [ '5.9.3' ],
+248 silly audit   ufo: [ '1.6.3' ],
+248 silly audit   ultrahtml: [ '1.6.0' ],
+248 silly audit   uncrypto: [ '0.1.3' ],
+248 silly audit   unified: [ '11.0.5' ],
+248 silly audit   unifont: [ '0.7.4' ],
+248 silly audit   'unist-util-find-after': [ '5.0.0' ],
+248 silly audit   'unist-util-is': [ '6.0.1' ],
+248 silly audit   'unist-util-modify-children': [ '4.0.0' ],
+248 silly audit   'unist-util-position': [ '5.0.0' ],
+248 silly audit   'unist-util-remove-position': [ '5.0.0' ],
+248 silly audit   'unist-util-stringify-position': [ '4.0.0' ],
+248 silly audit   'unist-util-visit': [ '5.1.0' ],
+248 silly audit   'unist-util-visit-children': [ '3.0.0' ],
+248 silly audit   'unist-util-visit-parents': [ '6.0.2' ],
+248 silly audit   unstorage: [ '1.17.4' ],
+248 silly audit   vfile: [ '6.0.3' ],
+248 silly audit   'vfile-location': [ '5.0.3' ],
+248 silly audit   'vfile-message': [ '4.0.3' ],
+248 silly audit   vite: [ '6.4.1' ],
+248 silly audit   vitefu: [ '1.1.1' ],
+248 silly audit   'web-namespaces': [ '2.0.1' ],
+248 silly audit   'which-pm-runs': [ '1.1.0' ],
+248 silly audit   'widest-line': [ '5.0.0' ],
+248 silly audit   'wrap-ansi': [ '9.0.2' ],
+248 silly audit   'xxhash-wasm': [ '1.1.0' ],
+248 silly audit   'yargs-parser': [ '21.1.1' ],
+248 silly audit   'yocto-queue': [ '1.2.2' ],
+248 silly audit   'yocto-spinner': [ '0.2.3' ],
+248 silly audit   yoctocolors: [ '2.1.2' ],
+248 silly audit   zod: [ '3.25.76' ],
+248 silly audit   'zod-to-json-schema': [ '3.25.1' ],
+248 silly audit   'zod-to-ts': [ '1.2.0' ],
+248 silly audit   zwitch: [ '2.0.4' ],
+248 silly audit   '@tailwindcss/vite': [ '4.2.0' ],
+248 silly audit   tailwindcss: [ '4.2.0' ],
+248 silly audit   '@tailwindcss/node': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide': [ '4.2.0' ],
+248 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+248 silly audit   'enhanced-resolve': [ '5.19.0' ],
+248 silly audit   jiti: [ '2.6.1' ],
+248 silly audit   lightningcss: [ '1.31.1' ],
+248 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+248 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+248 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+248 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.2.0' ],
+248 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.2.0' ],
+248 silly audit   'graceful-fs': [ '4.2.11' ],
+248 silly audit   tapable: [ '2.3.0' ],
+248 silly audit   'lightningcss-android-arm64': [ '1.31.1' ],
+248 silly audit   'lightningcss-darwin-arm64': [ '1.31.1' ],
+248 silly audit   'lightningcss-darwin-x64': [ '1.31.1' ],
+248 silly audit   'lightningcss-freebsd-x64': [ '1.31.1' ],
+248 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.31.1' ],
+248 silly audit   'lightningcss-linux-arm64-gnu': [ '1.31.1' ],
+248 silly audit   'lightningcss-linux-arm64-musl': [ '1.31.1' ],
+248 silly audit   'lightningcss-linux-x64-gnu': [ '1.31.1' ],
+248 silly audit   'lightningcss-linux-x64-musl': [ '1.31.1' ],
+248 silly audit   'lightningcss-win32-arm64-msvc': [ '1.31.1' ],
+248 silly audit   'lightningcss-win32-x64-msvc': [ '1.31.1' ]
+248 silly audit }
+249 http cache tapable@https://registry.npmjs.org/tapable/-/tapable-2.3.0.tgz 0ms (cache hit)
+250 http cache lightningcss-darwin-x64@https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.31.1.tgz 0ms (cache hit)
+251 http cache graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 0ms (cache hit)
+252 http cache @jridgewell/resolve-uri@https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 0ms (cache hit)
+253 http cache @tailwindcss/oxide-darwin-x64@https://registry.npmjs.org/@tailwindcss/oxide-darwin-x64/-/oxide-darwin-x64-4.2.0.tgz 0ms (cache hit)
+254 http cache lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.31.1.tgz 0ms (cache hit)
+255 http cache @jridgewell/gen-mapping@https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz 0ms (cache hit)
+256 http cache @jridgewell/trace-mapping@https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz 0ms (cache hit)
+257 http cache jiti@https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz 0ms (cache hit)
+258 http cache enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.19.0.tgz 0ms (cache hit)
+259 http cache @jridgewell/remapping@https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz 0ms (cache hit)
+260 http cache tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.2.0.tgz 0ms (cache hit)
+261 http cache @tailwindcss/vite@https://registry.npmjs.org/@tailwindcss/vite/-/vite-4.2.0.tgz 0ms (cache hit)
+262 http cache tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 0ms (cache hit)
+263 http cache @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.2.0.tgz 0ms (cache hit)
+264 http cache @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.8.1.tgz 0ms (cache hit)
+265 http cache @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.2.0.tgz 0ms (cache hit)
+266 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+267 silly tarball no local data for tapable@https://registry.npmjs.org/tapable/-/tapable-2.3.0.tgz. Extracting by manifest.
+268 silly tarball no local data for lightningcss-darwin-x64@https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.31.1.tgz. Extracting by manifest.
+269 silly tarball no local data for graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz. Extracting by manifest.
+270 silly tarball no local data for @jridgewell/resolve-uri@https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz. Extracting by manifest.
+271 silly tarball no local data for @tailwindcss/oxide-darwin-x64@https://registry.npmjs.org/@tailwindcss/oxide-darwin-x64/-/oxide-darwin-x64-4.2.0.tgz. Extracting by manifest.
+272 silly tarball no local data for lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.31.1.tgz. Extracting by manifest.
+273 silly tarball no local data for @jridgewell/gen-mapping@https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz. Extracting by manifest.
+274 silly tarball no local data for @jridgewell/trace-mapping@https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz. Extracting by manifest.
+275 silly tarball no local data for jiti@https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz. Extracting by manifest.
+276 silly tarball no local data for enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.19.0.tgz. Extracting by manifest.
+277 silly tarball no local data for @jridgewell/remapping@https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz. Extracting by manifest.
+278 silly tarball no local data for tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.2.0.tgz. Extracting by manifest.
+279 silly tarball no local data for @tailwindcss/vite@https://registry.npmjs.org/@tailwindcss/vite/-/vite-4.2.0.tgz. Extracting by manifest.
+280 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz. Extracting by manifest.
+281 silly tarball no local data for @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.2.0.tgz. Extracting by manifest.
+282 silly tarball no local data for @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.8.1.tgz. Extracting by manifest.
+283 silly tarball no local data for @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.2.0.tgz. Extracting by manifest.
+284 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 232ms
+285 silly audit report {}
+286 http fetch GET 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 241ms (cache miss)
+287 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.2.0.tgz 239ms (cache miss)
+288 http fetch GET 200 https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 271ms (cache miss)
+289 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/vite/-/vite-4.2.0.tgz 325ms (cache miss)
+290 http fetch GET 200 https://registry.npmjs.org/tapable/-/tapable-2.3.0.tgz 345ms (cache miss)
+291 http fetch GET 200 https://registry.npmjs.org/lightningcss/-/lightningcss-1.31.1.tgz 361ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 358ms (cache miss)
+293 http fetch GET 200 https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz 385ms (cache miss)
+294 http fetch GET 200 https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.8.1.tgz 386ms (cache miss)
+295 http fetch GET 200 https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz 402ms (cache miss)
+296 http fetch GET 200 https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz 436ms (cache miss)
+297 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/node/-/node-4.2.0.tgz 501ms (cache miss)
+298 http fetch GET 200 https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.19.0.tgz 525ms (cache miss)
+299 http fetch GET 200 https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.2.0.tgz 542ms (cache miss)
+300 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/oxide-darwin-x64/-/oxide-darwin-x64-4.2.0.tgz 562ms (cache miss)
+301 http fetch GET 200 https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz 638ms (cache miss)
+302 http fetch GET 200 https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.31.1.tgz 777ms (cache miss)
+303 silly ADD node_modules/lightningcss-darwin-x64
+304 silly ADD node_modules/tapable
+305 silly ADD node_modules/graceful-fs
+306 silly ADD node_modules/@tailwindcss/oxide-darwin-x64
+307 silly ADD node_modules/@jridgewell/resolve-uri
+308 silly ADD node_modules/@jridgewell/trace-mapping
+309 silly ADD node_modules/@jridgewell/gen-mapping
+310 silly ADD node_modules/lightningcss
+311 silly ADD node_modules/jiti
+312 silly ADD node_modules/enhanced-resolve
+313 silly ADD node_modules/@jridgewell/remapping
+314 silly ADD node_modules/@tailwindcss/oxide
+315 silly ADD node_modules/@tailwindcss/node
+316 silly ADD node_modules/tailwindcss
+317 silly ADD node_modules/@tailwindcss/vite
+318 silly ADD node_modules/tslib
+319 silly ADD node_modules/fsevents
+320 silly ADD node_modules/@emnapi/runtime
+321 verbose cwd /Users/jmx/Documents/PROJECTS/Consulta Website upgrade 2
+322 verbose os Darwin 22.6.0
+323 verbose node v24.13.1
+324 verbose npm  v11.8.0
+325 verbose exit 0
+326 info ok

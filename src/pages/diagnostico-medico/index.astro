@@ -1,0 +1,354 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ContactSection from "../../components/ContactSection.astro";
+import MainTreatments from "../../components/MainTreatments.astro";
+import { getLangFromUrl } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="Diagnóstico Médico" lang={lang}>
+  <!-- Hero Section with Background -->
+  <section
+    class="bg-[url('/images/backgrounds/background-1.png')] bg-center bg-cover bg-no-repeat w-full py-[50px] md:py-[100px]"
+  >
+    <div
+      class="max-w-[1200px] mx-auto flex flex-col md:flex-row px-4 text-center md:text-left"
+    >
+      <!-- Text Side -->
+      <div class="w-full md:w-1/2 flex flex-col justify-center mb-10 md:mb-0">
+        <h2
+          class="text-brand-primary font-heading font-bold text-[30px] md:text-[45px] uppercase leading-[1.2] mb-4"
+        >
+          Diagnostico médico completo
+        </h2>
+        <h4
+          class="text-brand-primary font-heading font-medium text-[20px] md:text-[25px]"
+        >
+          Los avances de la medicina electromagnética a su alcance
+        </h4>
+      </div>
+
+      <!-- Animation Side -->
+      <div class="w-full md:w-1/2 flex justify-center items-center">
+        <!-- Interactive Animation from HTML -->
+        <div
+          class="animation-container relative w-full max-w-[500px] mx-auto rounded-[0.75rem] overflow-hidden bg-white shadow-lg"
+        >
+          <img
+            decoding="async"
+            id="torso-image"
+            src="/images/pages/torso.jpg"
+            alt="Dibujo de un torso humano para diagnóstico"
+            class="w-full h-auto block opacity-80"
+          />
+          <div
+            class="scan-line absolute left-0 w-full h-[5px] opacity-0"
+            style="background: linear-gradient(90deg, transparent, rgba(21, 142, 199, 0.8), transparent); box-shadow: 0 0 15px 5px rgba(21, 142, 199, 0.5);"
+          >
+          </div>
+
+          <div
+            id="point1"
+            class="disharmony-point group absolute w-[25px] h-[25px] rounded-full border-2 border-white opacity-0 cursor-pointer"
+            style="background-color: rgba(250, 150, 4, 0.7); box-shadow: 0 0 10px 2px rgba(250, 150, 4, 0.8); transform: translate(-50%, -50%); top: 25%; left: 38%; transition: opacity 0.5s ease-in-out;"
+          >
+            <span
+              class="tooltip invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bottom-[125%] left-1/2 -translate-x-1/2 bg-brand-primary text-white py-1 px-2 rounded text-xs whitespace-nowrap transition-all z-10 font-body"
+              >Bloqueo por cicatriz</span
+            >
+          </div>
+
+          <div
+            id="point2"
+            class="disharmony-point group absolute w-[25px] h-[25px] rounded-full border-2 border-white opacity-0 cursor-pointer"
+            style="background-color: rgba(250, 150, 4, 0.7); box-shadow: 0 0 10px 2px rgba(250, 150, 4, 0.8); transform: translate(-50%, -50%); top: 58%; left: 60%; transition: opacity 0.5s ease-in-out;"
+          >
+            <span
+              class="tooltip invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bottom-[125%] left-1/2 -translate-x-1/2 bg-brand-primary text-white py-1 px-2 rounded text-xs whitespace-nowrap transition-all z-10 font-body"
+              >Sobrecarga tóxica</span
+            >
+          </div>
+
+          <div
+            id="point3"
+            class="disharmony-point group absolute w-[25px] h-[25px] rounded-full border-2 border-white opacity-0 cursor-pointer"
+            style="background-color: rgba(250, 150, 4, 0.7); box-shadow: 0 0 10px 2px rgba(250, 150, 4, 0.8); transform: translate(-50%, -50%); top: 40%; left: 52%; transition: opacity 0.5s ease-in-out;"
+          >
+            <span
+              class="tooltip invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bottom-[125%] left-1/2 -translate-x-1/2 bg-brand-primary text-white py-1 px-2 rounded text-xs whitespace-nowrap transition-all z-10 font-body"
+              >Estrés electromagnético</span
+            >
+          </div>
+
+          <style>
+            .scan-line {
+              animation: scan 4s linear infinite;
+            }
+            .disharmony-point {
+              animation: pulse 2s infinite;
+            }
+            @keyframes scan {
+              0% {
+                top: 0%;
+              }
+              100% {
+                top: 100%;
+              }
+            }
+            @keyframes pulse {
+              0% {
+                transform: translate(-50%, -50%) scale(0.95);
+                box-shadow: 0 0 0 0 rgba(250, 150, 4, 0.7);
+              }
+              70% {
+                transform: translate(-50%, -50%) scale(1.1);
+                box-shadow: 0 0 10px 15px rgba(250, 150, 4, 0);
+              }
+              100% {
+                transform: translate(-50%, -50%) scale(0.95);
+                box-shadow: 0 0 0 0 rgba(250, 150, 4, 0);
+              }
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conocer la causa Section -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4 text-center md:text-left">
+    <h2
+      class="text-brand-primary font-heading font-bold text-[24px] md:text-[30px] uppercase mb-4 tracking-[0.9px] text-center"
+    >
+      Conocer la causa profunda de su enfermedad
+    </h2>
+    <div
+      class="text-brand-text text-[17px] leading-[37px] font-body text-center max-w-[1000px] mx-auto"
+    >
+      <p>
+        En nuestra clínica, cada consulta se fundamenta en un diagnóstico médico
+        completo, ya que es el pilar indispensable para un tratamiento exitoso.
+        Para ello, integramos la avanzada tecnología de Bio-Resonancia MORA, que
+        revela la raíz del desequilibrio, con los métodos de la medicina
+        tradicional para obtener una visión global.
+      </p>
+    </div>
+  </section>
+
+  <!-- Feature 4 columns -->
+  <section
+    class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-6 px-4 py-8"
+  >
+    <div class="w-full md:w-1/4 text-center">
+      <h4 class="font-body text-[20px] font-bold text-brand-text mb-2">
+        Método No Invasivo
+      </h4>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        Identificamos el origen de tus síntomas sin agujas ni procedimientos
+        molestos.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h4 class="font-body text-[20px] font-bold text-brand-text mb-2">
+        Identificación Precisa
+      </h4>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        Descubrimos qué toxícos, toxinas, alérgenos o patógenos específicos
+        afectan a tu bienestar y su eliminación posterior.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h4 class="font-body text-[20px] font-bold text-brand-text mb-2">
+        Visión Integral
+      </h4>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        Analizamos tu cuerpo como un todo interconectado, no como partes
+        aisladas.
+      </p>
+    </div>
+    <div class="w-full md:w-1/4 text-center">
+      <h4 class="font-body text-[20px] font-bold text-brand-text mb-2">
+        Respuestas
+      </h4>
+      <p class="font-body text-[16px] text-brand-text leading-[28px]">
+        Detectamos desequilibrios incluso cuando los análisis convencionales no
+        muestran nada.
+      </p>
+    </div>
+  </section>
+
+  <!-- Como se usa Bio-resonancia -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4 mt-8">
+    <div
+      class="text-[17px] leading-[37px] font-body text-brand-text text-center md:text-left"
+    >
+      <h3 class="text-brand-secondary font-heading font-bold text-[25px] mb-6">
+        ¿Como se usa la Bio-resonancia MORA para el Diagnóstico?
+      </h3>
+      <p class="mb-6">
+        La Bio-resonancia MORA es un <strong
+          >método de diagnóstico médico avanzado</strong
+        > que nos permite ir más allá de los síntomas para identificar la causa original
+        del desequilibrio en el organismo. Se fundamenta en un principio clave de
+        la biofísica: cada célula, tejido y órgano de tu cuerpo emite una frecuencia
+        electromagnética específica y medible que refleja su estado funcional.
+      </p>
+
+      <h4 class="font-body text-[20px] font-bold mb-4">
+        El Diagnóstico a través de las frecuencias
+      </h4>
+      <p class="mb-4">
+        Podemos entender este sistema como un «traductor» del lenguaje de tus
+        células:
+      </p>
+      <ul
+        class="list-disc ml-6 space-y-2 text-left w-full max-w-[800px] mx-auto md:mx-0"
+      >
+        <li>
+          <strong>Cuando estás sano,</strong> las frecuencias que emites son ordenadas
+          y coherentes, formando un patrón de <strong
+            >vibraciones armónicas</strong
+          >.
+        </li>
+        <li>
+          <strong>Cuando existe una enfermedad,</strong> incluso antes de que se manifieste
+          en análisis convencionales, estas vibraciones se distorsionan. Factores
+          como toxinas, alérgenos, patógenos o estrés crean interferencias, generando
+          <strong>vibraciones inarmónicas o patológicas</strong>.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Image and List Block -->
+  <section
+    class="max-w-[1200px] mx-auto py-10 px-4 flex flex-col md:flex-row gap-8 items-center"
+  >
+    <div class="w-full md:w-1/3 flex justify-center">
+      <img
+        src="/images/pages/medical-illustration.jpg"
+        class="max-w-[500px] w-full h-auto rounded shadow-sm"
+        alt="Bio-resonancia MORA"
+      />
+    </div>
+    <div
+      class="w-full md:w-2/3 text-[17px] leading-[37px] font-body text-brand-text"
+    >
+      <p class="mb-4">
+        El equipo de Bio-resonancia MORA es capaz de leer este espectro completo
+        de vibraciones. Su extraordinaria precisión le permite diferenciar las
+        señales saludables de las patológicas, actuando como un escáner
+        bioenergético que nos revela:
+      </p>
+      <ul class="list-disc ml-6 space-y-2 mb-6">
+        <li>
+          <strong>La Causa Raíz:</strong> Identifica qué toxinas, alérgenos, metales
+          pesados o microorganismos específicos están alterando tu salud.
+        </li>
+        <li>
+          <strong>El Estado de los Órganos:</strong> Evalúa la funcionalidad de órganos
+          y sistemas, detectando bloqueos energéticos o debilidades.
+        </li>
+        <li>
+          <strong>Desequilibrios Ocultos:</strong> Descubre carencias de nutrientes,
+          intolerancias alimentarias o focos interferentes (como cicatrices o problemas
+          dentales) que a menudo pasan desapercibidos.
+        </li>
+      </ul>
+      <p>
+        En resumen, la Bio-resonancia MORA nos proporciona un <strong
+          >mapa funcional increíblemente detallado de tu estado de salud actual</strong
+        >. Gracias a esta información, podemos realizar un diagnóstico holístico
+        y certero que va directamente al origen del problema, permitiéndonos
+        diseñar un tratamiento verdaderamente efectivo y personalizado.
+      </p>
+    </div>
+  </section>
+
+  <!-- Medicina de verdad -->
+  <section class="max-w-[1200px] mx-auto py-12 px-4 mb-8">
+    <div class="text-[17px] leading-[37px] font-body text-brand-text">
+      <h3 class="text-brand-secondary font-heading font-bold text-[25px] mb-6">
+        Medicina de verdad y sin tiempos
+      </h3>
+      <p class="mb-4">
+        Una atención médica de calidad no se mide en minutos, sino en
+        resultados. Como consulta privada, tenemos la libertad de dedicar a cada
+        paciente el tiempo que sea necesario, garantizando un diagnóstico
+        riguroso y un trato humano que marcan la diferencia. Esta filosofía,
+        construida sobre más de 40 años de experiencia, te asegura que serás
+        escuchado/a y que tu caso será analizado con la profundidad que mereces
+        donde se involucra:
+      </p>
+      <ul class="list-disc ml-6 space-y-2">
+        <li>
+          <strong>Tu historia médica:</strong> Enfermedades pasadas, cirugías, tratamientos
+          recibidos.
+        </li>
+        <li>
+          <strong>Tu historia familiar:</strong> Las predisposiciones genéticas que
+          podrían influir en tu salud actual.
+        </li>
+        <li>
+          <strong>Tu historia personal:</strong> Tu estilo de vida, tu entorno, tu
+          alimentación, tu nivel de estrés y tu estado emocional.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Principales Tratamientos Menu Block -->
+  <MainTreatments />
+
+  <ContactSection />
+</Layout>
+
+<script>
+  // Medical Diagnosis Torso Animation Script Translation handling & initiation
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(
+      ".animation-container",
+    ) as HTMLElement;
+    const scanLine = document.querySelector(".scan-line") as HTMLElement;
+    const points = document.querySelectorAll(".disharmony-point");
+    const image = document.getElementById("torso-image") as HTMLImageElement;
+
+    if (!container || !scanLine || !image || points.length === 0) return;
+
+    function startAnimation() {
+      scanLine.style.opacity = "1";
+
+      function checkScanPosition() {
+        const scanLineRect = scanLine.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        const scanLineTop = scanLineRect.top - containerRect.top;
+
+        points.forEach((rawPoint) => {
+          const point = rawPoint as HTMLElement;
+          const pointTop = point.offsetTop;
+
+          if (scanLineTop > pointTop && point.style.opacity !== "1") {
+            point.style.opacity = "1";
+          }
+        });
+
+        requestAnimationFrame(checkScanPosition);
+      }
+
+      requestAnimationFrame(checkScanPosition);
+
+      scanLine.addEventListener("animationiteration", () => {
+        points.forEach((rawPoint) => {
+          (rawPoint as HTMLElement).style.opacity = "0";
+        });
+      });
+    }
+
+    if (image.complete) {
+      startAnimation();
+    } else {
+      image.onload = startAnimation;
+    }
+  });
+</script>

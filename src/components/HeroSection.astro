@@ -1,0 +1,221 @@
+---
+interface Props {
+  lang?: string;
+}
+
+const { lang = "es" } = Astro.props;
+---
+
+<section
+  class="relative min-h-[80vh] flex items-center bg-slate-50 overflow-hidden pt-20 pb-16 md:pt-32 lg:pt-0 lg:pb-0"
+>
+  <!-- Dynamic Background Patterns -->
+  <div class="absolute inset-0 z-0">
+    <!-- Medical Cross subtle pattern -->
+    <div
+      class="absolute top-10 right-10 w-64 h-64 text-brand-secondary opacity-[0.03] transform rotate-12"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        ><path d="M19 10h-5V5h-4v5H5v4h5v5h4v-5h5z"></path></svg
+      >
+    </div>
+    <!-- Clean gradient blob -->
+    <div
+      class="absolute -bottom-32 -left-32 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-brand-secondary/5 rounded-full blur-3xl translate-y-[-50%]"
+    >
+    </div>
+  </div>
+
+  <div
+    class="max-w-[1200px] mx-auto w-full px-4 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+  >
+    <!-- Text Content -->
+    <div
+      class="order-2 lg:order-1 text-center lg:text-left space-y-8 max-w-2xl mx-auto lg:mx-0"
+    >
+      <div class="space-y-4 animate-fade-in-up">
+        <span
+          class="inline-block py-1.5 px-4 rounded-full bg-brand-primary/10 text-brand-primary font-bold text-sm tracking-widest uppercase"
+        >
+          {lang === "es" ? "Atención Integral" : "Comprehensive Care"}
+        </span>
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-brand-primary leading-[1.15]"
+        >
+          {
+            lang === "es"
+              ? "Consulta Médica de Precisión"
+              : "Precision Medical Consultation"
+          }
+        </h1>
+        <p
+          class="text-lg md:text-xl text-brand-text/80 font-body leading-relaxed max-w-xl mx-auto lg:mx-0"
+        >
+          {
+            lang === "es"
+              ? "Un enfoque médico centrado en la persona. Integramos diagnóstico exhaustivo, homeopatía y medicina biológica para abordar la raíz de tus problemas de salud."
+              : "A person-centered medical approach. We integrate comprehensive diagnosis, homeopathy, and biological medicine to address the root of your health problems."
+          }
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 animate-fade-in-up"
+        style="animation-delay: 200ms;"
+      >
+        <a
+          href={lang === "es"
+            ? "/diagnostico-medico/"
+            : "/en/medical-diagnosis/"}
+          class="px-8 py-4 bg-brand-primary text-white font-bold rounded-xl shadow-lg shadow-brand-primary/30 hover:bg-brand-secondary transition-all duration-300 hover:-translate-y-1 text-center"
+        >
+          {lang === "es" ? "Nuestro Enfoque" : "Our Approach"}
+        </a>
+        <a
+          href={lang === "es" ? "/tratamientos/" : "/en/treatments/"}
+          class="px-8 py-4 bg-white text-brand-primary border-2 border-brand-primary/10 font-bold rounded-xl shadow-sm hover:border-brand-primary hover:bg-slate-50 transition-all duration-300 hover:-translate-y-1 text-center"
+        >
+          {lang === "es" ? "Ver Tratamientos" : "View Treatments"}
+        </a>
+      </div>
+
+      <!-- Quick Stats / Trust Indicators -->
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-10 border-t border-gray-200 mt-10 animate-fade-in-up"
+        style="animation-delay: 400ms;"
+      >
+        <div>
+          <p class="text-3xl font-heading font-bold text-brand-secondary">
+            +30
+          </p>
+          <p
+            class="text-sm text-brand-text/70 font-medium mt-1 uppercase tracking-wider"
+          >
+            {lang === "es" ? "Años Expr." : "Years Exp."}
+          </p>
+        </div>
+        <div>
+          <p class="text-3xl font-heading font-bold text-brand-secondary">
+            Integral
+          </p>
+          <p
+            class="text-sm text-brand-text/70 font-medium mt-1 uppercase tracking-wider"
+          >
+            {lang === "es" ? "Visión Médica" : "Medical Vision"}
+          </p>
+        </div>
+        <div class="hidden sm:block">
+          <p class="text-3xl font-heading font-bold text-brand-secondary">
+            Madrid
+          </p>
+          <p
+            class="text-sm text-brand-text/70 font-medium mt-1 uppercase tracking-wider"
+          >
+            Centro Médico
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Images / Visual -->
+    <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative">
+      <div
+        class="relative w-full max-w-md lg:max-w-none lg:w-[110%] aspect-square lg:aspect-[4/5] animate-fade-in"
+      >
+        <!-- Main Image with nice mask/shape -->
+        <div
+          class="absolute inset-0 bg-brand-primary/5 rounded-[40px] rotate-3 scale-105 transition-transform duration-500 hover:rotate-6"
+        >
+        </div>
+        <div
+          class="absolute inset-0 bg-white rounded-[40px] shadow-2xl overflow-hidden border-8 border-white"
+        >
+          <img
+            src="/images/hero/principal-1.png"
+            alt="Dr. Enrique Fernández y Dra. Miriam Matía en consulta médica"
+            class="w-full h-full object-cover object-top filter contrast-[1.05]"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+
+        <!-- Floating badge -->
+        <div
+          class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl shadow-black/5 animate-fade-in-up"
+          style="animation-delay: 800ms;"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <p class="font-bold text-brand-primary text-sm">
+                {
+                  lang === "es"
+                    ? "Medicina de Excelencia"
+                    : "Excellence in Medicine"
+                }
+              </p>
+              <p class="text-xs text-brand-text/70">
+                {
+                  lang === "es"
+                    ? "Compromiso total con el paciente"
+                    : "Total commitment to the patient"
+                }
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Local animations for hero */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1.2s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>

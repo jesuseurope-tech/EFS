@@ -1,0 +1,654 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import ContactSection from "../../../components/ContactSection.astro";
+import Locations from "../../../components/Locations.astro";
+import { getLangFromUrl } from "../../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout title="Comprehensive Family Medicine" lang={lang}>
+  <!-- Hero Section -->
+  <section
+    class="bg-[url('/images/pages/family-medicine-hero.jpeg')] bg-center bg-no-repeat bg-cover w-full py-[150px] md:py-[200px] flex items-center justify-center"
+  >
+    <div class="max-w-[1200px] w-full mx-auto px-4 text-center">
+      <h2
+        class="font-heading font-bold text-[30px] md:text-[55px] uppercase tracking-[0.9px] text-white drop-shadow-lg"
+      >
+        Comprehensive Family Medicine
+      </h2>
+      <h3
+        class="text-white text-[25px] mt-4 font-heading font-medium drop-shadow-lg"
+      >
+        Digestive Disorders, Intolerances, and Allergies
+      </h3>
+    </div>
+  </section>
+
+  <!-- Intro Block -->
+  <section class="max-w-[1200px] mx-auto py-16 px-4 text-center">
+    <div
+      class="text-brand-text font-body text-[20px] md:text-[37px] leading-[1.6]"
+    >
+      <p>
+        We specialize in the comprehensive approach to conditions that
+        significantly affect the quality of life of our patients, with a
+        particular focus on:
+      </p>
+    </div>
+  </section>
+
+  <!-- Specialities Grid -->
+  <section class="max-w-[1200px] mx-auto pb-16 px-4 font-body">
+    <div
+      class="flex flex-col md:flex-row bg-white shadow-sm border border-gray-100 p-4 md:p-8 rounded gap-8 md:gap-0"
+    >
+      <div
+        class="w-full md:w-1/3 px-6 hover:scale-[1.05] transition-transform duration-300"
+      >
+        <h3 class="text-center font-bold text-[25px] mb-4 text-[#158EC7]">
+          Chronic Digestive Disorders
+        </h3>
+        <p class="text-center text-[#3B3B3B] text-[17px] leading-[37px] mb-4">
+          From irritable bowel syndrome to functional dyspepsia and other
+          conditions that alter the balance of the digestive system, we
+          investigate the underlying causes and offer personalized solutions to
+          restore your comfort and digestive health.
+        </p>
+        <p class="text-center text-[#3B3B3B] text-[17px] leading-[37px]">
+          <strong>Well-being</strong> without compromising necessary nutrition, especially
+          in food intolerances in children.
+        </p>
+      </div>
+      <div
+        class="w-full md:w-1/3 px-6 md:border-l md:border-r md:border-gray-200 hover:scale-[1.05] transition-transform duration-300"
+      >
+        <h3 class="text-center font-bold text-[25px] mb-4 text-[#158EC7]">
+          Food Intolerances
+        </h3>
+        <p class="text-center text-[#3B3B3B] text-[17px] leading-[37px] mb-4">
+          Often confused with allergies, food intolerances can manifest with a
+          wide range of symptoms.
+        </p>
+        <p class="text-center text-[#3B3B3B] text-[17px] leading-[37px]">
+          Through precise diagnosis and treatment, we help the body assimilate
+          food normally so that at the end of the treatment, it treats the
+          previously harmful food as new, so it no longer causes symptoms.
+        </p>
+      </div>
+      <div
+        class="w-full md:w-1/3 px-6 hover:scale-[1.05] transition-transform duration-300"
+      >
+        <h3 class="text-center font-bold text-[25px] mb-4 text-[#158EC7]">
+          Asthma and Allergies in Children/Adults
+        </h3>
+        <p class="text-center text-[#3B3B3B] text-[17px] leading-[37px]">
+          Allergic diseases, including childhood asthma, rhinitis, and
+          dermatitis, are increasingly prevalent, especially in the child
+          population. Our approach focuses on identifying allergens, treating
+          and eliminating their harmful action, and strengthening the immune
+          system.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Family approach -->
+  <section class="max-w-[1200px] mx-auto py-16 px-4">
+    <h2
+      class="text-[#172550] text-[30px] font-heading font-bold text-center uppercase tracking-[0.9px] mb-8"
+    >
+      We treat the family
+    </h2>
+    <div
+      class="text-[#3B3B3B] text-[17px] leading-[37px] font-body space-y-6 max-w-[900px] mx-auto text-left"
+    >
+      <p>
+        Inspired by a vision of medicine that goes beyond the symptom, we
+        integrate the principles of family medicine with advanced diagnostic and
+        therapeutic methodologies. We recognize that the body is an
+        interconnected system and that, in many cases, digestive disorders and
+        allergies are rooted in deeper imbalances.
+      </p>
+      <p>
+        We are committed to providing personalized care that is fundamentally
+        family-oriented. We understand that an individual's health, especially a
+        child's, is often intertwined with their family context and history.
+        Therefore, <strong>Dr. Enrique Fernández San José</strong> and his team invite
+        the family unit (parents and children) to be treated together. By diagnosing
+        and treating the whole family, we can understand the root cause of the disease,
+        identify common patterns and predisposing factors, and address the disease
+        not only at the individual level but in its entire family ecosystem. Every
+        patient is listened to, and their clinical history, as well as their family's,
+        is thoroughly analyzed.
+      </p>
+      <p>
+        This allows us to design comprehensive treatment strategies that may
+        include, in addition to conventional medicine, approaches such as <strong
+          >Homeopathy</strong
+        > and <strong>Complete Detoxification</strong>, seeking to optimize the
+        immune response and eliminate the toxic burdens that contribute to
+        disease in all members.
+      </p>
+      <p>
+        Furthermore, we explore cutting-edge complementary therapies such as <strong
+          >Bioresonance</strong
+        >, an innovative therapy that allows us to identify and correct
+        energetic imbalances, making it a valuable tool in the treatment of
+        allergies and digestive problems for the whole family.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blue block -->
+  <section class="w-full bg-[#158EC7] py-16 flex justify-center text-center">
+    <div class="max-w-[1200px] w-full px-4">
+      <h2
+        class="text-white text-[30px] font-heading font-bold uppercase tracking-[0.9px]"
+      >
+        Comprehensive Support for Post-Vaccine Sequelae
+      </h2>
+    </div>
+  </section>
+
+  <!-- Diagram section -->
+  <section class="w-full bg-[#172550] flex flex-col md:flex-row">
+    <!-- Left text side -->
+    <div
+      class="w-full md:w-1/2 bg-[url('/images/pages/frecuencias.png')] bg-center bg-no-repeat bg-cover py-[100px] md:py-[200px] flex items-center justify-center relative"
+    >
+      <div
+        class="absolute inset-0 bg-[#172550] bg-opacity-[0.8] mix-blend-multiply md:hidden"
+      >
+      </div>
+      <div
+        class="max-w-[80%] md:max-w-[60%] text-white text-[24px] leading-[1.3em] font-body relative z-10 text-center md:text-left"
+      >
+        <p>
+          <i
+            >Everything that EXISTS possesses and emits a unique frequency and
+            wavelength, like a fingerprint.</i>
+        </p>
+        <br />
+        <p>
+          Every FREQUENCY is <span class="underline">vibrational</span> information.
+        </p>
+        <br />
+        <p>Every VIBRATION – INFORMATION is susceptible to being modified.</p>
+      </div>
+    </div>
+    <!-- Right diagram side -->
+    <div
+      class="w-full md:w-1/2 py-12 px-4 flex items-center justify-center bg-[#172550]"
+    >
+      <div
+        class="mora-diagram-container"
+        style="background-color: #172550; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);"
+      >
+        <h3
+          style="font-family: 'Inter', sans-serif; font-size: 1.5rem; font-weight: 700; text-align: left; margin-bottom: 2rem; color: #FFFFFF;"
+        >
+          The bio-frequency-based treatment harmonizes your body and eliminates
+          the vaccine signal
+        </h3>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+          <div>
+            <h4
+              style="font-family: 'Inter', sans-serif; font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; color: #FFFFFF;"
+            >
+              Healthy Signal (Harmonic)
+            </h4>
+            <canvas
+              id="harmonicWaveDiagram"
+              class="wave-canvas-standalone"
+              style="background-color: #D1FAE5; border-radius: 0.5rem; width: 100%; height: 120px; display: block;"
+            ></canvas>
+          </div>
+          <div>
+            <h4
+              style="font-family: 'Inter', sans-serif; font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; color: #FFFFFF;"
+            >
+              Vaccine Signal (Disharmonic)
+            </h4>
+            <canvas
+              id="disharmonicWaveDiagram"
+              class="wave-color-standalone"
+              style="background-color: #FEE2E2; border-radius: 0.5rem; width: 100%; height: 120px; display: block;"
+            ></canvas>
+          </div>
+          <div>
+            <h4
+              style="font-family: 'Inter', sans-serif; font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; color: #FFFFFF;"
+            >
+              Therapeutic Output (Cancellation and Amplification)
+            </h4>
+            <canvas
+              id="therapeuticWaveDiagram"
+              class="wave-canvas-standalone"
+              style="background-color: #DBEAFE; border-radius: 0.5rem; width: 100%; height: 144px; display: block;"
+            ></canvas>
+          </div>
+        </div>
+        <button
+          id="runTherapyBtnDiagram"
+          style="background-color: #4C51BF; color: white; font-family: 'Inter', sans-serif; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 0.5rem; width: 100%; margin-top: 1.5rem; border: none; cursor: pointer; transition: background-color 0.3s ease;"
+        >
+          Therapy Simulation
+        </button>
+        <button
+          id="resetTherapyBtnDiagram"
+          style="background-color: #6B7280; color: white; font-family: 'Inter', sans-serif; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 0.5rem; width: 100%; margin-top: 0.75rem; border: none; cursor: pointer; transition: background-color 0.3s ease;"
+        >
+          Restart Simulation
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enrique image and text -->
+  <section
+    class="max-w-[1200px] mx-auto py-16 px-4 flex flex-col items-center pt-[100px]"
+  >
+    <img
+      src="/images/team/enrique.png"
+      alt="Dr Enrique Fernández"
+      class="max-w-[800px] w-full mb-10 shadow-sm"
+    />
+    <div
+      class="text-[#3B3B3B] text-[17px] leading-[37px] font-body text-center max-w-[900px]"
+    >
+      <p class="mb-4">
+        At the forefront of integral medicine, we recognize the growing need to
+        address the <strong>sequelae of COVID</strong> and concerns related to <strong
+          >post-vaccine treatments</strong
+        >. Many patients experience a variety of persistent symptoms after a
+        COVID-19 infection, known as <strong>persistent COVID</strong> or <strong
+          >post-COVID syndrome</strong
+        >, as well as new symptoms or imbalances following vaccination.
+      </p>
+      <p>
+        We offer a meticulous approach to evaluating and treating these complex
+        conditions. Through an <strong>exhaustive medical diagnosis</strong> that
+        considers the overall state of the <strong>immune system</strong>,
+        residual viral load, and possible organic imbalances, we design <strong
+          >personalized treatment strategies</strong
+        >. These may include protocols for <strong
+          >complete detoxification</strong
+        > to help the body eliminate burdens and restore its natural balance, as well
+        as support therapies to modulate the immune response, reduce inflammation,
+        and alleviate persistent symptomatology. Our goal is to help you recover your
+        comprehensive <strong>health and well-being</strong> after these experiences,
+        strengthening your body holistically.
+      </p>
+    </div>
+  </section>
+
+  <!-- Carousel Block -->
+  <section
+    class="max-w-[1200px] mx-auto py-12 px-4 flex flex-col items-center overflow-hidden"
+  >
+    <div class="carousel-wrapper">
+      <style>
+        .carousel-wrapper {
+          font-family: "Open Sans", sans-serif;
+          position: relative;
+          width: 100%;
+          max-width: 1200px;
+          padding: 2.5rem;
+          margin: auto;
+          height: 400px;
+        }
+        .quote-carousel-container {
+          position: relative;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .carousel-slide {
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          pointer-events: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          transition: opacity 1s ease-in-out;
+        }
+        .carousel-slide.active {
+          opacity: 1;
+          position: relative;
+          pointer-events: auto;
+        }
+        .quote-text {
+          font-size: 1.3rem;
+          font-style: italic;
+          color: #3b3b3b;
+          margin-bottom: 0.8rem;
+          line-height: 1.4;
+        }
+        .quote-author {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #172550;
+        }
+      </style>
+
+      <div id="quote-carousel-container" class="quote-carousel-container">
+        <div class="carousel-slide active">
+          <p class="quote-text">
+            “Before you heal someone, ask him if he's willing to give up the
+            things that make him sick.”
+          </p>
+          <p class="quote-author">— Hippocrates</p>
+        </div>
+        <div class="carousel-slide">
+          <p class="quote-text">
+            “Health depends on being in harmony with our souls.”
+          </p>
+          <p class="quote-author">— Edward Bach</p>
+        </div>
+        <div class="carousel-slide">
+          <p class="quote-text">
+            “Medicine must integrate body, soul, and spirit for treatment to be
+            true and lasting.”
+          </p>
+          <p class="quote-author">— Rudolf Steiner</p>
+        </div>
+        <div class="carousel-slide">
+          <p class="quote-text">
+            “The true doctor not only prescribes, but listens, understands, and
+            guides toward balance.”
+          </p>
+          <p class="quote-author">— Anonymous</p>
+        </div>
+        <div class="carousel-slide">
+          <p class="quote-text">
+            “Homeopathy does not treat diseases, but people who are sick.”
+          </p>
+          <p class="quote-author">— André Saine</p>
+        </div>
+        <div class="carousel-slide">
+          <p class="quote-text">
+            “The body whispers before it screams; the attentive doctor listens
+            to the silence of the disease before it manifests.”
+          </p>
+          <p class="quote-author">— Proposed Quote</p>
+        </div>
+        <div class="carousel-slide">
+          <p class="quote-text">
+            “Technology heals, chemistry acts, but the soul is cured in the
+            presence of love and listening.”
+          </p>
+          <p class="quote-author">— Proposed Quote</p>
+        </div>
+        <div class="carousel-slide">
+          <p class="quote-text">
+            “The physician's high and only mission is to restore the sick to
+            health, to cure, as it is termed.”
+          </p>
+          <p class="quote-author">— Samuel Hahnemann</p>
+        </div>
+        <div class="carousel-slide">
+          <p class="quote-text">
+            “The good physician treats the disease; the great physician treats
+            the patient who has the disease.”
+          </p>
+          <p class="quote-author">— William Osler</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Locations />
+
+  <ContactSection />
+
+  <!-- Scripts -->
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll(".carousel-slide");
+      if (slides.length > 0) {
+        let currentSlide = 0;
+        let slideInterval;
+
+        const showSlide = (index) => {
+          if (index >= slides.length) {
+            currentSlide = 0;
+          } else if (index < 0) {
+            currentSlide = slides.length - 1;
+          } else {
+            currentSlide = index;
+          }
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slides[currentSlide].classList.add("active");
+        };
+
+        const startInterval = () => {
+          slideInterval = setInterval(() => {
+            showSlide(currentSlide + 1);
+          }, 9000);
+        };
+
+        showSlide(currentSlide);
+        startInterval();
+      }
+    });
+
+    // Diagram Animation Script
+    document.addEventListener("DOMContentLoaded", function () {
+      const harmonicCanvasDiagram = document.getElementById(
+        "harmonicWaveDiagram",
+      );
+      const disharmonicCanvasDiagram = document.getElementById(
+        "disharmonicWaveDiagram",
+      );
+      const therapeuticCanvasDiagram = document.getElementById(
+        "therapeuticWaveDiagram",
+      );
+      const runTherapyBtnDiagram = document.getElementById(
+        "runTherapyBtnDiagram",
+      );
+      const resetTherapyBtnDiagram = document.getElementById(
+        "resetTherapyBtnDiagram",
+      );
+
+      let animationFrameIdDiagram;
+      let therapyIntervalId;
+      let phaseDiagram = 0;
+
+      function resizeCanvas(canvas) {
+        if (canvas) {
+          canvas.width = canvas.offsetWidth;
+          canvas.height = canvas.offsetHeight;
+        }
+      }
+
+      const canvasesToResize = [
+        harmonicCanvasDiagram,
+        disharmonicCanvasDiagram,
+        therapeuticCanvasDiagram,
+      ];
+      canvasesToResize.forEach((canvas) => resizeCanvas(canvas));
+      window.addEventListener("resize", () => {
+        canvasesToResize.forEach((canvas) => resizeCanvas(canvas));
+        drawWaveDiagram(harmonicCanvasDiagram, "#10B981", 2, 40, phaseDiagram);
+        drawWaveDiagram(
+          disharmonicCanvasDiagram,
+          "#EF4444",
+          2,
+          40,
+          phaseDiagram,
+          true,
+        );
+        if (runTherapyBtnDiagram.textContent === "Therapy Completed!") {
+          drawTherapeuticWave(100);
+        } else {
+          drawTherapeuticWave(0);
+        }
+      });
+
+      function drawWaveDiagram(
+        canvas,
+        color,
+        frequency,
+        amplitude,
+        phase,
+        isDisharmonic = false,
+      ) {
+        if (!canvas) return;
+        const ctx = canvas.getContext("2d");
+        const width = canvas.width;
+        const height = canvas.height;
+        ctx.clearRect(0, 0, width, height);
+        ctx.beginPath();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = color;
+        for (let x = 0; x < width; x++) {
+          const angle = (x / width) * 2 * Math.PI * frequency + phase;
+          let y = height / 2 + Math.sin(angle) * amplitude;
+          if (isDisharmonic) {
+            y += Math.sin(angle * 5) * amplitude * 0.3;
+            y += Math.cos(angle * 2.5) * amplitude * 0.2;
+          }
+          ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+
+      function drawTherapeuticWave(progress) {
+        if (!therapeuticCanvasDiagram) return;
+        const ctx = therapeuticCanvasDiagram.getContext("2d");
+        const width = therapeuticCanvasDiagram.width;
+        const height = therapeuticCanvasDiagram.height;
+        ctx.clearRect(0, 0, width, height);
+        ctx.beginPath();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "#3B82F6";
+
+        const amplificationFactor = 1 + progress / 200;
+        const cancellationFactor = 1 - progress / 100;
+
+        const maxAmplitude = (height / 2) * 0.8;
+        const currentAmplitude = (maxAmplitude * (1 + progress / 200)) / 1.5;
+
+        for (let x = 0; x < width; x++) {
+          const harmonicAngle = (x / width) * 2 * Math.PI * 2 + phaseDiagram;
+          const harmonicY =
+            Math.sin(harmonicAngle) *
+            (currentAmplitude / amplificationFactor) *
+            amplificationFactor;
+
+          const disharmonicAngle = (x / width) * 2 * Math.PI * 2 + phaseDiagram;
+          let disharmonicY_raw =
+            Math.sin(disharmonicAngle) *
+            (currentAmplitude / amplificationFactor);
+          disharmonicY_raw +=
+            Math.sin(disharmonicAngle * 5) *
+            (currentAmplitude / amplificationFactor) *
+            0.3;
+          disharmonicY_raw +=
+            Math.cos(disharmonicAngle * 2.5) *
+            (currentAmplitude / amplificationFactor) *
+            0.2;
+
+          const invertedDisharmonicY = -disharmonicY_raw * cancellationFactor;
+
+          const combinedY = height / 2 + harmonicY + invertedDisharmonicY;
+          ctx.lineTo(x, combinedY);
+        }
+        ctx.stroke();
+      }
+
+      function animateWavesDiagram() {
+        phaseDiagram += 0.05;
+        drawWaveDiagram(harmonicCanvasDiagram, "#10B981", 2, 40, phaseDiagram);
+        drawWaveDiagram(
+          disharmonicCanvasDiagram,
+          "#EF4444",
+          2,
+          40,
+          phaseDiagram,
+          true,
+        );
+
+        if (
+          !runTherapyBtnDiagram.disabled ||
+          runTherapyBtnDiagram.textContent === "Therapy Completed!"
+        ) {
+          if (runTherapyBtnDiagram.textContent !== "Therapy Completed!") {
+            drawTherapeuticWave(0);
+          } else {
+            drawTherapeuticWave(100);
+          }
+        }
+
+        animationFrameIdDiagram = requestAnimationFrame(animateWavesDiagram);
+      }
+
+      function resetDiagram() {
+        clearInterval(therapyIntervalId);
+        runTherapyBtnDiagram.disabled = false;
+        runTherapyBtnDiagram.textContent = "Therapy Simulation";
+        runTherapyBtnDiagram.style.backgroundColor = "#4C51BF";
+
+        phaseDiagram = 0;
+
+        resizeCanvas(harmonicCanvasDiagram);
+        resizeCanvas(disharmonicCanvasDiagram);
+        resizeCanvas(therapeuticCanvasDiagram);
+
+        drawWaveDiagram(harmonicCanvasDiagram, "#10B981", 2, 40, phaseDiagram);
+        drawWaveDiagram(
+          disharmonicCanvasDiagram,
+          "#EF4444",
+          2,
+          40,
+          phaseDiagram,
+          true,
+        );
+        drawTherapeuticWave(0);
+      }
+
+      if (runTherapyBtnDiagram) {
+        runTherapyBtnDiagram.addEventListener("click", () => {
+          if (runTherapyBtnDiagram.disabled) return;
+
+          runTherapyBtnDiagram.disabled = true;
+          runTherapyBtnDiagram.textContent = "Therapy in Progress...";
+          runTherapyBtnDiagram.style.backgroundColor = "#6D28D9";
+
+          let progress = 0;
+          if (therapyIntervalId) {
+            clearInterval(therapyIntervalId);
+          }
+
+          therapyIntervalId = setInterval(() => {
+            progress += 1;
+            drawTherapeuticWave(progress);
+
+            if (progress >= 100) {
+              clearInterval(therapyIntervalId);
+              runTherapyBtnDiagram.textContent = "Therapy Completed!";
+              runTherapyBtnDiagram.style.backgroundColor = "#16A34A";
+            }
+          }, 20);
+        });
+      }
+
+      if (resetTherapyBtnDiagram) {
+        resetTherapyBtnDiagram.addEventListener("click", resetDiagram);
+      }
+
+      if (harmonicCanvasDiagram) {
+        animateWavesDiagram();
+      }
+    });
+  </script>
+</Layout>

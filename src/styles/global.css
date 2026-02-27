@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #172550;
+  --color-brand-secondary: #158ec7;
+  --color-brand-accent: #fa9604;
+  --color-brand-text: #3b3b3b;
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-serif: "Noto Serif", serif;
+}
+
+@layer base {
+  body {
+    @apply font-body text-brand-text bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading uppercase tracking-wider text-brand-primary;
+  }
+
+  a {
+    @apply text-brand-secondary transition-colors duration-200 hover:text-brand-accent;
+  }
+}

@@ -1,0 +1,74 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  imageUrl: string;
+  linkUrl?: string; // Optional: If we want the card to be clickable
+}
+
+const { name, role, imageUrl, linkUrl } = Astro.props;
+---
+
+<div
+  class="group flex flex-col items-center bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 border border-gray-100 transform hover:-translate-y-1 relative overflow-hidden"
+>
+  {
+    linkUrl && (
+      <a
+        href={linkUrl}
+        class="absolute inset-0 z-10"
+        aria-label={`View profile of ${name}`}
+      >
+        <span class="sr-only">Ver perfil de {name}</span>
+      </a>
+    )
+  }
+
+  <div
+    class="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-slate-50 mb-6 relative group-hover:border-brand-secondary transition-colors duration-300"
+  >
+    <img
+      src={imageUrl}
+      alt={name}
+      class="w-full h-full object-cover object-top filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110"
+      loading="lazy"
+    />
+  </div>
+
+  <h3
+    class="font-heading font-bold text-xl md:text-2xl text-brand-primary mb-2 text-center group-hover:text-brand-secondary transition-colors duration-300"
+  >
+    {name}
+  </h3>
+
+  <p class="text-brand-text/80 text-center font-medium font-body mb-4">
+    {role}
+  </p>
+
+  <div
+    class="w-10 h-1 bg-brand-accent rounded-full mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-x-0 group-hover:scale-x-100 origin-center"
+  >
+  </div>
+
+  {
+    linkUrl && (
+      <span class="text-brand-secondary text-sm font-bold uppercase tracking-wider flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0 relative z-20">
+        Ver Perfil
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M14 5l7 7m0 0l-7 7m7-7H3"
+          />
+        </svg>
+      </span>
+    )
+  }
+</div>

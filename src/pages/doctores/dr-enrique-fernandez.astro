@@ -1,0 +1,83 @@
+---
+import DoctorProfileLayout from "../../layouts/DoctorProfileLayout.astro";
+
+const doctor = {
+  name: "Dr. Enrique Fernández",
+  role: "Médico y Cirujano Homeópata",
+  image: "/images/team/enrique.png",
+  bio: `Licenciado en Medicina y Cirugía por la Universidad del País Vasco (España) y, desde 1984, me dedico a la práctica de la Medicina en mi consulta.`,
+};
+---
+
+<DoctorProfileLayout
+  title={doctor.name}
+  description={`Conozca al ${doctor.name}, ${doctor.role}.`}
+  doctorName={doctor.name}
+  doctorRole={doctor.role}
+  doctorImageUrl={doctor.image}
+>
+  <div class="space-y-12">
+    <section>
+      <h2 class="text-2xl font-heading font-bold text-brand-primary mb-6">
+        Diplomas y Especializaciones
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-brand-text">
+        <li>
+          <strong class="text-brand-primary">Diplomado en Homeopatía</strong> por
+          la Asociación Médica Española de Homeopatía y Bioterapia A.M.E.B. (España).
+        </li>
+        <li>
+          Miembro asociado de la <strong class="text-brand-primary"
+            >Faculty of Homeopathy</strong
+          >, Londres.
+        </li>
+        <li>
+          <strong class="text-brand-primary">Diplomado en Homeopatía</strong> por
+          la Asociacion Homeoform (Homeopathie Post-Universitaire (Ginebra) H.P.U.
+        </li>
+        <li>
+          <strong class="text-brand-primary"
+            >Diplomado en Homo-toxicología</strong
+          > (España).
+        </li>
+        <li>
+          <strong class="text-brand-primary"
+            >Diplomado en Biorresonancia Mora</strong
+          > desde 1.990.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-heading font-bold text-brand-primary mb-6">
+        Cargos y Reconocimientos Profesionales
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-brand-text">
+        <li>
+          Fundador y Ex-Presidente de la Sección Colegial de Homeopatía del
+          Colegio Oficial de Médicos de Vizcaya.
+        </li>
+        <li>
+          Coordinador de Estudios de Perfeccionamiento de la Asociación
+          Homeoform.
+        </li>
+        <li>Secretario General de la Asociación Homeoform.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-heading font-bold text-brand-primary mb-6">
+        Docencia
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-brand-text">
+        <li>
+          Profesor Auxiliar de Homeopatía en la Homeopathie Post-Universitaire
+          (España).
+        </li>
+        <li>
+          Profesor Auxiliar de Homeopatía en la Asociación Homeoform (España).
+        </li>
+      </ul>
+    </section>
+  </div>
+</DoctorProfileLayout>

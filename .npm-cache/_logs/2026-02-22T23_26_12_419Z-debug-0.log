@@ -1,0 +1,134 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.8.0
+2 info using node@v24.13.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/jmx/Documents/PROJECTS/Consulta Website upgrade 2/.npmrc
+5 silly config load:file:/Users/jmx/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install @tailwindcss/vite@^4.2.0 tailwindcss@^4.2.0
+8 verbose argv "install" "@tailwindcss/vite@^4.2.0" "tailwindcss@^4.2.0" "--cache" "./.npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/jmx/Documents/PROJECTS/Consulta Website upgrade 2/.npm-cache/_logs/2026-02-22T23_26_12_419Z-
+10 verbose logfile /Users/jmx/Documents/PROJECTS/Consulta Website upgrade 2/.npm-cache/_logs/2026-02-22T23_26_12_419Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+14 silly idealTree buildDeps
+15 silly fetch manifest @tailwindcss/vite@^4.2.0
+16 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fvite cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2fvite 219ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fvite set size:undefined disposed:false
+19 silly fetch manifest vite@^5.2.0 || ^6 || ^7
+20 silly packumentCache full:https://registry.npmjs.org/vite cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/vite 130ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmjs.org/vite set size:38728544 disposed:false
+23 silly fetch manifest @types/node@^20.19.0 || >=22.12.0
+24 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 83ms (cache revalidated)
+26 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:10864169 disposed:false
+27 silly fetch manifest jiti@>=1.21.0
+28 silly packumentCache full:https://registry.npmjs.org/jiti cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/jiti 28ms (cache revalidated)
+30 silly packumentCache full:https://registry.npmjs.org/jiti set size:382310 disposed:false
+31 silly fetch manifest less@^4.0.0
+32 silly packumentCache full:https://registry.npmjs.org/less cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/less 25ms (cache revalidated)
+34 silly packumentCache full:https://registry.npmjs.org/less set size:430648 disposed:false
+35 silly fetch manifest lightningcss@^1.21.0
+36 silly packumentCache full:https://registry.npmjs.org/lightningcss cache-miss
+37 http fetch GET 200 https://registry.npmjs.org/lightningcss 28ms (cache revalidated)
+38 silly packumentCache full:https://registry.npmjs.org/lightningcss set size:182441 disposed:false
+39 silly fetch manifest sass@^1.70.0
+40 silly packumentCache full:https://registry.npmjs.org/sass cache-miss
+41 http fetch GET 200 https://registry.npmjs.org/sass 26ms (cache revalidated)
+42 silly packumentCache full:https://registry.npmjs.org/sass set size:722061 disposed:false
+43 silly fetch manifest sass-embedded@^1.70.0
+44 silly packumentCache full:https://registry.npmjs.org/sass-embedded cache-miss
+45 http fetch GET 200 https://registry.npmjs.org/sass-embedded 36ms (cache revalidated)
+46 silly packumentCache full:https://registry.npmjs.org/sass-embedded set size:407397 disposed:false
+47 silly fetch manifest stylus@>=0.54.8
+48 silly packumentCache full:https://registry.npmjs.org/stylus cache-miss
+49 http fetch GET 200 https://registry.npmjs.org/stylus 30ms (cache revalidated)
+50 silly packumentCache full:https://registry.npmjs.org/stylus set size:286766 disposed:false
+51 silly fetch manifest sugarss@^5.0.0
+52 silly packumentCache full:https://registry.npmjs.org/sugarss cache-miss
+53 http fetch GET 200 https://registry.npmjs.org/sugarss 31ms (cache revalidated)
+54 silly packumentCache full:https://registry.npmjs.org/sugarss set size:44975 disposed:false
+55 silly fetch manifest postcss@^8.3.3
+56 silly packumentCache full:https://registry.npmjs.org/postcss cache-miss
+57 http fetch GET 200 https://registry.npmjs.org/postcss 31ms (cache revalidated)
+58 silly packumentCache full:https://registry.npmjs.org/postcss set size:696248 disposed:false
+59 silly fetch manifest terser@^5.16.0
+60 silly packumentCache full:https://registry.npmjs.org/terser cache-miss
+61 http fetch GET 200 https://registry.npmjs.org/terser 38ms (cache revalidated)
+62 silly packumentCache full:https://registry.npmjs.org/terser set size:786629 disposed:false
+63 silly fetch manifest tsx@^4.8.1
+64 silly packumentCache full:https://registry.npmjs.org/tsx cache-miss
+65 http fetch GET 200 https://registry.npmjs.org/tsx 29ms (cache revalidated)
+66 silly packumentCache full:https://registry.npmjs.org/tsx set size:289592 disposed:false
+67 silly fetch manifest yaml@^2.4.2
+68 silly packumentCache full:https://registry.npmjs.org/yaml cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/yaml 28ms (cache revalidated)
+70 silly packumentCache full:https://registry.npmjs.org/yaml set size:361552 disposed:false
+71 silly fetch manifest tailwindcss@^4.2.0
+72 silly packumentCache full:https://registry.npmjs.org/tailwindcss cache-miss
+73 http fetch GET 200 https://registry.npmjs.org/tailwindcss 48ms (cache revalidated)
+74 silly packumentCache full:https://registry.npmjs.org/tailwindcss set size:10210224 disposed:false
+75 silly placeDep ROOT @tailwindcss/vite@4.2.0 OK for: consulta-medica-astro@0.0.1 want: ^4.2.0
+76 silly placeDep ROOT tailwindcss@4.2.0 OK for: consulta-medica-astro@0.0.1 want: ^4.2.0
+77 silly fetch manifest tailwindcss@4.2.0
+78 silly packumentCache full:https://registry.npmjs.org/tailwindcss cache-miss
+79 silly fetch manifest @tailwindcss/node@4.2.0
+80 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fnode cache-miss
+81 silly fetch manifest @tailwindcss/oxide@4.2.0
+82 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide cache-miss
+83 http cache https://registry.npmjs.org/tailwindcss 43ms (cache hit)
+84 silly packumentCache full:https://registry.npmjs.org/tailwindcss set size:10210224 disposed:false
+85 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2fnode 133ms (cache miss)
+86 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fnode set size:undefined disposed:false
+87 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide 228ms (cache miss)
+88 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide set size:undefined disposed:false
+89 silly placeDep ROOT @tailwindcss/node@4.2.0 OK for: @tailwindcss/vite@4.2.0 want: 4.2.0
+90 silly placeDep ROOT @tailwindcss/oxide@4.2.0 OK for: @tailwindcss/vite@4.2.0 want: 4.2.0
+91 silly fetch manifest jiti@^2.6.1
+92 silly packumentCache full:https://registry.npmjs.org/jiti cache-hit
+93 silly fetch manifest lightningcss@1.31.1
+94 silly packumentCache full:https://registry.npmjs.org/lightningcss cache-hit
+95 silly fetch manifest enhanced-resolve@^5.19.0
+96 silly packumentCache full:https://registry.npmjs.org/enhanced-resolve cache-miss
+97 silly fetch manifest @jridgewell/remapping@^2.3.5
+98 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fremapping cache-miss
+99 silly fetch manifest @tailwindcss/oxide-darwin-x64@4.2.0
+100 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-x64 cache-miss
+101 silly fetch manifest @tailwindcss/oxide-freebsd-x64@4.2.0
+102 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 cache-miss
+103 silly fetch manifest @tailwindcss/oxide-wasm32-wasi@4.2.0
+104 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi cache-miss
+105 silly fetch manifest @tailwindcss/oxide-darwin-arm64@4.2.0
+106 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 cache-miss
+107 silly fetch manifest @tailwindcss/oxide-android-arm64@4.2.0
+108 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 cache-miss
+109 http fetch GET 200 https://registry.npmjs.org/enhanced-resolve 122ms (cache miss)
+110 silly packumentCache full:https://registry.npmjs.org/enhanced-resolve set size:undefined disposed:false
+111 silly fetch manifest @tailwindcss/oxide-linux-x64-gnu@4.2.0
+112 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu cache-miss
+113 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fremapping 132ms (cache miss)
+114 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fremapping set size:undefined disposed:false
+115 silly fetch manifest @tailwindcss/oxide-linux-x64-musl@4.2.0
+116 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl cache-miss
+117 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 290ms (cache miss)
+118 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 set size:undefined disposed:false
+119 silly fetch manifest @tailwindcss/oxide-win32-x64-msvc@4.2.0
+120 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-x64-msvc cache-miss
+121 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 393ms (cache miss)
+122 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 set size:undefined disposed:false
+123 silly fetch manifest @tailwindcss/oxide-linux-arm64-gnu@4.2.0
+124 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-gnu cache-miss
+125 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl 296ms (cache miss)
+126 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl set size:undefined disposed:false
+127 silly fetch manifest @tailwindcss/oxide-linux-arm64-musl@4.2.0
+128 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-musl cache-miss
+129 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 451ms (cache miss)
+130 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 set size:undefined disposed:false
+131 silly fetch manifest @tailwindcss/oxide-win32-arm64-msvc@4.2.0
+132 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-arm64-msvc cache-miss
+133 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu 346ms (cache miss)

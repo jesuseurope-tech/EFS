@@ -1,0 +1,69 @@
+---
+import TreatmentLayout from "../../layouts/TreatmentLayout.astro";
+import { getLangFromUrl } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<TreatmentLayout
+  title="Como se toma la Homeopatía"
+  lang={lang}
+  treatmentName="Como se toma la Homeopatía"
+>
+  <p>
+    <strong
+      ><span class="underline"
+        >NORMAS PARA SEGUIR UN TRATAMIENTO HOMEOPÁTICO</span
+      ></strong
+    >
+  </p>
+  <p>
+    Para que un tratamiento homeopático sea eficaz al máximo, se recomienda:
+  </p>
+  <p>
+    -Mantener la boca lo más limpia posible en el momento de tomar el
+    medicamento homeopático<br />
+    -No lavar los dientes con dentífrico con flúor, no fumar, ni ingerir comida al
+    menos 10-15 minutos antes ni 15´ después de tomar el remedio homeopático; se puede
+    beber agua. Se puede usar dentífrico Homeopático, o de aloe (marca Vitis)<br
+    />
+    – No tomar manzanilla ó hacerlo al mínimo siempre separado de la toma del medicamento.
+  </p>
+
+  <p>
+    <strong><span class="underline">FORMAS DE PRESENTACIÓN:</span></strong>
+  </p>
+
+  <p>
+    <strong><span class="underline">GOTAS</span>= </strong>Ponga las gotas en un
+    vaso muy limpio que contenga un poco de agua mineral, Mantenga la ablución
+    en la boca, todo lo posible debajo de la lengua durante 1 minuto y luego
+    tragarla.
+  </p>
+
+  <p>
+    <span class="underline"><strong>AMPOLLAS BEBIBLES</strong></span><strong
+      >=
+    </strong>Poner el contenido de la ampolla en un vaso con un poco de agua y
+    proceder como en el caso anterior.
+  </p>
+
+  <p>
+    <strong><span class="underline">GRÁNULOS Y COMPRIMIDOS</span>= </strong>Es
+    recomendado no tocarlos con los dedos. Según la prescripción médica,
+    mantenga los gránulos debajo de la lengua hasta que se disuelvan.
+  </p>
+
+  <p>
+    <strong><span class="underline">MONODOSIS</span>=</strong> Deben de ser tomados
+    de una sola vez y en totalidad por el paciente. Poner el contenido de todo el
+    tubíto debajo de la lengua, hasta que se disuelva.
+  </p>
+
+  <p>
+    <strong><span class="underline">TRITURACIONES</span>=</strong> Triturado en polvo
+    que se presenta en frascos con una cuchara-medida. El paciente mide con la ayuda
+    de esta cuchara, cada dosis a tomar, debe dejarlo debajo de la lengua hasta que
+    se disuelva.
+  </p>
+</TreatmentLayout>

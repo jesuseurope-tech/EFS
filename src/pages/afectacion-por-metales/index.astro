@@ -1,0 +1,112 @@
+---
+import TreatmentLayout from "../../layouts/TreatmentLayout.astro";
+import { getLangFromUrl } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<TreatmentLayout
+  title="Afectación por Metales"
+  lang={lang}
+  treatmentName="Intoxicación por Metales Pesados"
+>
+  <p>
+    Los metales pesados son compuestos inorgánicos que el organismo no es capaz
+    de metabolizar. Desgraciadamente, el aumento de la polución, de todo tipo,
+    en todo tipo de lugares, residuos tóxicos, etc. hacen que el Ser Humano se
+    vea expuesto a la ingesta, absorción y exposición de estos metales que se
+    convierten en toxinas que el cuerpo no es capaz de eliminar, se acumulan en
+    los órganos y los tejidos, y sino es con la ayuda de "quelantes" (sustancias
+    que atrapan las moléculas inorgánicas de los metales pesados y crean
+    compuestos que el cuerpo sí puede eliminar a través de la orina), no se
+    podrían eliminar.
+  </p>
+  <p>
+    Hay diferentes substancias que "quelan" los metales pesados. Pese a ello, la
+    presencia de metales pesados en los tejidos, crea una impregnación
+    electromagnética, que a pesar de que se proceda a la eliminación física,
+    esta impregnación queda, provocando los mismos síntomas como si se
+    mantuviese la presencia de estos metales pesados, aparentemente eliminados.
+  </p>
+  <p>
+    Solo con una eliminación de estas frecuencias a través de la Biorresonancia
+    Mora, es posible la eliminación total, así como la restitución de la función
+    del tejido afectado.
+  </p>
+</TreatmentLayout>
+
+<div>
+  <h2 class="text-2xl font-bold mt-12 mb-6">
+    Listado de Metales Pesados mas comunes y donde se encuentran
+  </h2>
+  <div class="space-y-4">
+    <p>
+      <strong><span class="underline">ALUMINIO</span></strong>:<br />
+      – Se acumula en pulmones y cerebro. Bloquea la absorción de magnesio, provoca
+      astenia y contribuye a la aparición de Alzheimer.<br />
+      – Se halla en vegetales no ecológicos, comida industrial, agua del grifo, desodorantes,
+      amalgamas, vacunas, analgésicos y antiácidos.
+    </p>
+
+    <p>
+      <strong><span class="underline">ARSÉNICO</span></strong><br />
+      – Se acumula en hígado, riñones, piel y sistema nervioso.<br />
+      -Inhibe la acción de la vitamina E, el selenio y el azufre. Provoca fatiga crónica,
+      cáncer de pulmón y vejiga, diabetes y problemas gastrointestinales. Se halla
+      en el agua del grifo, los zumos envasados, los cereales integrales (en especial
+      el arroz) y los vinos.<br />
+      Para eliminar el arsénico del arroz, enjuágalo varias veces y cuécelo en mucha
+      agua (unas 6 veces su volumen).
+    </p>
+
+    <p>
+      <strong><span class="underline">CADMIO</span></strong><br />
+      – Se acumula en las vías respiratorias, hígado, riñones, grasa, nervios y huesos.<br
+      />
+      Bloquea la absorción de zinc, magnesio, selenio y azufre.<br />
+      – Causa hipertensión, dolor de cabeza, anemia, alteraciones del sistema nervioso
+      periférico, problemas renales y pulmonares.<br />
+      – Se halla en el agua del grifo, pescados de agua dulce, crustáceos, hojas de
+      hortalizas, champiñones y algas secas no ecológicas.
+    </p>
+
+    <p>
+      <strong><span class="underline">MERCURIO</span></strong><br />
+      – Se acumula en riñones, cerebro y sistema nervioso.<br />
+      – Impide la absorción de zinc, selenio y hierro. Destruye la vitamina B12 y
+      provoca fatiga crónica, hipertensión arterial, infecciones, anemia y problemas
+      inmunitarios.<br />
+      – Se halla en peces grandes, pesticidas de la agricultura intensiva, vacunas
+      y amalgamas dentales.
+    </p>
+
+    <p>
+      <strong><span class="underline">PLOMO</span></strong><br />
+      – Se acumula en cerebro, sistema nervioso y huesos. Bloquea la absorción de
+      hierro, calcio y molibdeno. Provoca dolores osteomusculares, irritabilidad,
+      trastornos del sueño y alteraciones cognitivas.<br />
+      – Se halla en el agua canalizada en tuberías de plomo, pesticidas, productos
+      envasados, medicamentos, humo del tabaco.
+    </p>
+
+    <p>
+      <strong><span class="underline">ALGAS Y SETAS</span></strong>: ¡CUIDADO!
+      Si proceden de lugares contaminados, constituyen auténticas bombas de
+      metales pesados.
+    </p>
+  </div>
+
+  <div class="mt-8 text-center border-t border-gray-200 pt-8 not-prose">
+    <p class="font-body text-lg text-brand-secondary font-bold mb-4">
+      El borrado de las frecuencias de los metales, por biorresonancia M.
+      garantiza su eliminación completa.
+    </p>
+    <p class="font-body text-lg text-brand-text">
+      <a
+        href="/desintoxicacion/"
+        class="text-brand-primary hover:text-brand-accent transition-colors underline font-bold"
+        >Ver el procedimiento aquí.</a
+      >
+    </p>
+  </div>
+</div>

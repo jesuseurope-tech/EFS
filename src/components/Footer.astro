@@ -1,0 +1,140 @@
+---
+import { getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+const quotesEs = [
+  {
+    text: "“Antes de curar a alguien, pregúntale si está dispuesto a renunciar a aquello que le enfermó.”",
+    author: "— Hipócrates",
+  },
+  {
+    text: "“La salud depende de estar en armonía con nuestras almas.”",
+    author: "— Edward Bach",
+  },
+  {
+    text: "“La medicina debe integrar cuerpo, alma y espíritu para que el tratamiento sea verdadero y duradero.”",
+    author: "— Rudolf Steiner",
+  },
+  {
+    text: "“El verdadero médico no solo receta, sino que escucha, comprende y guía hacia el equilibrio.”",
+    author: "— Anónimo",
+  },
+  {
+    text: "“La homeopatía no trata enfermedades, sino personas que están enfermas.”",
+    author: "— André Saine",
+  },
+  {
+    text: "“El cuerpo susurra antes de gritar; el médico atento escucha el silencio de la enfermedad antes de que se manifieste.”",
+    author: "— Frase propuesta",
+  },
+  {
+    text: "“La tecnología sana, la química actúa, pero el alma se cura en presencia del amor y la escucha.”",
+    author: "— Frase propuesta",
+  },
+  {
+    text: "“La única y gran misión del médico es restablecer la salud del enfermo, es aquello que se llama curar.”",
+    author: "— Samuel Hahnemann",
+  },
+  {
+    text: "“El buen médico trata la enfermedad; el gran médico trata al paciente que tiene la enfermedad.”",
+    author: "— William Osler",
+  },
+];
+
+const quotesEn = [
+  {
+    text: "“Before curing anyone, ask him if he is willing to give up the things that made him sick.”",
+    author: "— Hippocrates",
+  },
+  {
+    text: "“Health depends on being in harmony with our souls.”",
+    author: "— Edward Bach",
+  },
+  {
+    text: "“Medicine must integrate body, soul and spirit so that the treatment is true and lasting.”",
+    author: "— Rudolf Steiner",
+  },
+  {
+    text: "“The true doctor not only prescribes, but listens, understands and guides towards balance.”",
+    author: "— Anonymous",
+  },
+  {
+    text: "“Homeopathy does not treat diseases, but people who are sick.”",
+    author: "— André Saine",
+  },
+  {
+    text: "“The body whispers before it screams; the attentive doctor listens to the silence of the disease before it manifests.”",
+    author: "— Proposed Quote",
+  },
+  {
+    text: "“Technology heals, chemistry acts, but the soul is cured in the presence of love and listening.”",
+    author: "— Proposed Quote",
+  },
+  {
+    text: "“The physician's high and only mission is to restore the sick to health, to cure, as it is termed.”",
+    author: "— Samuel Hahnemann",
+  },
+  {
+    text: "“The good physician treats the disease; the great physician treats the patient who has the disease.”",
+    author: "— William Osler",
+  },
+];
+
+const quotes = lang === "en" ? quotesEn : quotesEs;
+---
+
+<div class="bg-gray-50 flex flex-col pt-32 pb-8">
+  <div
+    class="bg-[#04101A] max-w-[800px] w-[90%] mx-auto -mt-[14rem] mb-16 p-8 rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.15)] relative z-20 flex items-center justify-center h-[16rem] sm:h-[18rem] md:h-[20rem] lg:h-[24rem]"
+    id="quote-carousel"
+  >
+    {
+      quotes.map((quote, idx) => (
+        <div
+          class={`carousel-slide transition-opacity duration-[1500ms] ease-in-out absolute left-0 right-0 px-4 flex flex-col items-center justify-center ${idx === 0 ? "opacity-100 z-10" : "opacity-0 z-0"}`}
+        >
+          <p class="font-serif italic text-white text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] lg:text-[1.3rem] mb-3 leading-[1.4] text-center">
+            {quote.text}
+          </p>
+          <p class="font-body text-gray-300 font-semibold text-[0.8rem] sm:text-[0.9rem] lg:text-[1rem] text-center">
+            {quote.author}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<footer class="bg-white py-10">
+  <div class="max-w-[1200px] mx-auto flex flex-col items-center gap-4">
+    <a href={lang === "en" ? "/en/" : "/"} class="inline-block w-[138px]">
+      <img
+        src="/images/logo/logo.png"
+        alt="Dr. Enrique Fernández"
+        class="w-[138px] h-auto object-contain"
+      />
+    </a>
+    <p class="text-black font-body text-[16px]">Consulta Médica Privada</p>
+    <p class="text-black font-body text-[16px] mt-2">All rights reserved</p>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".carousel-slide");
+    if (!slides.length) return;
+
+    let currentSlide = 0;
+
+    const nextSlide = () => {
+      slides[currentSlide].classList.remove("opacity-100", "z-10");
+      slides[currentSlide].classList.add("opacity-0", "z-0");
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.remove("opacity-0", "z-0");
+      slides[currentSlide].classList.add("opacity-100", "z-10");
+    };
+
+    setInterval(nextSlide, 9000);
+  });
+</script>
