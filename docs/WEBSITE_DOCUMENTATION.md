@@ -119,3 +119,31 @@ A mirrored version of the Spanish site for international patients:
 > - **Core Value Proposition**: Primarily a Medical Consultation with a focus on advanced diagnostic tools (Bio-resonance).
 > - **Flagship Service**: "Quit Smoking" (Antitabaco) is the star treatment.
 > - **Ongoing Goal**: Optimize the distribution and hierarchy of clinical pages for better user flow.
+
+---
+
+## 10. Core Messaging & Brand Voice (Curated Text)
+
+To maintain the professional and empathetic tone of the clinic, the following curated Spanish text should be used as the primary reference for any new content development.
+
+### Clinical Philosophy
+> "El ser humano es un TODO. No se puede separar su parte física de su sistema emocional, mental e incluso espiritual."
+> 
+> "No hay enfermedad física sin un síntoma mental o emocional que se correlacione ni al contrario un síntoma mental, emocional sin que haya un síntoma físico."
+
+### The 3-Step Methodology
+1. **Evaluación Médica Inicial en Profundidad**: 
+   - "Dedicamos el tiempo que sea necesario para profundizar no solo en su biografía médica, sino también en su historia familiar, su entorno vital y su contexto."
+2. **Diagnóstico Médico de Precisión**: 
+   - "Nuestro Diagnóstico Médico mediante Bio-resonancia MORA ® permite un análisis objetivo de la actividad celular y sistémica, identificando desequilibrios, cargas tóxicas, intolerancias o focos interferentes."
+3. **Estrategia Terapéutica Personalizada**: 
+   - "No ofrecemos soluciones genéricas, sino planes de tratamiento individualizados que pueden integrar diferentes modalidades como la Homeopatía clínica o protocolos de Desintoxicación avanzada."
+
+### Key Treatment Descriptions
+- **Medicina Homeopática**: "Recupera tu salud abordando la raíz de tus enfermedades."
+- **Tratamiento Antitabaco**: "Deja de fumar con una única sesión. Natural y eficaz con bio-frecuencias."
+- **Desintoxicación completa**: "Libera tu cuerpo de tóxicos, cargas bacterianas y virales, efectos secundarios de vacunas y Covid persistente."
+- **Medicina Familiar**: "Niños, alergias, asmas y trastornos digestivos como intolerancias, etc."
+
+### About the Clinic (ACERCA DE NOSOTROS)
+- "Consulta especializada en encontrar la causa de la enfermedad, dando solución a problemas, enfermedades y bloqueos."
