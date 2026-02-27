@@ -8,6 +8,8 @@ import MainTreatments from "../components/MainTreatments.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 import HeroSection from "../components/HeroSection.astro";
+import ProcessIcon from "../components/ProcessIcon.astro";
+import DoctorProfileCard from "../components/DoctorProfileCard.astro";
 
 const lang = getLangFromUrl(Astro.url);
 // Here we will use hardcoded Spanish for `index.astro` since the prompt said build Spanish Home Page `src/pages/index.astro`.
@@ -34,136 +36,7 @@ const lang = getLangFromUrl(Astro.url);
             class="inline-block hover:scale-105 transition-transform"
             href="/diagnostico-medico/"
           >
-            <svg
-              class="h-[259px] w-[259px] text-brand-primary"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 200 201"
-              xml:space="preserve"
-              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
-            >
-              <g transform="matrix(1,0,0,1,0,-5277)">
-                <g
-                  id="Evaluación"
-                  transform="matrix(0.48667,0,0,0.692525,1393.81,1653.2)"
-                >
-                  <rect
-                    x="-2863.96"
-                    y="5233.32"
-                    width="410.956"
-                    height="288.798"
-                    style="fill:none;"></rect>
-                  <g
-                    transform="matrix(9.92479e-17,1.13904,-1.62084,6.97463e-17,-2456.97,6427.93)"
-                  >
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-831.46,-194.751)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-775.351,-161.044)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-831.46,-130.328)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-775.351,-225.467)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-887.077,-99.6126)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-943.353,-130.328)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                  </g>
-                  <g transform="matrix(4.21866,0,0,2.96465,-96.4581,4328.04)">
-                    <g>
-                      <g
-                        id="Hexagon"
-                        transform="matrix(1.06891,0,0,1.06891,-807.379,-29.9444)"
-                      >
-                        <path
-                          d="M205.907,367.005L184.229,367.005C182.774,367.005 181.417,366.222 180.688,364.96L169.85,346.187C169.122,344.926 169.122,343.359 169.85,342.099L180.688,323.325C181.417,322.064 182.774,321.28 184.229,321.28L205.907,321.28C207.363,321.28 208.72,322.064 209.448,323.325L220.287,342.099C221.014,343.359 221.014,344.926 220.287,346.187L209.448,364.96C208.72,366.222 207.363,367.005 205.907,367.005ZM184.229,322.125C183.074,322.125 181.998,322.746 181.42,323.747L170.581,342.521C170.003,343.521 170.003,344.764 170.581,345.765L181.42,364.538C181.998,365.539 183.074,366.161 184.229,366.161L205.907,366.161C207.062,366.161 208.139,365.539 208.717,364.538L219.555,345.765C220.133,344.764 220.133,343.521 219.555,342.521L208.717,323.747C208.139,322.746 207.062,322.125 205.907,322.125L184.229,322.125Z"
-                          style="fill:currentColor;stroke:currentColor;stroke-width:0.46px;stroke-linecap:butt;stroke-miterlimit:2;"
-                        ></path>
-                      </g>
-                      <g
-                        transform="matrix(0.862746,0,0,0.862746,-619.575,317.205)"
-                      >
-                        <path
-                          d="M33,15C33,14.448 32.552,14 32,14C31.448,14 31,14.448 31,15L31,17.734C30.084,18.064 29.13,18.518 28.022,19.122C27.537,19.386 27.358,19.993 27.622,20.478C27.886,20.963 28.493,21.142 28.978,20.878C29.741,20.463 30.4,20.137 31,19.882L31,23C31,23.552 31.448,24 32,24C32.552,24 33,23.552 33,23L33,19.235C33.884,19.048 34.806,18.986 35.986,19.003C36.538,19.01 36.992,18.569 37,18.016C37.008,17.464 36.566,17.01 36.014,17.003C34.906,16.987 33.943,17.035 33,17.199L33,15Z"
-                          class="fill-[#FA9604]"
-                          style="stroke:currentColor;stroke-width:0.56px;stroke-linecap:butt;stroke-miterlimit:2;"
-                        ></path>
-                      </g>
-                      <g
-                        transform="matrix(0.862746,0,0,0.862746,-619.575,317.205)"
-                      >
-                        <path
-                          d="M19.142,28.934C16.045,27.747 14.426,27.472 11.51,27.5L11.49,25.5C14.67,25.469 16.538,25.794 19.858,27.066L19.142,28.934Z"
-                          style="fill:currentColor;stroke:currentColor;stroke-width:0.56px;stroke-linecap:butt;stroke-miterlimit:2;"
-                        ></path>
-                      </g>
-                      <g
-                        transform="matrix(0.862746,0,0,0.862746,-619.575,317.205)"
-                      >
-                        <path
-                          d="M11.51,22.5C14.426,22.472 16.045,22.747 19.142,23.934L19.858,22.066C16.538,20.794 14.67,20.469 11.49,20.5L11.51,22.5Z"
-                          class="fill-brand-secondary"
-                          style="stroke:currentColor;stroke-width:0.56px;stroke-linecap:butt;stroke-miterlimit:2;"
-                        ></path>
-                      </g>
-                      <g
-                        transform="matrix(0.862746,0,0,0.862746,-619.575,317.205)"
-                      >
-                        <path
-                          d="M19.142,18.934C16.045,17.747 14.426,17.472 11.51,17.5L11.49,15.5C14.67,15.469 16.538,15.794 19.858,17.066L19.142,18.934Z"
-                          class="fill-[#158EC7]"
-                          style="stroke:currentColor;stroke-width:0.56px;stroke-linecap:butt;stroke-miterlimit:2;"
-                        ></path>
-                      </g>
-                      <g
-                        transform="matrix(0.862746,0,0,0.862746,-619.575,317.205)"
-                      >
-                        <path
-                          d="M43.243,11.271C42.82,11.169 42.406,11.073 42,10.984L42,10.524C42,9.639 41.411,8.83 40.516,8.605C34.366,7.058 29.888,8.696 24.76,11.081C24.51,11.133 24.257,11.186 24,11.24C23.743,11.186 23.49,11.133 23.24,11.081C18.112,8.696 13.634,7.058 7.484,8.605C6.589,8.83 6,9.639 6,10.524L6,10.984C5.594,11.073 5.18,11.169 4.757,11.271C4.311,11.378 4,11.778 4,12.236L4,37.775C4,38.408 4.583,38.88 5.204,38.762C11.417,37.577 15.605,37.494 21.326,38.361C21.822,39.334 22.833,40 24,40C25.167,40 26.178,39.334 26.674,38.361C32.395,37.494 36.583,37.577 42.796,38.762C43.417,38.88 44,38.408 44,37.775L44,12.236C44,11.778 43.689,11.378 43.243,11.271ZM25,13.176C30.317,10.672 34.342,9.122 40,10.538L40,33.968C39.999,33.969 39.997,33.972 39.993,33.975C39.987,33.98 39.98,33.984 39.971,33.986C39.965,33.988 39.956,33.988 39.946,33.987C34.214,32.94 29.932,34.201 25.023,36.423C25.02,36.424 25.019,36.424 25.017,36.425L25.015,36.425L25.014,36.425C25.012,36.425 25.008,36.424 25.003,36.421L25.001,36.419L25,13.176ZM8,10.538C13.658,9.122 17.683,10.673 23,13.177L23,36.419L22.995,36.422C22.991,36.424 22.988,36.425 22.986,36.425L22.985,36.425C22.985,36.425 22.982,36.425 22.977,36.423C18.068,34.201 13.786,32.94 8.054,33.987C8.044,33.988 8.036,33.988 8.029,33.986C8.021,33.984 8.013,33.98 8.007,33.975C8.006,33.974 8.005,33.973 8.004,33.973C8.002,33.971 8.001,33.969 8,33.968L8,33.967L8,10.538Z"
-                          style="fill:currentColor;stroke:currentColor;stroke-width:0.56px;stroke-linecap:butt;stroke-miterlimit:2;"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g></svg
-            >
+            <ProcessIcon step={1} />
           </a>
         </div>
         <div>
@@ -192,136 +65,7 @@ const lang = getLangFromUrl(Astro.url);
             class="inline-block hover:scale-105 transition-transform"
             href="/diagnostico-medico/"
           >
-            <svg
-              class="h-[259px] w-[259px] text-brand-primary"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 200 201"
-              xml:space="preserve"
-              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
-            >
-              <g transform="matrix(1,0,0,1,0,-5632)">
-                <g
-                  id="Resonancia"
-                  transform="matrix(0.48667,0,0,0.692525,1393.81,2007.87)"
-                >
-                  <rect
-                    x="-2863.96"
-                    y="5233.32"
-                    width="410.956"
-                    height="288.798"
-                    style="fill:none;"></rect>
-                  <g
-                    transform="matrix(9.92479e-17,-1.13904,1.62084,6.97463e-17,-2860,4327.5)"
-                  >
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-831.46,-194.751)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-775.351,-161.044)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-831.46,-130.328)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-775.351,-225.467)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-887.077,-99.6126)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-943.353,-130.328)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                  </g>
-                  <g
-                    id="Hexagon"
-                    transform="matrix(4.59811,0,0,3.07476,-3603.77,4360.23)"
-                  >
-                    <path
-                      d="M205.907,367.005L184.229,367.005C182.774,367.005 181.417,366.222 180.688,364.96L169.85,346.187C169.122,344.926 169.122,343.359 169.85,342.099L180.688,323.325C181.417,322.064 182.774,321.28 184.229,321.28L205.907,321.28C207.363,321.28 208.72,322.064 209.448,323.325L220.287,342.099C221.014,343.359 221.014,344.926 220.287,346.187L209.448,364.96C208.72,366.222 207.363,367.005 205.907,367.005ZM184.229,322.125C183.074,322.125 181.998,322.746 181.42,323.747L170.581,342.521C170.003,343.521 170.003,344.764 170.581,345.765L181.42,364.538C181.998,365.539 183.074,366.161 184.229,366.161L205.907,366.161C207.062,366.161 208.139,365.539 208.717,364.538L219.555,345.765C220.133,344.764 220.133,343.521 219.555,342.521L208.717,323.747C208.139,322.746 207.062,322.125 205.907,322.125L184.229,322.125Z"
-                      style="fill:currentColor;stroke:currentColor;stroke-width:0.46px;stroke-linecap:butt;stroke-miterlimit:2;"
-                    ></path>
-                  </g>
-                  <g transform="matrix(0.379038,0,0,0.253463,-2511.58,5344.16)">
-                    <g transform="matrix(0.1,0,0,-0.1,-774.953,548.673)">
-                      <path
-                        d="M896,3898C618,3608 429,3197 380,2775C316,2215 515,1618 898,1219C971,1144 998,1134 1041,1168C1084,1203 1072,1237 980,1341C761,1589 613,1880 551,2185C433,2757 588,3334 976,3774C1072,3883 1084,3916 1041,3952C998,3986 971,3976 896,3898Z"
-                        style="fill:currentColor;fill-rule:nonzero;stroke:currentColor;stroke-width:55.54px;stroke-linecap:butt;stroke-miterlimit:2;"
-                      ></path>
-                    </g>
-                    <g transform="matrix(0.1,0,0,-0.1,-774.953,548.673)">
-                      <path
-                        d="M4079,3952C4037,3917 4048,3881 4127,3793C4316,3582 4450,3349 4527,3095C4716,2472 4568,1819 4127,1327C4048,1239 4037,1202 4079,1168C4122,1134 4149,1144 4224,1222C4555,1566 4750,2063 4750,2560C4750,3057 4554,3554 4224,3898C4149,3976 4122,3986 4079,3952Z"
-                        style="fill:currentColor;fill-rule:nonzero;stroke:currentColor;stroke-width:55.54px;stroke-linecap:butt;stroke-miterlimit:2;"
-                      ></path>
-                    </g>
-                    <g transform="matrix(0.1,0,0,-0.1,-774.953,548.673)">
-                      <path
-                        d="M1444,3607C1411,3588 1305,3464 1246,3375C1142,3220 1072,3053 1028,2859C1008,2770 1005,2728 1005,2560C1005,2392 1008,2350 1028,2261C1086,2005 1198,1779 1361,1595C1451,1493 1481,1480 1525,1525C1565,1564 1557,1591 1484,1672C1322,1851 1212,2073 1163,2318C1137,2448 1140,2693 1168,2827C1219,3062 1326,3272 1484,3448C1557,3529 1565,3556 1525,3595C1498,3622 1476,3626 1444,3607Z"
-                        class="fill-[#158EC7]"
-                        style="stroke-width:55.54px;stroke-linecap:butt;stroke-miterlimit:2;"
-                      ></path>
-                    </g>
-                    <g transform="matrix(0.1,0,0,-0.1,-774.953,548.673)">
-                      <path
-                        d="M3595,3595C3555,3556 3563,3529 3636,3448C3795,3271 3901,3064 3952,2827C3983,2682 3983,2438 3952,2293C3901,2056 3795,1849 3636,1672C3563,1591 3555,1564 3595,1525C3638,1481 3671,1494 3758,1594C3921,1780 4038,2013 4091,2260C4111,2349 4114,2395 4114,2560C4114,2725 4111,2771 4091,2860C4038,3107 3921,3340 3758,3526C3671,3626 3638,3639 3595,3595Z"
-                        class="fill-[#158EC7]"
-                        style="stroke-width:55.54px;stroke-linecap:butt;stroke-miterlimit:2;"
-                      ></path>
-                    </g>
-                    <g transform="matrix(0.1,0,0,-0.1,-774.953,548.673)">
-                      <path
-                        d="M1912,3245C1822,3169 1712,2984 1664,2825C1638,2741 1636,2722 1636,2560C1636,2398 1638,2379 1664,2295C1699,2179 1758,2063 1825,1975C1918,1853 1954,1832 2003,1870C2048,1905 2040,1937 1964,2032C1700,2358 1707,2794 1981,3111C2039,3178 2045,3216 2004,3249C1969,3276 1948,3275 1912,3245Z"
-                        style="fill:currentColor;fill-rule:nonzero;stroke:currentColor;stroke-width:55.54px;stroke-linecap:butt;stroke-miterlimit:2;"
-                      ></path>
-                    </g>
-                    <g transform="matrix(0.1,0,0,-0.1,-774.953,548.673)">
-                      <path
-                        d="M3117,3250C3072,3214 3080,3181 3157,3087C3232,2995 3300,2861 3327,2755C3352,2653 3350,2450 3322,2349C3293,2242 3232,2125 3154,2029C3101,1963 3089,1943 3092,1918C3096,1874 3138,1844 3176,1857C3253,1882 3416,2143 3462,2315C3494,2432 3493,2689 3462,2805C3422,2949 3334,3110 3239,3213C3186,3270 3154,3279 3117,3250Z"
-                        style="fill:currentColor;fill-rule:nonzero;stroke:currentColor;stroke-width:55.54px;stroke-linecap:butt;stroke-miterlimit:2;"
-                      ></path>
-                    </g>
-                    <g transform="matrix(0.1,0,0,-0.1,-774.953,548.673)">
-                      <path
-                        d="M2482,2779C2431,2764 2354,2684 2340,2630C2277,2396 2552,2230 2720,2399C2814,2494 2814,2627 2720,2720C2656,2784 2573,2805 2482,2779Z"
-                        class="fill-[#FA9604]"
-                        style="stroke-width:55.54px;stroke-linecap:butt;stroke-miterlimit:2;"
-                      ></path>
-                    </g>
-                  </g>
-                </g>
-              </g></svg
-            >
+            <ProcessIcon step={2} />
           </a>
         </div>
         <div>
@@ -350,105 +94,7 @@ const lang = getLangFromUrl(Astro.url);
             class="inline-block hover:scale-105 transition-transform"
             href="/tratamientos/"
           >
-            <svg
-              class="h-[259px] w-[259px] text-brand-primary"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 200 201"
-              xml:space="preserve"
-              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
-            >
-              <g transform="matrix(1,0,0,1,0,-5969)">
-                <g
-                  id="Tratamiento"
-                  transform="matrix(0.48667,0,0,0.692525,1393.81,2345.36)"
-                >
-                  <rect
-                    x="-2863.96"
-                    y="5233.32"
-                    width="410.956"
-                    height="288.798"
-                    style="fill:none;"></rect>
-                  <g
-                    transform="matrix(1.62084,0,-2.46519e-32,1.13904,-1118.57,5236.26)"
-                  >
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-831.46,-194.751)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-831.46,-130.328)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-887.077,-99.6126)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.866025,0.5,-0.5,0.866025,-943.353,-130.328)"
-                    >
-                      <path
-                        d="M89.165,244.299L119.881,262.033L119.881,297.5L89.165,315.234L58.45,297.5L58.45,262.033L89.165,244.299Z"
-                        style="fill:none;stroke:currentColor;stroke-width:0.38px;"
-                      ></path>
-                    </g>
-                  </g>
-                  <g
-                    id="Hexagon"
-                    transform="matrix(4.59811,0,0,3.07476,-3559.79,4283.03)"
-                  >
-                    <path
-                      d="M205.907,367.005L184.229,367.005C182.774,367.005 181.417,366.222 180.688,364.96L169.85,346.187C169.122,344.926 169.122,343.359 169.85,342.099L180.688,323.325C181.417,322.064 182.774,321.28 184.229,321.28L205.907,321.28C207.363,321.28 208.72,322.064 209.448,323.325L220.287,342.099C221.014,343.359 221.014,344.926 220.287,346.187L209.448,364.96C208.72,366.222 207.363,367.005 205.907,367.005ZM184.229,322.125C183.074,322.125 181.998,322.746 181.42,323.747L170.581,342.521C170.003,343.521 170.003,344.764 170.581,345.765L181.42,364.538C181.998,365.539 183.074,366.161 184.229,366.161L205.907,366.161C207.062,366.161 208.139,365.539 208.717,364.538L219.555,345.765C220.133,344.764 220.133,343.521 219.555,342.521L208.717,323.747C208.139,322.746 207.062,322.125 205.907,322.125L184.229,322.125Z"
-                      style="fill:currentColor;stroke:currentColor;stroke-width:0.46px;stroke-linecap:butt;stroke-miterlimit:2;"
-                    ></path>
-                  </g>
-                  <g transform="matrix(1.98356,0,0,1.42378,-993.124,5008.01)">
-                    <g transform="matrix(1.18465,0,0,1.18465,-1473.5,-213.522)">
-                      <path
-                        d="M525.456,365.062L525.456,353.261L515.1,353.261L515.1,365.062L503.299,365.062L503.299,375.419L515.1,375.419L515.1,387.22L525.456,387.22L525.456,375.419L537.257,375.419L537.257,365.062L525.456,365.062Z"
-                        style="fill:currentColor;stroke:currentColor;stroke-width:0.17px;"
-                      ></path>
-                    </g>
-                    <g
-                      transform="matrix(0.666558,0,0,0.666558,-1180.27,4.94054)"
-                    >
-                      <path
-                        d="M525.456,365.062L525.456,353.261L515.1,353.261L515.1,365.062L503.299,365.062L503.299,375.419L515.1,375.419L515.1,387.22L525.456,387.22L525.456,375.419L537.257,375.419L537.257,365.062L525.456,365.062Z"
-                        class="fill-brand-secondary"
-                        style="stroke:currentColor;stroke-width:0.31px;"></path>
-                    </g>
-                    <g
-                      transform="matrix(0.737642,0,0,0.737642,-1204.72,-43.1458)"
-                    >
-                      <path
-                        d="M525.456,365.062L525.456,353.261L515.1,353.261L515.1,365.062L503.299,365.062L503.299,375.419L515.1,375.419L515.1,387.22L525.456,387.22L525.456,375.419L537.257,375.419L537.257,365.062L525.456,365.062Z"
-                        class="fill-[#158EC7]"
-                        style="stroke:currentColor;stroke-width:0.28px;"></path>
-                    </g>
-                    <g
-                      transform="matrix(0.384519,0,0,0.384519,-1008.48,109.363)"
-                    >
-                      <path
-                        d="M525.456,365.062L525.456,353.261L515.1,353.261L515.1,365.062L503.299,365.062L503.299,375.419L515.1,375.419L515.1,387.22L525.456,387.22L525.456,375.419L537.257,375.419L537.257,365.062L525.456,365.062Z"
-                        style="fill:currentColor;stroke:currentColor;stroke-width:0.53px;"
-                      ></path>
-                    </g>
-                  </g>
-                </g>
-              </g></svg
-            >
+            <ProcessIcon step={3} />
           </a>
         </div>
         <div>
@@ -606,47 +252,24 @@ const lang = getLangFromUrl(Astro.url);
           id="tab-bio-enrique"
           class="tab-bio-content hidden bg-transparent text-white"
         >
-          <img
-            src="/images/team/enrique.png"
-            alt="Doctor Enrique Fernández"
-            class="w-full max-h-[300px] object-contain mb-6 rounded shadow-md object-top"
+          <DoctorProfileCard
+            name="Doctor Enrique Fernández"
+            role="Licenciado en Medicina y Cirugía por la Universidad del País Vasco (España) y, desde 1984, me dedico a la práctica de la Medicina en mi consulta."
+            imageUrl="/images/team/enrique.png"
+            linkUrl="/doctores/dr-enrique-fernandez"
           />
-          <p class="mb-8 text-center px-4">
-            Licenciado en <strong
-              >Medicina y Cirugía por la Universidad del País Vasco (España)</strong
-            > y, desde 1984, me dedico a la práctica de la Medicina en mi consulta.
-          </p>
-          <div class="flex justify-center">
-            <a
-              href="/doctores/dr-enrique-fernandez"
-              class="inline-block border-2 border-white px-6 py-3 font-heading font-bold text-white uppercase tracking-wider hover:bg-white hover:text-brand-primary transition-colors"
-              >Ver Perfil Completo</a
-            >
-          </div>
         </div>
 
         <div
           id="tab-bio-miriam"
           class="tab-bio-content hidden bg-transparent text-white"
         >
-          <img
-            src="/images/team/Miriam.png"
-            alt="Psicóloga Miriam Matia"
-            class="w-full max-h-[300px] object-contain mb-6 rounded shadow-md object-top"
+          <DoctorProfileCard
+            name="Psicóloga Miriam Matia"
+            role="Licenciada en psicología por La Universidad de Deusto, Bilbao y me dedico a la practica de la psicología, la homeopatía y los tratamientos de desintoxicación, antitabaco y adicciones en nuestra consulta."
+            imageUrl="/images/team/Miriam.png"
+            linkUrl="/doctores/dra-miriam-matia"
           />
-          <p class="mb-8 text-center px-4">
-            Soy Licenciada en psicología por La Universidad de Deusto, Bilbao y
-            me dedico a la practica de la psicología, la homeopatía y los
-            tratamientos de desintoxicación, antitabaco y adicciones en nuestra
-            consulta.
-          </p>
-          <div class="flex justify-center">
-            <a
-              href="/doctores/dra-miriam-matia"
-              class="inline-block border-2 border-white px-6 py-3 font-heading font-bold text-white uppercase tracking-wider hover:bg-white hover:text-brand-primary transition-colors"
-              >Ver Perfil Completo</a
-            >
-          </div>
         </div>
       </div>
     </div>
