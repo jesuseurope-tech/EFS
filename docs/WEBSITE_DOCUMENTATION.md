@@ -147,3 +147,66 @@ To maintain the professional and empathetic tone of the clinic, the following cu
 
 ### About the Clinic (ACERCA DE NOSOTROS)
 - "Consulta especializada en encontrar la causa de la enfermedad, dando solución a problemas, enfermedades y bloqueos."
+
+---
+
+## 11. Curated Treatment Details (Source Text)
+The following texts show the exact branding language for each specific treatment page.
+
+### 11.1 Tratamiento Antitabaco
+> **"Si quiere, es fácil dejarlo."**
+> "Tratamiento de desintoxicación anulando por completo el efecto adictivo de la nicotina y tóxicos del tabaco."
+> - **Methodology**: "La aplicación de bio-resonancia para dejar de fumar se basa en el principio físico de que el cuerpo (sus celulas) se impregnan del humo del tabaco y de esa manera «memorizan» y retienen las frecuencias electromagnéticas... Nuestro tratamiento ayuda al organismo a neutralizar y eliminar estas frecuencias tóxicas."
+> - **Features**: 
+>   - Eficacia rápida y efectiva (Una sola sesión, de una hora)
+>   - Sin efectos secundarios (Sin sustancias químicas)
+>   - Desintoxicación completa (Elimina nicotina, alquitranes, cadmio, plomo, arsénico, etc.)
+>   - Mejora del bienestar (Mayor energía, mejor respiración)
+> - **Key Question**: "¿Quiero o no quiero dejar de fumar? No es necesario tener fuerza de voluntad. Es imprescindible desear / querer dejar de fumar."
+> - **MORA Concept**: "Observe cómo las frecuencias armoniosas interactúan y neutralizan las 'toxinas' caóticas, restaurando el equilibrio... Las frecuencias patológicas son invertidas electrónicamente."
+
+### 11.2 Desintoxicación Completa
+> **"Desintoxicación avanzada por bio-frecuencias."**
+> "La desintoxicación es un proceso natural esencial, pero a menudo sobrecargado por la exposición continua a toxinas... Restaurar este equilibrio es clave para tu salud general y vitalidad."
+> - **Identified Toxins**:
+>   - Tóxicos Medioambientales (Pinturas, amianto, pesticidas)
+>   - Tóxicos Domésticos (Cosméticos, detergentes)
+>   - Tóxicos Médicos (Residuos de fármacos, secuelas de vacunas)
+>   - Metales Pesados (Plomo, mercurio, amalgamas dentales)
+>   - Agentes Biológicos (Bacterias, virus, Covid persistente)
+>   - Geopatías y Electrosmog (Wi-Fi, móviles)
+>   - Intolerancias y Alergias
+>   - Cicatrices (que actúan como focos de interferencia)
+>   - Disbiosis Intestinal y Nutricional
+
+### 11.3 Homeopatía
+> **"Médico y homeopáta. Se debe tratar al Ser Humano que hay en usted."**
+> "Con más de cuarenta años de dedicación a la Medicina, le ofrezco una atención médica profundamente personalizada... Tratar la causa raíz de sus dolencias."
+> - **Core Principles**: 
+>   - *El Principio de Similitud*: "Lo similar cura lo similar" (Hipócrates, Paracelso y Hahnemann).
+>   - *Síntesis profunda*: "Hablaremos de su plano físico, emocional, mental e incluso espiritual... para encontrar el remedio único (simillimum)."
+> - **Application Areas**:
+>   - Bienestar Emocional y Mental (Ansiedad, depresión, estrés)
+>   - Afecciones Crónicas y Recurrentes (Asma, dermatitis, problemas digestivos)
+### 11.4 Diagnóstico Médico
+> **"Diagnóstico médico completo. Los avances de la medicina electromagnética a su alcance."**
+> "En nuestra clínica, cada consulta se fundamenta en un diagnóstico médico completo... integramos la avanzada tecnología de Bio-Resonancia MORA, que revela la raíz del desequilibrio."
+> - **Four Pillars**:
+>   1. Método No Invasivo (Sin agujas ni molestias).
+>   2. Identificación Precisa (Tóxicos, toxinas, alérgenos, patógenos).
+>   3. Visión Integral (Cuerpo como un todo interconectado).
+>   4. Respuestas (Detecta desequilibrios invisibles para análisis convencionales).
+> - **The Science**: "La Bio-resonancia MORA... se fundamenta en un principio clave de la biofísica: cada célula, tejido y órgano emite una frecuencia electromagnética."
+>   - Saludable son "vibraciones armónicas". 
+>   - Enfermedad (toxinas/estrés) crea "vibraciones inarmónicas o patológicas".
+> - **Deep Evaluation**: "Una atención médica de calidad no se mide en minutos, sino en resultados." (Historia médica, historia familiar, historia personal).
+
+### 11.5 Medicina Familiar Integral
+> **"Trastornos Digestivos, Intolerancias y Alergias"**
+> "Nos especializamos en el abordaje integral de condiciones que afectan significativamente la calidad de vida... orientada a la familia."
+> - **Key Areas**:
+>   - *Trastornos Digestivos Crónicos*: Síndrome del intestino irritable, dispepsia funcional.
+>   - *Intolerancias Alimentarias*: Ayudamos al organismo a asimilar normalmente los alimentos (para que el alimento no provoque síntomas).
+>   - *Asma y Alergias Infantiles/Adultos*: Identificar alérgenos y fortalecer el sistema inmunológico.
+> - **Family Approach**: "Tratamos a la familia... El núcleo familiar (padres e hijos) sea atendido de forma conjunta."
+> - **Post-Vaccine Support**: "Apoyo Integral en Secuelas Post-Vacunas... COVID persistente o síndrome post-COVID, así como nuevas sintomatologías o desequilibrios tras la vacunación."
