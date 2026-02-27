@@ -43,6 +43,11 @@ The visual identity is based on a professional medical aesthetic with high-contr
 | `brand-success` | `#10B981` | Green used for harmonic waves/positive markers |
 | `brand-danger` | `#EF4444` | Red used for disharmonic waves/negative markers |
 | `brand-warning` | `#F59E0B` | Amber used for cautions/alerts |
+| `brand-diagram-interference` | `#FDBA74` | Soft orange for wave interference in canvas |
+| `brand-diagram-stroke` | `#3B82F6` | Blue for interactive canvas strokes |
+| `brand-action-primary` | `#4C51BF` | Indigo for interactive therapy start buttons |
+| `brand-action-processing` | `#6D28D9` | Purple for active therapy processing state |
+| `brand-action-success` | `#16A34A` | Dark green for completed therapy state |
 | `brand-black` | `#0F172A` | Soft black for high contrast |
 | `brand-white` | `#FFFFFF` | Pure white |
 | `brand-muted` | `#64748B` | Slate 500 for secondary text and borders |

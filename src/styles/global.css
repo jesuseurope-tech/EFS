@@ -11,6 +11,15 @@
   --color-brand-success: #10B981; /* Emerald Green (Harmonic/Success) */
   --color-brand-danger: #EF4444; /* Red (Disharmonic/Error) */
   --color-brand-warning: #F59E0B; /* Amber (Warnings/Caution) */
+  
+  /* Diagram & Interactive Canvas colors */
+  --color-brand-diagram-interference: #FDBA74; /* Soft orange for wave interference */
+  --color-brand-diagram-stroke: #3B82F6; /* Blue for canvas strokes */
+  
+  /* Therapy Interactive Button colors */
+  --color-brand-action-primary: #4C51BF; /* Indigo for interactive therapy buttons */
+  --color-brand-action-processing: #6D28D9; /* Purple for active processing state */
+  --color-brand-action-success: #16A34A; /* Dark green for completed therapy state */
 
   /* Core Foundation colors */
   --color-brand-black: #0F172A; /* Slate 900 (Soft black for high contrast elements) */
