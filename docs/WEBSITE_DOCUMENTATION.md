@@ -42,6 +42,11 @@ The visual identity is based on a professional medical aesthetic with high-contr
 | `brand-highlight` | `#20428A` | Secondary navy from SVGs, diagrams |
 | `brand-success` | `#10B981` | Green used for harmonic waves/positive markers |
 | `brand-danger` | `#EF4444` | Red used for disharmonic waves/negative markers |
+| `brand-warning` | `#F59E0B` | Amber used for cautions/alerts |
+| `brand-black` | `#0F172A` | Soft black for high contrast |
+| `brand-white` | `#FFFFFF` | Pure white |
+| `brand-muted` | `#64748B` | Slate 500 for secondary text and borders |
+| `brand-surface` | `#F8FAFC` | Slate 50 for very soft card backgrounds |
 
 ### UI Components
 The site follows a consistent pattern of using:

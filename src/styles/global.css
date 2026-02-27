@@ -6,8 +6,17 @@
   --color-brand-accent: #fa9604; /* Orange accent */
   --color-brand-text: #3b3b3b; /* Body text grey */
 
-  /* Additional SVGs specific colors */
+  /* Additional SVGs specific & Status colors */
   --color-brand-highlight: #20428a; /* A slightly lighter navy used in SVGs */
+  --color-brand-success: #10B981; /* Emerald Green (Harmonic/Success) */
+  --color-brand-danger: #EF4444; /* Red (Disharmonic/Error) */
+  --color-brand-warning: #F59E0B; /* Amber (Warnings/Caution) */
+
+  /* Core Foundation colors */
+  --color-brand-black: #0F172A; /* Slate 900 (Soft black for high contrast elements) */
+  --color-brand-white: #FFFFFF; /* Pure white */
+  --color-brand-muted: #64748B; /* Slate 500 (Secondary text, borders, inactive) */
+  --color-brand-surface: #F8FAFC; /* Slate 50 (Off-white for card backgrounds) */
 
   --font-heading: "Montserrat", sans-serif;
   --font-body: "Open Sans", sans-serif;
