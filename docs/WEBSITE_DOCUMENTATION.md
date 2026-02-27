@@ -104,3 +104,18 @@ A mirrored version of the Spanish site for international patients:
 - **Modifying the Header/Footer**: Edit the files in `src/components/`.
 - **Styling Changes**: Primary adjustments should be made in `src/styles/global.css` using the `@theme` block.
 - **Backups**: Commits are made to `development`, and stable releases are merged to `main`.
+
+---
+
+## 9. Insights & Decisions
+> **Date: 2026-02-27**
+> - **Leadership**: The clinic is run by Dr. Enrique Fernández San José and Psychologist Miriam Matia.
+> - **Official URL**: [www.drenriquefernandez.com](https://www.drenriquefernandez.com)
+> - **SEO Legacy**: Project must maintain existing page names and URLs to protect SEO rankings, while allowing for new expansion pages.
+> - **Locations**: 
+>   - Primary Clinic: La Herradura (Near Málaga/Granada).
+>   - Satellite Clinic: Periodic temporary visits to Bilbao.
+>   - Other branches: Logroño, Malaga, etc. (as per Locations component).
+> - **Core Value Proposition**: Primarily a Medical Consultation with a focus on advanced diagnostic tools (Bio-resonance).
+> - **Flagship Service**: "Quit Smoking" (Antitabaco) is the star treatment.
+> - **Ongoing Goal**: Optimize the distribution and hierarchy of clinical pages for better user flow.
