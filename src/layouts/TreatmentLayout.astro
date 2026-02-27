@@ -1,5 +1,7 @@
 ---
 import Layout from "./Layout.astro";
+import Locations from "../components/Locations.astro";
+import ContactSection from "../components/ContactSection.astro";
 
 interface Props {
   title: string;
@@ -57,4 +59,7 @@ const { title, description, lang = "es", treatmentName } = Astro.props;
       </div>
     </aside>
   </div>
+
+  <Locations />
+  <ContactSection sectionId={lang === "es" ? "contacto" : "contact"} />
 </Layout>

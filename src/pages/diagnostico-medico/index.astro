@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import ContactSection from "../../components/ContactSection.astro";
 import MainTreatments from "../../components/MainTreatments.astro";
+import Locations from "../../components/Locations.astro";
 import { getLangFromUrl } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -298,9 +299,8 @@ const lang = getLangFromUrl(Astro.url);
     </div>
   </section>
 
-  <!-- Principales Tratamientos Menu Block -->
   <MainTreatments />
-
+  <Locations />
   <ContactSection />
 </Layout>
 

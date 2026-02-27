@@ -1,5 +1,7 @@
 ---
 import Layout from "./Layout.astro";
+import Locations from "../components/Locations.astro";
+import ContactSection from "../components/ContactSection.astro";
 
 interface Props {
   title: string;
@@ -74,13 +76,11 @@ const {
       </article>
 
       <div class="mt-16 flex justify-center">
-        <a
-          href={lang === "es" ? "/#contacto" : "/en/#contact"}
-          class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-300 bg-brand-primary rounded-full hover:bg-brand-secondary hover:shadow-xl hover:-translate-y-1"
-        >
-          {lang === "es" ? "Contactar" : "Contact Us"}
-        </a>
+        <!-- Replaced by ContactSection below -->
       </div>
     </div>
   </section>
+
+  <Locations />
+  <ContactSection sectionId={lang === "es" ? "contacto" : "contact"} />
 </Layout>

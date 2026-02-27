@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import ContactSection from "../../components/ContactSection.astro";
 import WaveDivider from "../../components/WaveDivider.astro";
 import MainTreatments from "../../components/MainTreatments.astro";
+import Locations from "../../components/Locations.astro";
 import { getLangFromUrl } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -426,7 +427,8 @@ const lang = getLangFromUrl(Astro.url);
     <WaveDivider />
   </section>
 
-  <ContactSection variant="form-only" />
+  <Locations />
+  <ContactSection />
 </Layout>
 
 <script>

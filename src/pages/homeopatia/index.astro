@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import ContactSection from "../../components/ContactSection.astro";
 import MainTreatments from "../../components/MainTreatments.astro";
+import Locations from "../../components/Locations.astro";
 import { getLangFromUrl } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -370,7 +371,8 @@ const lang = getLangFromUrl(Astro.url);
             >(Esta lista es meramente orientativa, ya que el enfoque
             individualizado de la homeopatía permite abordar prácticamente
             cualquier desequilibrio en el que el organismo necesite un impulso
-            para recuperar su estado de salud.)</em>
+            para recuperar su estado de salud.)</em
+          >
         </p>
       </div>
     </div>
@@ -378,6 +380,8 @@ const lang = getLangFromUrl(Astro.url);
 
   <!-- Principales Tratamientos Menu Block -->
   <MainTreatments />
+
+  <Locations />
 
   <ContactSection />
 </Layout>

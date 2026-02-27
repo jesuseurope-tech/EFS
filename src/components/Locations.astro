@@ -1,6 +1,5 @@
 ---
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
-import ContactSection from "./ContactSection.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -162,8 +161,6 @@ const t = labels[lang];
     </div>
   </div>
 </section>
-
-<ContactSection variant="compact" />
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {

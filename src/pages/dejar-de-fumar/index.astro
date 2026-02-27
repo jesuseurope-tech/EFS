@@ -3,23 +3,12 @@ import Layout from "../../layouts/Layout.astro";
 import ContactSection from "../../components/ContactSection.astro";
 import TreatmentCard from "../../components/TreatmentCard.astro";
 import { getLangFromUrl } from "../../i18n/utils";
+import Locations from "../../components/Locations.astro";
 
 const lang = getLangFromUrl(Astro.url);
 ---
 
 <Layout title="Tratamiento Antitabaco" lang={lang}>
-  <!-- Orange Alert Banner -->
-  <div class="bg-brand-accent text-white text-center py-6 px-4">
-    <h5 class="font-body text-[24px] md:text-[26px] font-semibold mb-2">
-      El próximo tratamiento en Bilbao:<br />
-      Del 1 de Abril de 2026 al 30 de Abril de 2026
-    </h5>
-    <p class="font-body text-[20px] md:text-[24px] font-medium">
-      pedir cita anticipada llamando al +34 629 43 41 82<br />
-      Plazas Limitadas.
-    </p>
-  </div>
-
   <!-- Hero Section 2 -->
   <section
     class="bg-[#0C1124] min-h-[600px] flex items-center relative py-20 overflow-hidden"
@@ -448,89 +437,7 @@ const lang = getLangFromUrl(Astro.url);
     </div>
   </section>
 
-  <!-- Tab localization logic will go here, simplified -->
-  <section class="bg-gray-50 py-20" id="Consultas">
-    <div class="max-w-[1200px] mx-auto px-4 text-center">
-      <h2
-        class="text-brand-primary font-heading font-bold uppercase text-[30px] mb-10"
-      >
-        Localizacion de las consultas
-      </h2>
-      <!-- Location subpages: Málaga, Granada, Logroño, Bilbao -->
-      <p class="text-brand-text font-body text-[17px] mb-8">
-        Tratamiento antitabaco en: <a
-          href="/dejar-de-fumar/dejar-de-fumar-en-malaga/"
-          class="text-brand-secondary hover:text-brand-accent font-medium"
-          >Málaga</a
-        > · <a
-          href="/dejar-de-fumar/dejar-de-fumar-en-granada/"
-          class="text-brand-secondary hover:text-brand-accent font-medium"
-          >Granada</a
-        > · <a
-          href="/dejar-de-fumar/dejar-de-fumar-en-logrono/"
-          class="text-brand-secondary hover:text-brand-accent font-medium"
-          >Logroño</a
-        > · <a
-          href="/dejar-de-fumar/dejar-de-fumar-en-bilbao/"
-          class="text-brand-secondary hover:text-brand-accent font-medium"
-          >Bilbao</a
-        >
-      </p>
-      <!-- The actual content mapping -> Herradura, Bilbao, Internacional as tabs or sections -->
-      <div class="flex flex-col md:flex-row justify-center gap-10">
-        <a
-          href="/dejar-de-fumar/dejar-de-fumar-en-granada/"
-          class="flex-1 bg-white p-6 shadow-sm hover:shadow-md transition-shadow block"
-        >
-          <h3
-            class="text-brand-secondary font-heading font-bold text-[20px] mb-4"
-          >
-            La Herradura (Granada)
-          </h3>
-          <img
-            src="/images/locations/la-herradura.jpg"
-            class="mx-auto my-4 w-full object-cover h-[150px]"
-            alt="La Herradura"
-          />
-          <p class="text-brand-text text-[15px] font-body">
-            Paseo Andrés Segovia nº 35, 1ºC 18697 La Herradura. Situada a una
-            hora del aeropuerto de Málaga.
-          </p>
-        </a>
-        <a
-          href="/dejar-de-fumar/dejar-de-fumar-en-bilbao/"
-          class="flex-1 bg-white p-6 shadow-sm hover:shadow-md transition-shadow block"
-        >
-          <h3
-            class="text-brand-secondary font-heading font-bold text-[20px] mb-4"
-          >
-            Bilbao
-          </h3>
-          <img
-            src="/images/locations/bilbao.png"
-            class="mx-auto my-4 w-[200px] object-cover h-[150px]"
-            alt="Bilbao"
-          />
-          <p class="text-brand-text text-[15px] font-body">
-            Edificio Albia, Calle San Vicente. Centro de Negocios SPANPKOR –
-            Planta Sexta.
-          </p>
-        </a>
-        <div class="flex-1 bg-white p-6 shadow-sm">
-          <h3
-            class="text-brand-secondary font-heading font-bold text-[20px] mb-4"
-          >
-            Consulta Internacional
-          </h3>
-          <p class="text-brand-text text-[15px] font-body mt-4">
-            Les recomendamos contacten antelación. Le facilitaremos taxi
-            confiable desde Aeropuerto Málaga a La Herradura. Opción con hotel
-            disponible.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <Locations />
 
   <ContactSection />
 </Layout>
