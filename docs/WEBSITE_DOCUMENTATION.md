@@ -103,6 +103,12 @@ A mirrored version of the Spanish site for international patients:
 - **Adding a Page**: Create a new `.astro` file in `src/pages/`.
 - **Modifying the Header/Footer**: Edit the files in `src/components/`.
 - **Styling Changes**: Primary adjustments should be made in `src/styles/global.css` using the `@theme` block.
+- **Page Structure Standard**: All clinical and main pages should follow a standard flow:
+  1. `<HeroSection />` (or custom Hero block).
+  2. Main Content Sections (Text, Grids, Animations).
+  3. `<MainTreatments />` (for internal cross-linking between services).
+  4. `<Locations />` (if relevant, to show clinic branches).
+  5. `<ContactSection />` (Mandatory call to action at the bottom of every page).
 - **Backups**: Commits are made to `development`, and stable releases are merged to `main`.
 
 ---
