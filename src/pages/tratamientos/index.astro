@@ -341,26 +341,6 @@ const lang = getLangFromUrl(Astro.url);
 </Layout>
 
 <script>
-  // Accordion Logic
-  const detailsElements = document.querySelectorAll(
-    ".custom-accordion details",
-  );
-
-  detailsElements.forEach((details) => {
-    details.addEventListener("toggle", (e) => {
-      if ((details as HTMLDetailsElement).open) {
-        detailsElements.forEach((otherDetails) => {
-          if (
-            otherDetails !== details &&
-            (otherDetails as HTMLDetailsElement).open
-          ) {
-            otherDetails.removeAttribute("open");
-          }
-        });
-      }
-    });
-  });
-
   // Wave Logic
   document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById(
